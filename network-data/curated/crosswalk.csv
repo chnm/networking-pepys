@@ -1,0 +1,72 @@
+network,firstgen_id,firstgen_name,curated_id,status
+network4,alehouse_city,Alehouse (unspecified),,REVIEW: no curated match
+network4,alehouse_westminster,Alehouse (unspecified),,REVIEW: no curated match
+network4,axe_tavern,The Axe,axe_brewhouse,manual
+network4,capt_matthews_lodging,Captain Dick Matthews's Lodging,richard_matthews_house,manual
+network4,catans_lodging,Catan Sterpin's Lodging,,REVIEW: no curated match
+network4,clerks_hall,Clerks' Hall,parish_clerks_hall,manual
+network4,cockpit_whitehall,The Cockpit (Mr. Mount's chamber),cockpit_whitehall,id-exact
+network4,coffee_club_westminster,Coffee House / Rota Club (Turk's Head),turks_head_coffee_house,manual
+network4,cooks_shop_westminster,Cook's Shop (unspecified),,REVIEW: no curated match
+network4,cousin_stradwick_house,Cousin Thomas Stradwick's House,stradwick_house,id-folded
+network4,crowlys,Crowly's,,REVIEW: no curated match
+network4,crown_palace_yard,The Crown Tavern,crown_pub,manual
+network4,dr_whores_house,Dr. Whore's House,dr_hoares_house,manual
+network4,exchequer_office,Pepys's Office (Mr. Downing's,office_exchequer,id-folded
+network4,exeter_house_chapel,Mr. Gunning's Chapel at Exeter House,exeter_house_chapel,id-exact
+network4,father_house_salisbury_court,John Pepys Sr.'s House (father's),john_pepys_house,manual
+network4,french_ordinary,French Ordinary,french_ordinary,id-exact
+network4,g_montagus_house,Mr. George Montagu's House,george_montagu_house,manual
+network4,golden_lion_charing_cross,Golden Lion Tavern,golden_lion_pub,manual
+network4,green_dragon_lambeth_hill,Green Dragon Tavern,green_dragon_pub,manual
+network4,half_moon_tavern,Half Moon Tavern,the_half_moon_alehouse,id-folded
+network4,harp_and_ball,Harp and Ball Tavern,harp_and_ball_tavern,id-folded
+network4,harpers_alehouse,Mrs. Harper's Alehouse,harpers_tavern,id-folded
+network4,heaven_tavern,Heaven Tavern,heaven_alehouse,id-folded
+network4,home_axe_yard,Home (Axe Yard),home_axe_yard,id-exact
+network4,lady_wrights_house,My Lady Wright's House,anne_wright_house,manual
+network4,market_westminster,Market,,REVIEW: no curated match
+network4,marshes_whitehall,Marsh's,,REVIEW: no curated match
+network4,members_lodgings_westminster,Lodgings of Members of Parliament (various),,REVIEW: no curated match
+network4,mitre_fleet_street,Mitre Tavern,mitre_tavern,manual
+network4,mother_lams,Mother Lam's,mother_lams_pub,id-folded
+network4,mr_calthrops_chancery_lane,Mr. Calthrop's,lestrange_calthorpe_chamber,manual
+network4,mr_crews_house,Mr. John Crew's House,john_crews_house,manual
+network4,mr_downings_lodgings,Mr. George Downing's Lodgings,george_downings_lodgings,manual
+network4,mr_fages,Mr. Fage's (apothecary),valentine_fage_house,manual
+network4,mr_frosts,Mr. Frost's,,REVIEW: no curated match
+network4,mr_fullers_twickenham,Mr. Fuller's (school),,REVIEW: no curated match
+network4,mr_hunts_house,Mr. Hunt's House,john_hunt_house,manual
+network4,mr_jessops,Mr. Jessop's,william_jessop_lodging,manual
+network4,mr_mossums_church,Mr. Mossum's Church,robert_mossum_church,manual
+network4,mr_pierces_house,Mr. Pierce the Surgeon's House,,REVIEW: no curated match
+network4,mr_sherwins,Mr. Sherwin's,richard_sherwin_office,manual
+network4,mr_stevens_silversmith,Mr. Stevens's (silversmith),mr_stevens_house,manual
+network4,mr_vernons,Mr. Vernon's,mr_vernon_lodging,id-folded
+network4,mr_vines_house,Mr. Vines's House,george_vines_house,manual
+network4,mr_wades_house,Mr. Wade's House,thomas_wade_house,manual
+network4,mr_woottons_shop,Mr. Wotton's Shop (shoemaker),,REVIEW: no curated match
+network4,mrs_jems_lodgings,Mrs. Jem's Lodgings (Jemima and Anne Montagu),sandwich_lodgings,manual
+network4,mrs_turner_house,Mrs. Jane Turner's House,turner_house,id-folded
+network4,my_lords_lodgings_whitehall,My Lord Montagu's Lodgings,sandwich_lodgings,manual
+network4,new_exchange,The New Exchange,,REVIEW: no curated match
+network4,new_market_alehouse,Alehouse in the New Market,the_new_market,id-folded
+network4,st_brides_church,St Bride's Church (Mr. Herring's),st_brides_church,id-exact
+network4,st_clements,St Clement's (St Clement Danes),st_clements_church,manual
+network4,st_pauls_churchyard,St Paul's Churchyard (booksellers),st_pauls_churchyard,id-exact
+network4,st_pauls_school,St Paul's School,,REVIEW: no curated match
+network4,star_cheapside,The Star Tavern,star_tavern,manual
+network4,sun_chancery_lane,Sun Tavern,the_sun_pub,manual
+network4,swan_fish_street,Swan Tavern,the_swan_pub,manual
+network4,swan_kings_street,The Swan Tavern,swan_inn,manual
+network4,temple,The Temple (Mr. Calthrop's chamber),lestrange_calthorpe_chamber,manual
+network4,thomas_pepys_house,Cousin Thomas Pepys's House,thomas_pepys_house,id-exact
+network4,tom_pepys_turner_shop,Cousin Tom Pepys the Turner's Shop,thomas_pepys_shop,manual
+network4,torrianos_house,Signor Torriano's House,mr_torriano_house,id-folded
+network4,uncle_wights_house,Uncle Wight's House,william_wight_house,manual
+network4,w_joyces_house,William Joyce's House,william_joyce_house,manual
+network4,waters_vintner,Waters the Vintner's,,REVIEW: no curated match
+network4,westminster_hall,Westminster Hall,westminster_hall,id-exact
+network4,whitehall,Whitehall Palace,whitehall_palace,manual
+network4,wilkinsons_cook_shop,Wilkinson's Cook Shop,wilkinsons_cookshop,id-folded
+network4,wills_alehouse,Will's Alehouse,wills_alehouse,id-exact
