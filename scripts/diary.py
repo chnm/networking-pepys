@@ -31,12 +31,16 @@ _ORD = r"(?:\d{1,2}(?:st|nd|rd|th|d)|Loth)"
 # text varies a good deal: "1st.", "2d.", "February 1st.", "5th,(Lord's day).",
 # "19th (Lord's day).", and two entries covering several days at once --
 # "8th, 9th, Loth, 11th, 12th, 13th." and "16th, 17th, 18th, 19th." (both July
-# 1661), where "Loth" is the scan's slip for "10th". Requiring the closing
-# period is what stops wrapped prose ("...on the 20th of March...") from
-# registering as an entry.
+# 1661), where "Loth" is the scan's slip for "10th". The terminator varies too:
+# usually a period, sometimes a comma or colon ("16th, In the morning at my
+# lute.", "27th: The last night..."), and twice nothing at all ("31st Office
+# day."). Anything other than a period is accepted only when a capitalised word
+# follows, which is what keeps wrapped prose out -- every line in the corpus
+# that opens with a bare ordinal and is *not* an entry continues in lower case
+# ("29th of May, the King's birthday...", "3rd part to a song...").
 DAY_RE = re.compile(
-    r"^(?:(?:%s)\.?\s+)?%s(?:\s*,\s*%s)*\s*,?\s*(?:\([^)]*\)\s*)?\."
-    % (_MONTH_WORD, _ORD, _ORD), re.M)
+    r"^(?:(?:%s)\.?\s+)?%s(?:\s*,\s*%s)*\s*,?\s*(?:\([^)]*\)\s*)?"
+    r"(?:\.|[,:]?(?=\s+[A-Z]))" % (_MONTH_WORD, _ORD, _ORD), re.M)
 _ORDINAL_RE = re.compile(r"(\d{1,2})(?:st|nd|rd|th|d)|(Loth)")
 
 
