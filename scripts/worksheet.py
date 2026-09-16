@@ -41,24 +41,43 @@ def main():
 
     days = parse_days(args.days)
     nodes = {n["id"]: n for n in pepys.read_nodes()}
-    edges = [e for e in pepys.read_edges(args.year)
-             if e["month"].strip() == str(args.month)]
+    year_edges = pepys.read_edges(args.year)
+    edges = [e for e in year_edges if e["month"].strip() == str(args.month)]
+    if not edges:
+        raise SystemExit("no edges drafted for %s-%02d" % (args.year, args.month))
     by_day = collections.defaultdict(list)
     for e in edges:
         by_day[int(e["day"])].append(e)
 
+    # "New" means new to the whole dataset, not merely first seen this month,
+    # so places carried over from earlier chunks are not re-listed.
+    seen_before = set()
+    for e in pepys.all_edges():
+        if (e["_year_file"], e["month"].strip()) == (args.year, str(args.month)):
+            continue
+        if (e["_year_file"] < args.year
+                or (e["_year_file"] == args.year
+                    and int(e["month"]) < args.month)):
+            seen_before.add(e["source"].strip())
+            seen_before.add(e["target"].strip())
+
     entries = diary.entries(args.year, args.month)
     month_name = diary.MONTHS[args.month - 1].title()
+    # Use the year exactly as the edges record it, Old Style included.
+    year_label = edges[0]["year"].strip() or args.year
 
-    # A node counts as "new" on the first day an edge touches it.
+    # A node counts as "new" on the first day an edge touches it this month,
+    # provided no earlier chunk used it.
     first_seen = {}
     for d in sorted(by_day):
         for e in by_day[d]:
             for end in ("source", "target"):
-                first_seen.setdefault(e[end].strip(), d)
+                ref = e[end].strip()
+                if ref not in seen_before:
+                    first_seen.setdefault(ref, d)
 
     L = []
-    L.append("# Review worksheet - %s %s" % (month_name, args.year))
+    L.append("# Review worksheet - %s %s" % (month_name, year_label))
     L.append("")
     L.append("%d edges over %d days. Mark each day `OK`, `FIX: ...`, or "
              "`FLAG: ...` (a FLAG becomes a rule in DECISIONS.md)." %
@@ -70,7 +89,7 @@ def main():
             continue
         L.append("---")
         L.append("")
-        L.append("## %d %s %s" % (day, month_name, args.year))
+        L.append("## %d %s %s" % (day, month_name, year_label))
         L.append("")
         L.append("**Verdict:** _______")
         L.append("")

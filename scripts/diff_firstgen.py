@@ -96,11 +96,17 @@ def load_firstgen(name, year, month):
     return names, found
 
 
-def slug(s):
-    """Collapse a slug-style identifier for comparison."""
+def slug_words(s):
+    """Significant words of a slug-style identifier, singularised.
+
+    Compared as sets rather than as a concatenated string: "bridge_tavern"
+    reduces to {bridge} once "tavern" is dropped, and a substring test would
+    then match it inside "cam-bridge", mapping every Cambridge college to the
+    Bridge Tavern.
+    """
     words = re.split(r"[^a-z0-9]+", (s or "").lower())
-    return "".join(sorted(w[:-1] if len(w) > 3 and w.endswith("s") else w
-                          for w in words if w and w not in STOP))
+    return {w[:-1] if len(w) > 3 and w.endswith("s") else w
+            for w in words if w and w not in STOP}
 
 
 def propose(fg_id, fg_name, cur_nodes):
@@ -115,19 +121,22 @@ def propose(fg_id, fg_name, cur_nodes):
     if fg_id in cur_nodes:
         return [(fg_id, "id-exact")]
 
-    by_slug = collections.defaultdict(list)
+    target = slug_words(fg_id)
+    by_words = collections.defaultdict(list)
     for nid in ids:
-        by_slug[slug(nid)].append(nid)
-    hit = by_slug.get(slug(fg_id))
+        by_words[frozenset(slug_words(nid))].append(nid)
+    hit = by_words.get(frozenset(target))
     if hit:
         return [(hit[0], "id-folded")]
 
-    contained = sorted((nid for nid in ids
-                        if slug(nid) and (slug(nid) in slug(fg_id)
-                                          or slug(fg_id) in slug(nid))),
-                       key=lambda nid: abs(len(slug(nid)) - len(slug(fg_id))))
-    if contained:
-        return [(contained[0], "id-partial")]
+    if target:
+        subset = sorted((nid for nid in ids
+                         if slug_words(nid)
+                         and (slug_words(nid) <= target
+                              or target <= slug_words(nid))),
+                        key=lambda nid: len(slug_words(nid) ^ target))
+        if subset:
+            return [(subset[0], "id-partial")]
 
     close = difflib.get_close_matches(fg_id, ids, n=1, cutoff=0.72)
     if close:
@@ -175,6 +184,12 @@ def main():
         raise SystemExit("no curated edges for %s-%02d" % (args.year, args.month))
 
     xwalk = read_crosswalk()
+    curated_days = {day for day, _, _ in cur_rows}
+    # A partially drafted month would otherwise be compared against the whole
+    # of the first-gen month, reporting every undrafted day as a disagreement.
+    fg_rows = [r for r in fg_rows if r[0] in curated_days]
+    if not fg_rows:
+        raise SystemExit("%s covers none of the drafted days" % name)
     present = {p for _, s, t in fg_rows for p in (s, t)}
 
     if args.bootstrap:
