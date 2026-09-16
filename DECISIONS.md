@@ -79,3 +79,13 @@ Rulings needed from the project team. Claude should not decide these alone.
    or should they be distinguished?
 6. **Companion roles** -- keep descriptors like "Clerk of Sandwich Troop" as
    companions, or only named people?
+7. **Combined entries.** Two entries in the diary cover several days at once:
+   July 1661 has "8th, 9th, Loth, 11th, 12th, 13th." (six days) and
+   "16th, 17th, 18th, 19th." (four). The prose does not say which day each
+   movement happened on. How should the edges be dated -- all on the first day
+   of the span, spread by inference, or a new convention? `scripts/diary.py`
+   currently attributes the text to every day it covers and
+   `diary.combined_days()` reports them.
+8. **October 1668.** Wheatley's text has no entries for 1-10 October 1668; it
+   resumes on the 11th. Confirmed a genuine gap in the source, not a parsing
+   artefact -- no edges for those days.
