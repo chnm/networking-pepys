@@ -66,29 +66,25 @@ Rulings needed from the project team. Claude should not decide these alone.
 1. **`peter_gunning_church` vs `exeter_house_chapel`** -- both exist in
    `nodes.csv`. Gunning preached at Exeter House Chapel, and network4 reads
    29 January as a visit to Exeter House Chapel where the curated data has
-   `peter_gunning_church`. Are these one place?
-2. **`the_new_market` vs `market_unknown_1`** -- do these overlap?
+   `peter_gunning_church`. Are these one place? yes, call them Exeter House Chapel
+2. **`the_new_market` vs `market_unknown_1`** -- do these overlap? no.
 3. **`city_of_london`** -- the `name` field currently holds a query
    ("Referencing the Royal Exchange?") rather than a name. Resolve, and move
-   the uncertainty into `notes`.
+   the uncertainty into `notes`. yes.
 4. **Names vs ids** -- `john_pepys_house` is named "Father House" and
-   `john_crews_house` "Mr Crews House", which sits awkwardly with README
-   principle 7 (use the most specific label we have). Rename the `name` fields?
-5. **Coordinate granularity** -- several nodes share coordinates (e.g.
-   `john_pepys_house` and `turner_house` are both Salisbury Court). Intended,
-   or should they be distinguished?
-6. **Companion roles** -- keep descriptors like "Clerk of Sandwich Troop" as
-   companions, or only named people?
-7. **Combined entries.** Two entries in the diary cover several days at once:
+   `john_crews_house` "Mr Crews House". This reflects a disjunction between how
+   Pepys referred to these people and these people's most specific name as historians understand them.
+6. **Coordinate granularity** -- several nodes share coordinates (e.g.
+   `john_pepys_house` and `turner_house` are both Salisbury Court). This is intended behavior.
+7. **Companion roles** -- keep descriptors like "Clerk of Sandwich Troop" as
+   companions
+8. **Combined entries.** Two entries in the diary cover several days at once:
    July 1661 has "8th, 9th, Loth, 11th, 12th, 13th." (six days) and
-   "16th, 17th, 18th, 19th." (four). The prose does not say which day each
-   movement happened on. How should the edges be dated -- all on the first day
-   of the span, spread by inference, or a new convention? `scripts/diary.py`
-   currently attributes the text to every day it covers and
-   `diary.combined_days()` reports them.
-8. **October 1668.** Wheatley's text has no entries for 1-10 October 1668; it
-   resumes on the 11th. Confirmed a genuine gap in the source, not a parsing
-   artefact -- no edges for those days.
+   "16th, 17th, 18th, 19th." (four). The edges for these dates should be
+   flagged for human dating based on a manual read of the diary.
+9. **October 1668.** Wheatley's text has no entries for 1-10 October 1668; it
+   resumes on the 11th. This is confirmed as a genuine gap in the source, not a parsing
+   artefact -- there will be no edges for those days.
 
 ---
 
