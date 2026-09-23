@@ -14,7 +14,7 @@ Principles for unique identifiers:
 10. when referring to a palace or other sprawling complex, use the most precise location possible within it (e.g. Westminster, Whitehall, Tower of London, etc.)
 11. when referring to a semi-known location, it is acceptable to use higher-level labels (e.g. "city of London")
 12. ships are a single location, despite the fact that the ship itself moves
-13. when travelling by boat or coach, include the people who transport him as companions only if they are explicitly named by Pepys (e.g. Mr White named as a waterman)
+13. when travelling by boat or coach, include the people who transport Pepys as companions only if they are explicitly named by Pepys (e.g. Mr White named as a waterman)
 
 Project Team:
 Jessica Otis
