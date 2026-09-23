@@ -3,7 +3,7 @@
 The curated January data was migrated from `node-list.xlsx` / `edge-list.xlsx`
 unchanged, then `scripts/validate.py` reported 77 errors. These are the fixes,
 recorded here because they were applied in the same commit as the migration
-and so are not visible as a git diff. **Please spot-check them.**
+and so are not visible as a git diff. **These were spot-checked and confirmed correct.**
 
 After: 77 nodes, 294 edges, 0 validation errors.
 
