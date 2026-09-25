@@ -101,44 +101,44 @@ up into section 2 or 3.
    was in a heat ... but told Mrs. Jem what I had done", which puts Mrs Jem at
    Scott's. Drafted per the existing ruling, which produces a
    home -> lodgings -> home -> lodgings shuttle on 1 February. **Does Mrs Jem
-   need her own node?**
+   need her own node?** Yes, Mrs Jem is staying at the Scott house in February.
 2. **How finely should the Temple be divided?** The draft has four nodes in the
    Temple district -- `lestrange_calthorpe_chamber` (from January), `the_temple`
    (area level, where no chamber is named), `stephens_chamber_temple` and
    `temple_gardens`. Network4 collapses all of them into one. README principle
    10 favours precision, principle 11 allows area-level labels; this is the
-   boundary between them.
+   boundary between them. Yes keep them separate, use precise location in the Temple when given, area-level labels are acceptable when specific location is not provided.
 3. **Same question for Westminster and Whitehall.** The draft adds
    `guard_chamber_whitehall`, `palace_yard_westminster`, `house_of_commons`,
    `commons_lobby` and `upper_bench_court`. `palace_yard_westminster` is
    unavoidably vague -- the 3 and 6 February entries say only "the Palace
-   Yard", not which one.
+   Yard", not which one. This is correct. 
 4. **The Chequers.** The draft treats "the Exchequer at Charing Cross" (2 Feb)
    and "the Chequers" (5 and 11 Feb) as one house, `chequers_inn`. Network4
-   keeps them apart as two taverns. One node or two?
+   keeps them apart as two taverns. One node or two? Two.
 5. **`downings_counsellor_chamber` may be `stephens_chamber_temple`.** On
    1 February Pepys goes to "Mr. Downing's Counsellor"; on 4 February to "the
    Counsellor at the Temple, Mr. Stephens", and on 10 February "Mr. Stevens our
    lawyer" acts in the same Downing/Squib case. Drafted as two nodes to avoid
-   asserting the identification. **Merge?**
+   asserting the identification. **Merge?** Yes merge for these dates to stephens_chamber_temple.
 6. **"The Exchange", 11 February** -- drafted as `new_exchange` (the Strand)
    rather than `royal_exchange` (the City), because the walk starts from Axe
    Yard after ten at night; network4 reads it the same way. January's data uses
    `royal_exchange` for its Exchange references, so this may want revisiting
    there too -- and it bears on open question 3, the `city_of_london` node whose
-   name still reads "Referencing the Royal Exchange?".
+   name still reads "Referencing the Royal Exchange?". new_exchange is correct for February, references to the exchange should be flagged for human check based on a manual read of the diary.
 7. **Inferred a place that is not named.** On 4 February, "we met with an
    acquaintance of his in the walks, and went and drank" became
    `alehouse_unknown_4` near Gray's Inn, to keep the walk continuous. Accept
    the inference, or should an unnamed drinking stop be folded into the
-   preceding node?
+   preceding node? Yes accept the inference.
 8. **Out-of-order narration, 13 February.** "I went to Mr. Fage from my
    father's" appears at the very end of the entry, after Pepys has already gone
    home. Drafted on the sequence the sentence describes (father's -> Fage's ->
    father's -> home) rather than the order the text presents it in. Is that the
-   right general rule for retrospective sentences?
+   right general rule for retrospective sentences? Yes.
 9. **Mr Swan's house vs the Swan tavern.** The draft reads "to Mr. Swan's"
    (4 Feb) and "I went to Mr. Swan" (10 Feb) as his house, `swan_house`,
    separate from `swan_inn`, the tavern in New Palace Yard. Network4 reads at
-   least one of these as the tavern.
+   least one of these as the tavern. These are distinct locations. 
 
