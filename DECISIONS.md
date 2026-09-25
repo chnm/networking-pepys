@@ -126,7 +126,7 @@ up into section 2 or 3.
    Yard after ten at night; network4 reads it the same way. January's data uses
    `royal_exchange` for its Exchange references, so this may want revisiting
    there too -- and it bears on open question 3, the `city_of_london` node whose
-   name still reads "Referencing the Royal Exchange?".
+   name still reads "Referencing the Royal Exchange?". new_exchange is correct for February, references to the exchange should be flagged for human check based on a manual read of the diary.
 7. **Inferred a place that is not named.** On 4 February, "we met with an
    acquaintance of his in the walks, and went and drank" became
    `alehouse_unknown_4` near Gray's Inn, to keep the walk continuous. Accept
@@ -140,5 +140,5 @@ up into section 2 or 3.
 9. **Mr Swan's house vs the Swan tavern.** The draft reads "to Mr. Swan's"
    (4 Feb) and "I went to Mr. Swan" (10 Feb) as his house, `swan_house`,
    separate from `swan_inn`, the tavern in New Palace Yard. Network4 reads at
-   least one of these as the tavern.
+   least one of these as the tavern. These are distinct locations. 
 
