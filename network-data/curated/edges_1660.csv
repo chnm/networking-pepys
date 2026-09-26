@@ -312,7 +312,7 @@ id,source,target,year,month,day,mode,companions,notes
 100311,chequers_inn,lestrange_calthorpe_chamber,1659/60,2,2,walk,Thomas Doling,
 100312,lestrange_calthorpe_chamber,edward_calthrop_grocer,1659/60,2,2,boat,Thomas Doling; Edward Calthorpe; Mr White,waterman White
 100313,edward_calthrop_grocer,bridge_tavern,1659/60,2,2,walk,Thomas Doling; Edward Calthorpe,
-,bridge_tavern,the_temple,1659/60,2,2,boat,Thomas Doling; Edward Calthorpe,
+100482,bridge_tavern,the_temple,1659/60,2,2,boat,Thomas Doling; Edward Calthorpe,
 100314,the_temple,the_strand,1659/60,2,2,boat,Thomas Doling,"""over against Somerset House, hearing the noise of guns, we landed"""
 100315,the_strand,mrs_johnson_house,1659/60,2,2,walk,Thomas Doling,
 100316,mrs_johnson_house,home_axe_yard,1659/60,2,2,walk,,"""went home on foot"""
@@ -339,7 +339,7 @@ id,source,target,year,month,day,mode,companions,notes
 100338,wills_alehouse,william_swan_house,1659/60,2,4,walk,William Swan,
 100339,william_swan_house,stephens_chamber_temple,1659/60,2,4,boat,William Swan,"""took him out by water to the Counsellor at the Temple"""
 100340,stephens_chamber_temple,grays_inn,1659/60,2,4,walk,William Swan,
-100341,grays_inn,alehouse_unknown_4,1659/60,2,4,walk,William Swan; Unknown man,acquaintance of Sotherton Ellis
+100341,grays_inn,alehouse_unknown_4,1659/60,2,4,walk,William Swan; unknown man,acquaintance of Sotherton Ellis
 100342,alehouse_unknown_4,thomas_widdrington_house,1659/60,2,4,walk,William Swan,"""leaving Swan at his master's, my Lord Widdrington"""
 100343,thomas_widdrington_house,lincolns_inn,1659/60,2,4,walk,,"""I met with Spicer, Washington, and D. Vines in Lincoln's Inn Court"""
 100344,lincolns_inn,john_crews_house,1659/60,2,4,walk,,"""to Mrs. Crew's"""
@@ -451,9 +451,8 @@ id,source,target,year,month,day,mode,companions,notes
 100450,office_exchequer,home_axe_yard,1659/60,2,13,walk,,
 100451,home_axe_yard,sandwich_lodgings,1659/60,2,13,walk,,"""in the way met with Catan on foot in the street"" - no node, met in passing"
 100452,sandwich_lodgings,home_axe_yard,1659/60,2,13,walk,,
-100453,home_axe_yard,john_pepys_house,1659/60,2,13,walk,Elizabeth Pepys,
-100454,home_axe_yard,john_playford_shop,1659/60,2,13,walk,,
-100455,john_playford_shop,john_pepys_house,1659/60,2,13,walk,,
+100454,home_axe_yard,john_playford_shop,1659/60,2,13,walk,Elizabeth Pepys,
+100455,john_playford_shop,john_pepys_house,1659/60,2,13,walk,Elizabeth Pepys,
 100456,john_pepys_house,richard_cumberland_lodgings,1659/60,2,13,walk,,
 100457,richard_cumberland_lodgings,john_pepys_house,1659/60,2,13,walk,,"""I returned"""
 100458,john_pepys_house,valentine_fage_house,1659/60,2,13,walk,,"""I went to Mr. Fage from my father's"" - stated at the end of the entry, placed here on the sequence it describes"
