@@ -37,12 +37,17 @@ superseded by a dated successor.
 |---|---|---|---|
 | "home" | `home_axe_yard` | from 1 Jan 1659/60 | Axe Yard, Westminster |
 | "my office", "the office" | `office_exchequer` | Jan 1659/60 - | Mr Downing's Exchequer office, Westminster Palace |
-| "Mrs. Jem", "my Lord's lodgings" | `sandwich_lodgings` | from 1 Jan 1659/60 | Jemima Montagu lodged at the Earl of Sandwich's Whitehall lodgings |
+| "Mrs. Jem", "my Lord's lodgings" | `sandwich_lodgings` | Jan 1659/60 | Jemima Montagu lodged at the Earl of Sandwich's Whitehall lodgings |
+| "Mrs. Jem", "Mrs. Ann" | `scott_house` | Feb 1659/60 | Mrs Jem lodges at the Scotts' through February (section 4 ruling 1). Mrs Ann lodges with her: 4 Feb puts both at Scott's, and 6 Feb has them in the same chamber |
+| "my Lord's lodgings" *in so many words* | `sandwich_lodgings` | from 1 Jan 1659/60 | Only where the diary names my Lord's lodgings, not where it names Mrs Jem -- 1 Feb does both, and they are two places |
 | "my father's" | `john_pepys_house` | from 1 Jan 1659/60 | John Pepys Sr., tailor, Salisbury Court |
 | "Mr. Calthrop's", "the Temple" | `lestrange_calthorpe_chamber` | from 2 Jan 1659/60 | Chancery Lane, Temple district |
 | "Will's" | `wills_alehouse` | from 2 Jan 1659/60 | Old Palace Yard |
 | "Catan" | `kate_petit_house` | 13 Jan 1659/60 | as read by the project team |
-| "the Sun" | `the_sun_pub` | 20 Jan 1659/60 | "the Sun in Chancery Lane" |
+| "the Sun" | `the_sun_tavern` | 20 Jan 1659/60 | "the Sun in Chancery Lane" |
+| "Mr. Downing's Counsellor", "the Counsellor at the Temple" | `stephens_chamber_temple` | from 1 Feb 1659/60 | One person acting in the Downing/Squib case (section 4 ruling 5) |
+| "Mr. Gunning", "Mr. Gunning's chapel" | `exeter_house_chapel` | from 1 Jan 1659/60 | Gunning preached at Exeter House Chapel (section 3 ruling 1) |
+| "the Exchequer at Charing Cross" | `exchequer_tavern_charing_cross` | 2 Feb 1659/60 | Distinct from `chequers_inn`, "the Chequers" (section 4 ruling 4) |
 
 ### Changes expected later (do not apply early)
 
@@ -67,10 +72,12 @@ Rulings needed from the project team. Claude should not decide these alone.
    `nodes.csv`. Gunning preached at Exeter House Chapel, and network4 reads
    29 January as a visit to Exeter House Chapel where the curated data has
    `peter_gunning_church`. Are these one place? yes, call them Exeter House Chapel
+   -- **applied**: `peter_gunning_church` retired, its two 29 January edges now
+   point at `exeter_house_chapel`.
 2. **`the_new_market` vs `market_unknown_1`** -- do these overlap? no.
 3. **`city_of_london`** -- the `name` field currently holds a query
    ("Referencing the Royal Exchange?") rather than a name. Resolve, and move
-   the uncertainty into `notes`. yes.
+   the uncertainty into `notes`. yes. -- **applied** during the February review.
 4. **Names vs ids** -- `john_pepys_house` is named "Father House" and
    `john_crews_house` "Mr Crews House". This reflects a disjunction between how
    Pepys referred to these people and these people's most specific name as historians understand them.
@@ -140,5 +147,35 @@ up into section 2 or 3.
 9. **Mr Swan's house vs the Swan tavern.** The draft reads "to Mr. Swan's"
    (4 Feb) and "I went to Mr. Swan" (10 Feb) as his house, `swan_house`,
    separate from `swan_inn`, the tavern in New Palace Yard. Network4 reads at
-   least one of these as the tavern. These are distinct locations. 
+   least one of these as the tavern. These are distinct locations.
 
+### Applied
+
+Rulings 1-9 above are settled. The four that needed data changes have been made:
+
+- **Ruling 1** -- eighteen February endpoints moved from `sandwich_lodgings` to
+  `scott_house`, covering every "Mrs. Jem" and "Mrs. Ann" visit on 1, 3, 6, 7,
+  8, 9, 13, 14 and 15 February. The single February reference to "my Lord's
+  lodgings" in so many words (1 Feb, edges 100303-100304) stays at
+  `sandwich_lodgings`. This resolves the shuttle the flag described: 1 February
+  now reads Wright's -> Scott's -> home -> my Lord's lodgings, and the entry
+  names Madam Scott and her husband at the Mrs Jem visit, which corroborates it.
+  **Note for the team:** the ruling named Mrs Jem; extending it to Mrs Ann is an
+  inference from 4 February ("to Scott's, where Mrs. Ann was in a heat ... but
+  told Mrs. Jem what I had done") and 6 February, which put them in one chamber.
+  Say if Mrs Ann should be treated separately.
+- **Ruling 4** -- `exchequer_tavern_charing_cross` added for 2 February;
+  `chequers_inn` keeps 5 and 11 February.
+- **Ruling 5** -- `downings_counsellor_chamber` retired into
+  `stephens_chamber_temple`.
+- **Rulings 2, 3, 6, 7, 8, 9** needed no change; the draft already matched.
+
+### Still to settle
+
+- **`house_of_commons` is now unused.** The review folded the 3 February
+  "Houses sitting" visit into `westminster_hall`, which leaves the node with no
+  edges, sitting awkwardly against ruling 3's endorsement of the Westminster
+  subdivision. Keep it for later months, or retire it?
+- **Principle 13** (named watermen and coachmen count as companions) was added
+  to `README.md` after the February draft was written. February applies it where
+  the review added names; earlier months have not been swept for it.

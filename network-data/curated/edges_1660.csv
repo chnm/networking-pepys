@@ -269,8 +269,8 @@ id,source,target,year,month,day,mode,companions,notes
 100267,wills_alehouse,home_axe_yard,1659/60,1,28,walk,,
 100268,home_axe_yard,whitehall_palace,1659/60,1,28,walk,,
 100269,whitehall_palace,home_axe_yard,1659/60,1,28,walk,,
-100270,home_axe_yard,peter_gunning_church,1659/60,1,29,walk,,
-100271,peter_gunning_church,john_crews_house,1659/60,1,29,walk,Henry Moore,
+100270,home_axe_yard,exeter_house_chapel,1659/60,1,29,walk,,
+100271,exeter_house_chapel,john_crews_house,1659/60,1,29,walk,Henry Moore,
 100272,john_crews_house,home_axe_yard,1659/60,1,29,walk,,
 100273,home_axe_yard,john_pepys_house,1659/60,1,29,walk,,
 100274,john_pepys_house,home_axe_yard,1659/60,1,29,walk,,
@@ -296,11 +296,11 @@ id,source,target,year,month,day,mode,companions,notes
 100295,home_axe_yard,office_exchequer,1659/60,2,1,walk,,
 100296,office_exchequer,home_axe_yard,1659/60,2,1,walk,,
 100297,home_axe_yard,westminster_hall,1659/60,2,1,walk,,
-100298,westminster_hall,downings_counsellor_chamber,1659/60,2,1,walk,William Swan,
-100299,downings_counsellor_chamber,lincolns_inn,1659/60,2,1,walk,William Swan,
+100298,westminster_hall,stephens_chamber_temple,1659/60,2,1,walk,William Swan,
+100299,stephens_chamber_temple,lincolns_inn,1659/60,2,1,walk,William Swan,
 100300,lincolns_inn,wright_house,1659/60,2,1,walk,,"""Sir Harry Wright's"""
-100301,wright_house,sandwich_lodgings,1659/60,2,1,walk,,
-100302,sandwich_lodgings,home_axe_yard,1659/60,2,1,walk,,
+100301,wright_house,scott_house,1659/60,2,1,walk,,
+100302,scott_house,home_axe_yard,1659/60,2,1,walk,,
 100303,home_axe_yard,sandwich_lodgings,1659/60,2,1,walk,Gammer East; James the porter,"""took Gammer East, and James the porter, a soldier, to my Lord's lodgings"""
 100304,sandwich_lodgings,wills_alehouse,1659/60,2,1,walk,,
 100305,wills_alehouse,home_axe_yard,1659/60,2,1,walk,,
@@ -308,8 +308,8 @@ id,source,target,year,month,day,mode,companions,notes
 100307,harpers_tavern,office_exchequer,1659/60,2,2,walk,,
 100308,office_exchequer,home_axe_yard,1659/60,2,2,walk,,
 100309,home_axe_yard,harpers_tavern,1659/60,2,2,walk,,
-100310,harpers_tavern,chequers_inn,1659/60,2,2,walk,Thomas Doling; Peter Llewellyn,Luellin met on the way
-100311,chequers_inn,lestrange_calthorpe_chamber,1659/60,2,2,walk,Thomas Doling,
+100310,harpers_tavern,exchequer_tavern_charing_cross,1659/60,2,2,walk,Thomas Doling; Peter Llewellyn,Luellin met on the way
+100311,exchequer_tavern_charing_cross,lestrange_calthorpe_chamber,1659/60,2,2,walk,Thomas Doling,
 100312,lestrange_calthorpe_chamber,edward_calthrop_grocer,1659/60,2,2,boat,Thomas Doling; Edward Calthorpe; Mr White,waterman White
 100313,edward_calthrop_grocer,bridge_tavern,1659/60,2,2,walk,Thomas Doling; Edward Calthorpe,
 100482,bridge_tavern,the_temple,1659/60,2,2,boat,Thomas Doling; Edward Calthorpe,
@@ -331,8 +331,8 @@ id,source,target,year,month,day,mode,companions,notes
 100330,palace_yard_westminster,home_axe_yard,1659/60,2,3,walk,,"""I returned"""
 100331,home_axe_yard,st_james_park,1659/60,2,3,walk,Elizabeth Pepys; Jane Turner; Joyce Norton; Theophila Turner,
 100332,st_james_park,charing_cross,1659/60,2,3,walk,Elizabeth Pepys; Jane Turner; Joyce Norton; Theophila Turner,"""I set them as far as Charing Cross, and there left them and my wife"""
-100333,charing_cross,sandwich_lodgings,1659/60,2,3,walk,,"""I went to see Mrs. Ann"" - Mrs Ann taken to be at my Lord's lodgings, cf. 1 Feb"
-100334,sandwich_lodgings,home_axe_yard,1659/60,2,3,walk,,
+100333,charing_cross,scott_house,1659/60,2,3,walk,,"""I went to see Mrs. Ann"" - Mrs Ann taken to be at my Lord's lodgings, cf. 1 Feb"
+100334,scott_house,home_axe_yard,1659/60,2,3,walk,,
 100335,home_axe_yard,office_exchequer,1659/60,2,4,walk,,
 100336,office_exchequer,westminster_hall,1659/60,2,4,walk,,
 100337,westminster_hall,wills_alehouse,1659/60,2,4,walk,William Swan; Captain Stone,
@@ -361,8 +361,8 @@ id,source,target,year,month,day,mode,companions,notes
 100360,swan_inn,westminster_hall,1659/60,2,6,walk,,
 100361,westminster_hall,home_axe_yard,1659/60,2,6,walk,,
 100362,home_axe_yard,bull_head_tavern,1659/60,2,6,walk,John Pepys,
-100363,bull_head_tavern,sandwich_lodgings,1659/60,2,6,walk,,"""I to Mrs. Ann"""
-100364,sandwich_lodgings,wills_alehouse,1659/60,2,6,walk,,
+100363,bull_head_tavern,scott_house,1659/60,2,6,walk,,"""I to Mrs. Ann"""
+100364,scott_house,wills_alehouse,1659/60,2,6,walk,,
 100365,wills_alehouse,home_axe_yard,1659/60,2,6,walk,,
 100366,home_axe_yard,office_exchequer,1659/60,2,7,walk,,"""to give Mr. Hawly notice of my being forced to go into London"""
 100367,office_exchequer,the_temple,1659/60,2,7,walk,John Hawly,"""he and I walked as far as the Temple"""
@@ -375,8 +375,8 @@ id,source,target,year,month,day,mode,companions,notes
 100374,john_stone_office,temple_gardens,1659/60,2,7,coach,Captain John Stone,
 100375,temple_gardens,home_axe_yard,1659/60,2,7,walk,,"""Thence back on foot home"""
 100376,home_axe_yard,john_crews_house,1659/60,2,7,walk,,
-100377,john_crews_house,sandwich_lodgings,1659/60,2,7,walk,,"""calling upon Mrs. Ann"""
-100378,sandwich_lodgings,home_axe_yard,1659/60,2,7,walk,,
+100377,john_crews_house,scott_house,1659/60,2,7,walk,,"""calling upon Mrs. Ann"""
+100378,scott_house,home_axe_yard,1659/60,2,7,walk,,
 100379,home_axe_yard,swan_inn,1659/60,2,8,walk,Thomas Fossan,"""the Swan in the Palace yard"""
 100380,swan_inn,office_exchequer,1659/60,2,8,walk,,
 100381,office_exchequer,swan_inn,1659/60,2,8,walk,Charles Carter; Captain Robert Lidcott,"""in the way I met with Captain Lidcott"""
@@ -386,8 +386,8 @@ id,source,target,year,month,day,mode,companions,notes
 100385,wills_alehouse,priors_rhenish_wine_house,1659/60,2,8,walk,Charles Carter; Mr Butler; William Howell,"""a Rhenish wine house"" - taken to be Prior's, cf. 3 Feb"
 100386,priors_rhenish_wine_house,william_wheeler_house,1659/60,2,8,walk,,"""in my way delivering a letter ... to Sir N. Wheeler"""
 100387,william_wheeler_house,home_axe_yard,1659/60,2,8,walk,,
-100388,home_axe_yard,sandwich_lodgings,1659/60,2,8,walk,,"""I called in my way upon Mrs. Jem"""
-100389,sandwich_lodgings,the_temple,1659/60,2,8,walk,,
+100388,home_axe_yard,scott_house,1659/60,2,8,walk,,"""I called in my way upon Mrs. Jem"""
+100389,scott_house,the_temple,1659/60,2,8,walk,,
 100390,the_temple,john_pepys_house,1659/60,2,8,walk,,
 100391,john_pepys_house,fleet_street,1659/60,2,8,walk,,"""in Fleet Street, received a great jostle"""
 100392,fleet_street,home_axe_yard,1659/60,2,8,walk,,
@@ -396,8 +396,8 @@ id,source,target,year,month,day,mode,companions,notes
 100395,john_phelps_house,westminster_hall,1659/60,2,9,walk,,
 100396,westminster_hall,upper_bench_court,1659/60,2,9,walk,,
 100397,upper_bench_court,office_exchequer,1659/60,2,9,walk,,"""I went to my office ... after I had been at the Upper Bench"""
-100398,office_exchequer,sandwich_lodgings,1659/60,2,9,walk,,
-100399,sandwich_lodgings,wright_house,1659/60,2,9,walk,,"""her Aunt Wright's, but she was gone, so I went thither"""
+100398,office_exchequer,scott_house,1659/60,2,9,walk,,
+100399,scott_house,wright_house,1659/60,2,9,walk,,"""her Aunt Wright's, but she was gone, so I went thither"""
 100400,wright_house,westminster_hall,1659/60,2,9,walk,,
 100401,westminster_hall,james_pearse_house,1659/60,2,9,walk,James Pierce,"""Mr. Pierce the surgeon, who would needs take me home"""
 100402,james_pearse_house,home_axe_yard,1659/60,2,9,walk,,
@@ -449,8 +449,8 @@ id,source,target,year,month,day,mode,companions,notes
 100448,john_pepys_house,home_axe_yard,1659/60,2,12,walk,Elizabeth Pepys,
 100449,home_axe_yard,office_exchequer,1659/60,2,13,walk,,
 100450,office_exchequer,home_axe_yard,1659/60,2,13,walk,,
-100451,home_axe_yard,sandwich_lodgings,1659/60,2,13,walk,,"""in the way met with Catan on foot in the street"" - no node, met in passing"
-100452,sandwich_lodgings,home_axe_yard,1659/60,2,13,walk,,
+100451,home_axe_yard,scott_house,1659/60,2,13,walk,,"""in the way met with Catan on foot in the street"" - no node, met in passing"
+100452,scott_house,home_axe_yard,1659/60,2,13,walk,,
 100454,home_axe_yard,john_playford_shop,1659/60,2,13,walk,Elizabeth Pepys,
 100455,john_playford_shop,john_pepys_house,1659/60,2,13,walk,Elizabeth Pepys,
 100456,john_pepys_house,richard_cumberland_lodgings,1659/60,2,13,walk,,
@@ -464,8 +464,8 @@ id,source,target,year,month,day,mode,companions,notes
 100464,office_exchequer,wills_alehouse,1659/60,2,14,walk,Mr Hill,"Mr Hill of Worcestershire, presumably a client of Pepys"
 100465,wills_alehouse,home_axe_yard,1659/60,2,14,walk,,
 100466,home_axe_yard,john_crews_house,1659/60,2,14,walk,,
-100467,john_crews_house,sandwich_lodgings,1659/60,2,14,walk,,
-100468,sandwich_lodgings,home_axe_yard,1659/60,2,14,walk,,
+100467,john_crews_house,scott_house,1659/60,2,14,walk,,
+100468,scott_house,home_axe_yard,1659/60,2,14,walk,,
 100469,home_axe_yard,westminster_hall,1659/60,2,14,walk,,
 100470,westminster_hall,wills_alehouse,1659/60,2,14,walk,,
 100471,wills_alehouse,home_axe_yard,1659/60,2,14,walk,,
@@ -477,5 +477,5 @@ id,source,target,year,month,day,mode,companions,notes
 100477,michael_hering_house,st_pauls_churchyard,1659/60,2,15,walk,,
 100478,st_pauls_churchyard,john_pepys_house,1659/60,2,15,walk,,
 100479,john_pepys_house,wright_house,1659/60,2,15,walk,,"""my Lady Wright's"""
-100480,wright_house,sandwich_lodgings,1659/60,2,15,walk,,
-100481,sandwich_lodgings,home_axe_yard,1659/60,2,15,walk,,
+100480,wright_house,scott_house,1659/60,2,15,walk,,
+100481,scott_house,home_axe_yard,1659/60,2,15,walk,,

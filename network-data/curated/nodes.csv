@@ -1,6 +1,6 @@
 id,name,location,latitude,longitude,notes
 home_axe_yard,Home Axe Yard,"Axe Yard, Westminster",51.502912,-0.127259,South of Downing St
-exeter_house_chapel,Exeter House Chapel,Covent Garden,51.511377,-0.120124,Peter Gunning
+exeter_house_chapel,Exeter House Chapel,Covent Garden,51.511377,-0.120124,"Peter Gunning preached here; ""to Mr. Gunning"" 29 Jan and 5 Feb 1659/60 refer to this chapel"
 john_pepys_house,Father House,Salisbury Court,51.5135,-0.1063,"John Pepys, Tailor, lived south of Fleet Street, St Brides Parish until 1661"
 turner_house,Turner House,Salisbury Court,51.5135,-0.1063,"John, Jane and Theophila Turner. Madame Morris?"
 sandwich_lodgings,Earl of Sandwich Lodgings,Whitehall Palace,,,"Managed by Edward Shipley (1659-62), Jemimah Montagu (Carteret after 1665)"
@@ -70,15 +70,13 @@ royal_exchange,Royal Exchange,,,,
 heaven_alehouse,Heaven Alehouse,"Old Palace Yard, Westminster",,,Adjacent to Westminster Hall
 st_clements_church,St Clement Danes Church,"Westminster, London",51.513107,-0.113898,
 wright_house,Wright House,,,,"Henry and Anne Wright, Anne sister of Jemima Montagu, wife of Sir Henry Wright"
-peter_gunning_church,Peter Gunning Church,,,,
 mr_torriano_house,Mr Torriano House,,,,
 richard_matthews_house,Richard Matthews House,,,,
 star_chamber_westminster,Star Chamber Westminster,Westminster Palace,51.5005,-0.1248,east side of new palace yard
 the_sun_tavern,The Sun Tavern,Chancery Lane,,,"""the Sun in Chancery Lane"", 20 Jan 1659/60"
 richard_sherwin_office,Richard Sherwin Office,,,,"Richard Sherwin; Pepys sent there by Mr Downing, 27 Jan 1659/60"
-downings_counsellor_chamber,Mr Downings Counsellor Chamber,,,,"Mr Downing's counsel, visited 1 Feb 1659/60; possibly Mr Stephens, the counsellor at the Temple (cf. 4 and 10 Feb) - unconfirmed"
 lincolns_inn,Lincoln's Inn,Holborn,,,"Inn of Court; ""Lincoln's Inn Court"" 4 Feb 1659/60"
-chequers_inn,The Chequers,Charing Cross,,,"An inn and ordinary. ""the Exchequer at Charing Cross"" 2 Feb, ""the Chequers"" 5 and 11 Feb 1659/60"
+chequers_inn,The Chequers,Charing Cross,,,"An inn and ordinary. ""the Chequers"" 5 and 11 Feb 1659/60"
 edward_calthrop_grocer,Edward Calthrop Grocer,London Bridge,,,"Mr Calthrop, a grocer - distinct from Sir Lestrange Calthorpe of the Temple"
 bridge_tavern,Bridge Tavern,London Bridge,,,
 the_strand,The Strand,Westminster,,,"Landing place, ""over against Somerset House"", 2 Feb 1659/60"
@@ -90,11 +88,11 @@ priors_rhenish_wine_house,Priors Rhenish Wine House,Westminster,,,"Cannon Row, W
 palace_yard_westminster,Palace Yard Westminster,Westminster Palace,,,The entry does not say whether New or Old Palace Yard
 charing_cross,Charing Cross,Westminster,,,
 william_swan_house,William Swan House,,,,"William Swan, of the Exchequer"
-stephens_chamber_temple,Mr Stephens Chamber,The Temple,,,"""the Counsellor at the Temple, Mr. Stephens"" 4 Feb; ""Mr. Stevens our lawyer"" 10 Feb 1659/60"
+stephens_chamber_temple,Mr Stephens Chamber,The Temple,,,"""Mr. Downing's Counsellor"" 1 Feb; ""the Counsellor at the Temple, Mr. Stephens"" 4 Feb; ""Mr. Stevens our lawyer"" 10 Feb 1659/60 - one person, acting in the Downing/Squib case throughout"
 grays_inn,Gray's Inn,Holborn,,,Inn of Court
 alehouse_unknown_4,Alehouse Unknown,Holborn,,,"""we met with an acquaintance of his in the walks, and went and drank"" 4 Feb 1659/60 - drinking house near Gray's Inn, unnamed"
 thomas_widdrington_house,Lord Thomas Widdrington House,,,,Mr Swan's master
-scott_house,Scott House,,,,"Madam Scott and her husband, cf. 1 Feb 1659/60"
+scott_house,Scott House,,,,"Madam Scott and her husband. Mrs Jem (Jemima Montagu) lodges here through February 1659/60, with Mrs Ann; 4 Feb places both at Scott's explicitly"
 bull_head_tavern,Bull Head Tavern,,,,
 the_temple,The Temple,Temple district,,,"Area-level node for ""the Temple"" where no chamber is named"
 st_pauls_school,St Paul's School,St. Paul's Churchyard,,,Pepys's own school; his brother John was a pupil
@@ -120,3 +118,4 @@ richard_cumberland_lodgings,Richard Cumberland Lodgings,,,,"Richard Cumberland, 
 michael_hering_house,Michael Hering House,City of London,,,"Possibly located on Coleman Street, Hering the merchant, concerned in my Lord's Worcester money"
 new_exchange,The New Exchange,The Strand,,,Shopping arcade on the south side of the Strand; distinct from the Royal Exchange in the City
 new_palace_yard_westminster,New Palace Yard,Westminster Palace,,,"""then to the Hall, where in the Palace I saw Monk's soldiers abuse Billing and all the Quakers"" 7 Feb 1659/60"
+exchequer_tavern_charing_cross,The Exchequer Tavern,Charing Cross,,,"""drank with him at the Exchequer at Charing Cross"" 2 Feb 1659/60; kept distinct from chequers_inn"

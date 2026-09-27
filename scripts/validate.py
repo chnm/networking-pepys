@@ -251,6 +251,27 @@ def check_people(edges):
                  % (len(spellings), " | ".join(sorted(spellings))))
 
 
+def check_crosswalk(node_ids):
+    """The first-gen crosswalk stores curated ids, so a node rename can leave it
+    pointing at places that no longer exist -- which makes diff_firstgen.py
+    report the rename as a disagreement. Advisory: it is a diagnostic aid, not
+    part of the dataset."""
+    path = os.path.join(pepys.CURATED, "crosswalk.csv")
+    if not os.path.exists(path):
+        return
+    import csv
+    with open(path, newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh))
+    stale = collections.defaultdict(list)
+    for r in rows:
+        cid = (r.get("curated_id") or "").strip()
+        if cid and cid not in node_ids:
+            stale[cid].append(r.get("firstgen_id", "?"))
+    for cid, refs in sorted(stale.items()):
+        warn("crosswalk.csv points at %r, which is not in nodes.csv "
+             "(from %s) -- renamed or retired?" % (cid, ", ".join(sorted(refs))))
+
+
 def check_coverage(edges, nodes, node_ids):
     used = {e[end].strip() for e in edges for end in ("source", "target")}
     for nid in sorted(set(node_ids) - used):
@@ -291,6 +312,7 @@ def main():
     check_edges(edges, node_ids)
     check_continuity(edges)
     check_people(edges)
+    check_crosswalk(node_ids)
     if not args.year:
         check_coverage(edges, nodes, node_ids)
 
