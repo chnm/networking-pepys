@@ -179,3 +179,54 @@ Rulings 1-9 above are settled. The four that needed data changes have been made:
 - **Principle 13** (named watermen and coachmen count as companions) was added
   to `README.md` after the February draft was written. February applies it where
   the review added names; earlier months have not been swept for it.
+
+---
+
+## 5. Flagged in the 16-29 February 1659/60 draft
+
+The Cambridge journey. 116 edges, 26 new places, validated clean, and the whole
+fortnight forms one unbroken walk: London -> Foulmere (night of 24th) ->
+Cambridge, three nights at the Falcon, -> Saffron Walden and Audley End ->
+Epping (night of 27th) -> London.
+
+1. **Which Sun Tavern, 16 February?** Drafted as `the_sun_tavern`, Chancery
+   Lane, the only Sun in the node list -- but the company is Exchequer
+   colleagues setting out from Will's in Westminster, and network4 keeps a
+   separate Sun in Westminster. One house or two?
+2. **"the park", 17 February** -- drafted as `st_james_park`, consistent with
+   3 and 12 February, though this walk starts from Exeter House in the Strand
+   rather than from Axe Yard.
+3. **Mr Moore's dinner, 19 February** -- "went home with him to dinner" drafted
+   as `john_crews_house`, on the strength of the secluded members coming in "to
+   Mr. Crew" after that dinner. If Moore had lodgings of his own, this is wrong.
+4. **"my partner", 20 February** -- recorded as the descriptor "Pepys's office
+   partner" for want of a name. Possibly Mr Hawly. A name would be better.
+5. **Mr Wotton has no first name** (`wotton_shop`, 18 February). The diary gives
+   only "Mr. Wotton's", the shoemaker.
+6. **Unnamed alehouses: new node or shared?** This chunk adds
+   `alehouse_unknown_6` (Fleet Street, 18 Feb) and `alehouse_unknown_7`
+   (Westminster, 23 Feb). network4 instead reuses an existing alehouse for
+   18 February. Should repeated unnamed stops in one area share a node, or does
+   each occasion get its own?
+7. **Boat landing, 29 February** -- "my wife and I by water to London, and
+   thence to Herring's" drafted as home -> `city_of_london` (boat) ->
+   `michael_hering_house` (walk). The landing place is not named, so
+   `city_of_london` stands in for it under README principle 11.
+8. **Waypoints on the road** -- `ware` is a node because the entry names it
+   ("About Ware we overtook Mr. Blayton"); network4 omits it. Confirm that named
+   waypoints on a long ride count, as they do in town.
+9. **Three Chequers, all distinct.** `chequers_inn` (the Chequers, Charing
+   Cross), `exchequer_tavern_charing_cross` (the Exchequer, Charing Cross) and
+   now `chequer_inn_foulmere` (the Chequer, Foulmere, Cambridgeshire). Please
+   confirm the third is genuinely separate and not a spelling of one of the others.
+10. **The White Hart's master as a companion.** He walks Pepys and Mr Blayton to
+    Audley End and through the almshouse, so he is recorded as "master of the
+    White Hart" -- a role descriptor, which section 3 ruling 7 permits.
+11. **"the Old Exchange", 28 February** -- read as `royal_exchange`, the Royal
+    Exchange in the City, against the New Exchange in the Strand. Flagged
+    because section 4 ruling 6 asks for Exchange references to be checked by
+    hand.
+12. **Queens' College is not a node.** network4 creates one for 26 February;
+    this draft reads "Mr. Nicholas, of Queen's College" as the preacher's
+    affiliation, not a place Pepys went. He heard him at St Botolph's.
+
