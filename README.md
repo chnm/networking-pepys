@@ -2,7 +2,7 @@ This began as an experiment in creating a historical network using agentic codin
 
 From fall 2026-spring 2027, the network was re-built systematically using a combination of human and agentic labor.
 
-Principles for unique identifiers:
+__Principles for unique identifiers:__
 1. human readable
 2. use underscores to separate words
 3. use OED to determine canonical spacing of multi-word locations (e.g. coffee house vs. alehouse)
@@ -13,7 +13,7 @@ Principles for unique identifiers:
 9. when referring to a person's home, include the honorific unless Pepys visits the family more generally (e.g. both Thomas and Elizabeth Stradwick so their location is stradwick_house)
 10. when referring to a palace or other sprawling complex, use the most precise location possible within it (e.g. Westminster, Whitehall, Tower of London, etc.)
 11. when referring to a semi-known location, it is acceptable to use higher-level labels (e.g. "city of London")
-12. ships are a single location, despite the fact that the ship itself moves
+12. ships are a single location, despite the fact that the ship itself moves, they are both a location and a mode of transportation
 13. when travelling by boat or coach, include the people who transport Pepys as companions only if they are explicitly named by Pepys (e.g. Mr White named as a waterman)
 
 Project Team:
