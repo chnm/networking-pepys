@@ -120,19 +120,19 @@ new_exchange,The New Exchange,The Strand,,,Shopping arcade on the south side of 
 new_palace_yard_westminster,New Palace Yard,Westminster Palace,,,"""then to the Hall, where in the Palace I saw Monk's soldiers abuse Billing and all the Quakers"" 7 Feb 1659/60"
 exchequer_tavern_charing_cross,The Exchequer Tavern,Charing Cross,,,"""drank with him at the Exchequer at Charing Cross"" 2 Feb 1659/60; kept distinct from chequers_inn"
 jacobs_alehouse,Jacob's Alehouse,Westminster,,,"""drank a cup of ale at Jacob's"" 17 Feb 1659/60, after walking in the park"
-wotton_shop,Mr Wotton Shop,,,,"Mr Wotton, shoemaker; first name not given in the diary"
+william_wotton_shop,William Wotton Shop,,,,"William Wotton, shoemaker"
 alehouse_unknown_6,Alehouse Unknown,Fleet Street,,,"""I to Mr. Wotton's, and with him to an alehouse"" 18 Feb 1659/60, unnamed"
 marshes_whitehall,Marsh's,Whitehall Palace,,,"A drinking house at Whitehall; ""to Marsh's at Whitehall to drink"" 20 Feb, ""at Marsh's"" 22 Feb 1659/60"
 alehouse_unknown_7,Alehouse Unknown,Westminster,,,"""thence I took them to drink, and so put off my uncle"" 23 Feb 1659/60, unnamed"
 scotland_yard_stable,Mr Garthwayt Stable,"Scotland Yard, Whitehall",,,"""taking horse at Scotland Yard, at Mr. Garthwayt's stable"" 24 Feb 1659/60; the horse was lent to Pepys for the Cambridge journey"
-mrs_michells_shop,Mrs Michell Shop,Westminster Hall,,,A shop within Westminster Hall
-ware,Ware,Hertfordshire,,,"""About Ware we overtook Mr. Blayton"" 24 Feb 1659/60"
-puckeridge,Puckeridge,Hertfordshire,,,"""at Puckeridge we baited, where we had a loin of mutton fried"" 24 Feb 1659/60"
-chequer_inn_foulmere,The Chequer Inn,"Foulmere, Cambridgeshire",,,"""as far as Foulmer, within six miles of Cambridge ... here we lay at the Chequer"" 24 Feb 1659/60. Distinct from chequers_inn and exchequer_tavern_charing_cross, both at Charing Cross"
+anne_michell_shop,Anne Michell Shop,Westminster Hall,,,"Mrs Anne Michell's shop, within Westminster Hall"
+ware_hertfordshire,Ware,Hertfordshire,,,"""About Ware we overtook Mr. Blayton"" 24 Feb 1659/60"
+puckeridge_hertfordshire,Puckeridge,Hertfordshire,,,"""at Puckeridge we baited, where we had a loin of mutton fried"" 24 Feb 1659/60"
+chequer_inn_fowlmere,The Chequer Inn,"Fowlmere, Cambridgeshire",,,"""as far as Foulmer, within six miles of Cambridge ... here we lay at the Chequer"" 24 Feb 1659/60. Distinct from chequers_inn and exchequer_tavern_charing_cross, both at Charing Cross"
 falcon_inn_cambridge,The Falcon Inn,"Petty Cury, Cambridge",,,"Pepys's lodging in Cambridge, 25-27 Feb 1659/60; ""my Inn"" throughout those entries"
 christs_college_cambridge,Christ's College,Cambridge,,,Mr Widdrington's chamber; Pepys's brother John was admitted here 25 Feb 1659/60
 magdalene_college_cambridge,Magdalene College,Cambridge,,,Pepys's own college; Mr Hill's chambers
-angier_house_cambridge,Angier House,Cambridge,,,Cousin Angier's house
+john_angier_house_cambridge,John Angier House,Cambridge,,,Cousin John Angier
 mertons_shop_cambridge,Mr Merton Shop,Cambridge,,,Bookseller; Pepys bought 'Elenchus Motuum' here 25 Feb 1659/60
 three_tuns_tavern_cambridge,Three Tuns Tavern,Cambridge,,,"Distinct from three_tuns_tavern in Guildhall Yard, City of London"
 kings_college_cambridge,King's College,Cambridge,,,"""the fields behind King's College, and in King's College Chapel Yard"" 26 Feb 1659/60"
@@ -145,3 +145,5 @@ inn_epping,Inn at Epping,"Epping, Essex",,,Unnamed inn; Pepys lodged here the ni
 st_pauls_cathedral,St Paul's Cathedral,St. Paul's Churchyard,,,"""At Paul's I light ... I found Dr. Reynolds in the pulpit, and General Monk there"" 28 Feb 1659/60"
 plough_fleet_street,The Plough,Fleet Street,,,"A hatter's; Pepys bought a hat here by my Lord's direction, 28 Feb 1659/60"
 greyhound_tavern,Greyhound Tavern,Fleet Street,,,
+sun_tavern_king_street,The Sun Tavern,"King Street, Westminster",,,"""we went to the Sun Tavern in expectation of a dinner"" 16 Feb 1659/60; separate from the_sun_tavern in Chancery Lane"
+park_unknown_1,Park Unknown,London,,,"""we went and walked in the park till it was dark. I played on my pipe at the Echo"" 17 Feb 1659/60 - which park is not said"

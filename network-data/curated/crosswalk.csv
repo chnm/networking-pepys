@@ -12,7 +12,7 @@ network4,capt_matthews_lodging,Captain Dick Matthews's Lodging,richard_matthews_
 network4,capt_stones,Captain Stone's,john_stone_office,manual
 network4,catans_lodging,Catan Sterpin's Lodging,john_stone_office,manual
 network4,charing_cross,Charing Cross,charing_cross,id-exact
-network4,chequer_foulmer,The Chequer Inn,chequer_inn_foulmere,manual
+network4,chequer_foulmer,The Chequer Inn,chequer_inn_fowlmere,manual
 network4,chequers_charing_cross,The Chequers,chequers_inn,manual
 network4,chetwinds_office_chancery_lane,Mr. Chetwind's Office,james_chetwind_office,manual
 network4,christs_college_cambridge,Christ's College,christs_college_cambridge,id-exact
@@ -22,7 +22,7 @@ network4,coffee_club_westminster,Coffee House / Rota Club (Turk's Head),turks_he
 network4,cooks_shop_temple_bar,Cook's Shop within Temple Bar,cookshop_unknown_2,manual
 network4,cooks_shop_westminster,Cook's Shop (unspecified),,manual
 network4,court_of_wards,Court of Wards,court_of_wards,id-exact
-network4,cousin_angiers_cambridge,Cousin Angier's House,angier_house_cambridge,id-folded
+network4,cousin_angiers_cambridge,Cousin Angier's House,john_angier_house_cambridge,id-folded
 network4,cousin_stradwick_house,Cousin Thomas Stradwick's House,stradwick_house,id-folded
 network4,crowlys,Crowly's,,manual
 network4,crown_palace_yard,The Crown Tavern,crown_pub,manual
@@ -81,7 +81,7 @@ network4,mr_swans_house,Mr. Swan's House,swan_inn,id-folded
 network4,mr_vernons,Mr. Vernon's,mr_vernon_lodging,id-folded
 network4,mr_vines_house,Mr. Vines's House,george_vines_house,manual
 network4,mr_wades_house,Mr. Wade's House,thomas_wade_house,manual
-network4,mr_woottons_shop,Mr. Wotton's Shop (shoemaker),wotton_shop,manual
+network4,mr_woottons_shop,Mr. Wotton's Shop (shoemaker),william_wotton_shop,manual
 network4,mrs_jems_lodgings,Mrs. Jem's Lodgings (Jemima and Anne Montagu),sandwich_lodgings,manual
 network4,mrs_johnsons,Mrs. Johnson's (my Lord's sempstress),mrs_johnson_house,id-folded
 network4,mrs_turner_house,Mrs. Jane Turner's House,turner_house,id-folded
@@ -92,7 +92,7 @@ network4,parliament_house,Parliament House (House of Commons),house_of_commons,m
 network4,playfords_shop,Playford's Music Shop,john_playford_shop,id-exact
 network4,plough_fleet_street,The Plough (hatter's),plough_fleet_street,id-exact
 network4,priors_rhenish_wine_house,Prior's Rhenish Wine House,priors_rhenish_wine_house,id-exact
-network4,puckeridge,Puckeridge (baiting inn),puckeridge,id-exact
+network4,puckeridge,Puckeridge (baiting inn),puckeridge_hertfordshire,id-exact
 network4,queens_college_cambridge,Queens' College,,"REVIEW: Mr Nicholas's college, not a place Pepys visited"
 network4,rolls_chancery_lane,The Rolls,rolls_office_chancery,manual
 network4,rose_tavern_cambridge,Rose Tavern,rose_tavern_cambridge,id-exact
@@ -110,7 +110,7 @@ network4,st_pauls_school,St Paul's School,st_pauls_school,id-exact
 network4,star_cheapside,The Star Tavern,star_tavern,manual
 network4,sugar_loaf_temple_bar,Sugar Loaf Tavern,sugar_loaf_tavern,manual
 network4,sun_chancery_lane,Sun Tavern,the_sun_tavern,manual
-network4,sun_tavern_westminster,Sun Tavern,the_sun_tavern,manual
+network4,sun_tavern_westminster,Sun Tavern,sun_tavern_king_street,manual
 network4,swan_fish_street,Swan Tavern,the_swan_pub,manual
 network4,swan_kings_street,The Swan Tavern,swan_inn,manual
 network4,temple,The Temple (Mr. Calthrop's chamber),lestrange_calthorpe_chamber,manual

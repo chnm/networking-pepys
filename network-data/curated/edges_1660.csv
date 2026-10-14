@@ -481,13 +481,13 @@ id,source,target,year,month,day,mode,companions,notes
 100480,scott_house,home_axe_yard,1659/60,2,15,walk,,
 100481,home_axe_yard,office_exchequer,1659/60,2,16,walk,,
 100482,office_exchequer,wills_alehouse,1659/60,2,16,walk,,
-100483,wills_alehouse,the_sun_tavern,1659/60,2,16,walk,Nicholas Osborne; Robin Shaw; Jack Spicer,"""we went to the Sun Tavern in expectation of a dinner"" - taken to be the_sun_tavern, Chancery Lane, the only Sun in the node list. FLAG"
-100484,the_sun_tavern,home_axe_yard,1659/60,2,16,walk,,
+100483,wills_alehouse,sun_tavern_king_street,1659/60,2,16,walk,Nicholas Osborne; Robin Shaw; Jack Spicer,"""we went to the Sun Tavern in expectation of a dinner"""
+100484,sun_tavern_king_street,home_axe_yard,1659/60,2,16,walk,,"""we went to the Sun Tavern in expectation of a dinner"""
 100485,home_axe_yard,office_exchequer,1659/60,2,17,walk,,
 100486,office_exchequer,home_axe_yard,1659/60,2,17,walk,John Hawly,
 100487,home_axe_yard,exeter_house_chapel,1659/60,2,17,walk,,
-100488,exeter_house_chapel,st_james_park,1659/60,2,17,walk,Mr Butler,
-100489,st_james_park,jacobs_alehouse,1659/60,2,17,walk,Mr Butler,
+100488,exeter_house_chapel,park_unknown_1,1659/60,2,17,walk,Mr Butler,"""we went and walked in the park till it was dark"""
+100489,park_unknown_1,jacobs_alehouse,1659/60,2,17,walk,Mr Butler,"""we went and walked in the park till it was dark"""
 100490,jacobs_alehouse,westminster_hall,1659/60,2,17,walk,Mr Butler,
 100491,westminster_hall,whitehall_palace,1659/60,2,17,walk,Mr Butler,
 100492,whitehall_palace,harpers_tavern,1659/60,2,17,walk,Mr Butler,
@@ -550,7 +550,7 @@ id,source,target,year,month,day,mode,companions,notes
 100549,home_axe_yard,scotland_yard_stable,1659/60,2,24,walk,,
 100550,scotland_yard_stable,james_pearse_house,1659/60,2,24,horse,,
 100551,james_pearse_house,ware_hertfordshire,1659/60,2,24,horse,James Pierce,
-100552,ware_hertforshire,puckeridge_hertfordshire,1659/60,2,24,horse,James Pierce; Thomas Blayton,
+100552,ware_hertfordshire,puckeridge_hertfordshire,1659/60,2,24,horse,James Pierce; Thomas Blayton,
 100553,puckeridge_hertfordshire,chequer_inn_fowlmere,1659/60,2,24,horse,James Pierce; Mr Blayton,
 100554,chequer_inn_fowlmere,falcon_inn_cambridge,1659/60,2,25,horse,Thomas Blayton,"""we two come to Cambridge by eight o'clock in the morning"" - described at the end of the 24 February entry, dated here to the morning it happened. Mr Pierce left the party at Foulmere for Hinchingbrooke"
 100555,falcon_inn_cambridge,christs_college_cambridge,1659/60,2,25,walk,John Pepys; John Pepys the younger,
@@ -558,7 +558,7 @@ id,source,target,year,month,day,mode,companions,notes
 100557,magdalene_college_cambridge,falcon_inn_cambridge,1659/60,2,25,walk,,
 100558,falcon_inn_cambridge,john_angier_house_cambridge,1659/60,2,25,walk,John Pepys,
 100559,john_angier_house_cambridge,mertons_shop_cambridge,1659/60,2,25,walk,,
-100560,mertons_shop_cambridge,three_tuns_tavern_cambridge,1659/60,2,25,walk, William Fairbrother; John Angier; Clement Sankey,
+100560,mertons_shop_cambridge,three_tuns_tavern_cambridge,1659/60,2,25,walk,William Fairbrother; John Angier; Clement Sankey,
 100561,three_tuns_tavern_cambridge,magdalene_college_cambridge,1659/60,2,25,walk,Clement Sankey,
 100562,magdalene_college_cambridge,falcon_inn_cambridge,1659/60,2,25,walk,,
 100563,falcon_inn_cambridge,kings_college_cambridge,1659/60,2,26,walk,John Pepys,

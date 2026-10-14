@@ -230,3 +230,49 @@ Epping (night of 27th) -> London.
     this draft reads "Mr. Nicholas, of Queen's College" as the preacher's
     affiliation, not a place Pepys went. He heard him at St Botolph's. Correct.
 
+### Applied (section 5)
+
+- **Ruling 1** -- `sun_tavern_king_street` added for 16 February; the Chancery
+  Lane `the_sun_tavern` keeps 20 and 23 January.
+- **Ruling 2** -- the 17 February park is `park_unknown_1`. 3 and 12 February
+  keep `st_james_park`, which the ruling did not disturb.
+- **Rulings 5, 7, 8, 9, 10, 11, 12** confirmed the draft as it stood. Ruling 6
+  (each unnamed stop gets its own node) matched the draft too.
+- `nodes.csv` was brought into line with the six node ids renamed in
+  `edges_1660.csv` during review: `wotton_shop` -> `william_wotton_shop`,
+  `mrs_michells_shop` -> `anne_michell_shop`, `ware` -> `ware_hertfordshire`,
+  `puckeridge` -> `puckeridge_hertfordshire`, `chequer_inn_foulmere` ->
+  `chequer_inn_fowlmere`, `angier_house_cambridge` ->
+  `john_angier_house_cambridge`. One reference read `ware_hertforshire`, a
+  missing "d", which had broken 24 February's continuity.
+
+### Still open from section 5
+
+- **Ruling 3, Mr Moore's dinner on 19 February** was not answered. It stands as
+  `john_crews_house`.
+- **Ruling 4, "my partner" on 20 February** was not answered. It stands as the
+  descriptor "Pepys's office partner".
+
+### A convention to settle: are edge ids stable or contiguous?
+
+Section 1 says an edge id is a stable surrogate key, never renumbered, so that
+a review worksheet or a commit message can cite one and still be right later.
+The February review instead renumbered the ids to run contiguously in row
+order, which is a reasonable thing to want but the opposite rule.
+
+The two cannot both hold, and the data is currently in between: ids run
+100001-100596 with no gaps, except `100294` -- the 13 January leg added during
+the January corrections -- which sits in its correct row position between
+`100116` and `100117` and so is out of numerical sequence.
+
+Deciding this is the team's call, not Claude's, because renumbering invalidates
+every id cited anywhere outside the file:
+
+- **Stable ids** -- leave `100294` where it is, accept gaps and out-of-order
+  ids as normal, and let row order carry chronology. Nothing to do.
+- **Contiguous ids** -- renumber `100117`-`100294` to close the sequence, and
+  expect a renumber whenever a leg is inserted mid-month. Section 1 needs
+  rewriting to match, as do the worksheets already reviewed.
+
+Nothing has been renumbered pending that decision.
+

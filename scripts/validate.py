@@ -221,6 +221,8 @@ def check_edges(edges, node_ids):
                 % (where, mode, ", ".join(sorted(pepys.MODES))))
 
         raw = e["companions"]
+        if raw != raw.strip():
+            warn("%s  companions %r has leading or trailing whitespace" % (where, raw))
         if "," in raw and ";" not in raw:
             warn("%s  companions %r uses a comma -- separator is '; '" % (where, raw))
         for person in pepys.companion_list(raw):
