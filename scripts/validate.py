@@ -128,13 +128,34 @@ def check_nodes(nodes):
                  % ", ".join("%s (line %d)" % g for g in group))
 
     # An id that has drifted away from its own name is the usual sign of a typo.
+    # Ids legitimately carry a place qualifier the display name leaves out
+    # ("falcon_inn_cambridge" / "The Falcon Inn" / "Petty Cury, Cambridge"), and
+    # a generic place-type word the name may not repeat, so the comparison runs
+    # against name *and* location and forgives those types.
+    TYPES = {"inn", "tavern", "house", "shop", "church", "park", "college",
+             "alehouse", "chapel", "office", "lodging", "stable", "yard",
+             "chamber", "court", "hall", "pub", "school", "garden"}
     for i, n in enumerate(nodes):
         nid, name = n["id"].strip(), n["name"].strip()
-        if nid and name:
-            a, b = collapse(nid), collapse(name)
-            if a != b and a not in b and b not in a:
-                warn("nodes.csv:%d  id %r and name %r do not correspond"
-                     % (i + 2, nid, name))
+        if not (nid and name):
+            continue
+        # The sequence number of an <type>_unknown_<n> id is checked separately
+        # and never appears in the name, so it is not drift.
+        id_words = {w for w in norm(nid).split()
+                    if w not in TYPES and not w.isdigit()}
+        described = set(norm(name + " " + n["location"]).split())
+        def described_by(word):
+            """Prefix match, so a possessive folded one way in the id and
+            another in the name ("st_james_park" / "St James's Park",
+            "marshes_whitehall" / "Marsh's") is not reported as drift."""
+            stem = word[:4]
+            return any(d == word or d.startswith(stem) or word.startswith(d[:4])
+                       for d in described)
+        missing = {w for w in id_words if not described_by(w)}
+        if missing:
+            warn("nodes.csv:%d  id %r has %s, which is in neither its name %r "
+                 "nor its location %r"
+                 % (i + 2, nid, "/".join(sorted(missing)), name, n["location"]))
     return seen
 
 
@@ -251,6 +272,27 @@ def check_people(edges):
                  % (len(spellings), " | ".join(sorted(spellings))))
 
 
+def check_crosswalk(node_ids):
+    """The first-gen crosswalk stores curated ids, so a node rename can leave it
+    pointing at places that no longer exist -- which makes diff_firstgen.py
+    report the rename as a disagreement. Advisory: it is a diagnostic aid, not
+    part of the dataset."""
+    path = os.path.join(pepys.CURATED, "crosswalk.csv")
+    if not os.path.exists(path):
+        return
+    import csv
+    with open(path, newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh))
+    stale = collections.defaultdict(list)
+    for r in rows:
+        cid = (r.get("curated_id") or "").strip()
+        if cid and cid not in node_ids:
+            stale[cid].append(r.get("firstgen_id", "?"))
+    for cid, refs in sorted(stale.items()):
+        warn("crosswalk.csv points at %r, which is not in nodes.csv "
+             "(from %s) -- renamed or retired?" % (cid, ", ".join(sorted(refs))))
+
+
 def check_coverage(edges, nodes, node_ids):
     used = {e[end].strip() for e in edges for end in ("source", "target")}
     for nid in sorted(set(node_ids) - used):
@@ -291,6 +333,7 @@ def main():
     check_edges(edges, node_ids)
     check_continuity(edges)
     check_people(edges)
+    check_crosswalk(node_ids)
     if not args.year:
         check_coverage(edges, nodes, node_ids)
 
