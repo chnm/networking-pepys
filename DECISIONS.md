@@ -276,3 +276,96 @@ every id cited anywhere outside the file:
 
 Nothing has been renumbered pending that decision.
 
+---
+
+## 6. Flagged in the 1-15 March 1659/60 draft
+
+128 edges, 33 new places, validated clean. The night of 12 March at Mr Bowyer's
+in Huntsmore is modelled explicitly, so the fortnight is one unbroken walk.
+
+Cross-checked against network4: 128 edges against their 124 over the same
+fifteen days. Nearly every disagreement falls on the first two items below,
+which is why they lead.
+
+1. **"my Lord's lodgings" or "my Lord at Mr Crew's"? -- the one that matters
+   most.** 6 March distinguishes them: "we both went up to my Lord's lodgings
+   at Mr. Crew's, where he bade us to go home again, and get a fire against an
+   hour after. **Which we did at White Hall**, whither he came." So my Lord was
+   *staying* at Mr Crew's while his own quarters stood at Whitehall. On that
+   reading the draft sends unqualified "my Lord's lodgings" and "my Lord's"
+   (1, 9, 13, 14, 15 March) to `sandwich_lodgings`, and only the explicit "at
+   Mr. Crew's" (2, 6, 7 March) to `john_crews_house`.
+   **network4 reads it the opposite way**, mapping every early-March visit to
+   Mr Crew's. Its own notes say so. Both are defensible and the choice changes
+   six edges in this chunk alone, more in the rest of March. Please rule.
+2. **Mrs Jem in March.** Section 4 ruling 1 placed her at `scott_house` "in
+   February". The draft carries that into March (2, 6, 10, 14, 15 March), since
+   nothing says she moved, but the ruling did not cover it. network4 keeps her
+   at `sandwich_lodgings` throughout.
+3. **Four Sun taverns now.** `the_sun_tavern` (Chancery Lane),
+   `sun_tavern_king_street`, and this chunk adds `sun_tavern_behind_exchange`
+   ("the Sun behind the Exchange", 7 March) and
+   `sun_tavern_fish_street_hill` ("the Sun tavern on Fish Street Hill",
+   10 and 15 March). Each is named with its own location in the text, so they
+   are drafted as four houses. Confirm.
+4. **"the Swan tavern", 2 March** -- drafted as `swan_inn`, New Palace Yard,
+   though the party had just come from the Leg in King Street.
+5. **Mr Pierce the purser is not Mr Pierce the surgeon.** 3 March names the
+   purser; `james_pearse_house` is the surgeon's. Recorded as the companion
+   "Mr Pierce the purser"; he will need his own node and a first name when
+   Pepys visits him.
+6. **"we three", 4 March** -- Pepys, his wife, and the third taken to be the
+   maid, Jane Birch, who is named as a companion in January.
+7. **Short's, 8 March** -- "To Whitehall to bespeak some firing for my father
+   at Short's" is drafted as `whitehall_palace` only. If Short's is a separate
+   shop it needs a node.
+8. **8 March does not say he went home.** The last stated movement is Harper's,
+   so a closing leg to Axe Yard was added to keep the day continuous; 9 March
+   starts from home.
+9. **"the Exchange", 12 March** -- read as `new_exchange`, the Strand arcade,
+   because he is shopping with his wife from Axe Yard. Flagged because section 4
+   ruling 6 asks for Exchange references to be checked by hand.
+10. **Three more unnamed alehouses** -- `alehouse_unknown_8` (City, 3 March),
+    `alehouse_unknown_9` (Drury Lane, 3 March), `alehouse_unknown_10` (City,
+    7 March), each its own node per section 5 ruling 6. The series is growing
+    quickly; worth a glance at whether that is wanted at this rate.
+11. **`lion_tavern` and `cock_tavern` have no location.** The entries name
+    neither street.
+12. **`navy_office` now exists**, Seething Lane. Pepys moves into the adjoining
+    house in July 1660, and earlier network notes keep house and office as two
+    nodes. Flagging now so that split is deliberate when we reach it.
+
+## 7. Ships: what principle 12 still leaves open
+
+README principle 12 now reads that ships "are a single location, despite the
+fact that the ship itself moves, they are both a location and a mode of
+transportation". That settles the node question. Drafting the voyage needs a
+little more, because Pepys boards the *Swiftsure* on 23 March and lives aboard
+until 8 June. Nothing after 22 March has been drafted pending answers.
+
+1. **When does `mode` take the value of a ship?** While Pepys is aboard and the
+   vessel sails, he does not change node, so no edge is created and there is
+   nothing to carry the mode. Is `ship` meant for the legs where a named vessel
+   carries him between two places he is recorded at ashore, with the small-boat
+   trips out to a ship and between ships staying `boat`? Or should the mode name
+   the vessel itself (`naseby`) rather than the generic `ship`?
+2. **Is an anchorage a node?** 23 March: the barges go "to the Long Reach, where
+   the Swiftsure lay at anchor". Principle 12 implies Long Reach is where the
+   ship happened to be, not a place visited, so the draft would read
+   `tower_of_london -> swiftsure` by boat with Long Reach in the notes. Confirm.
+3. **Movement within a ship.** "I to the cabin allotted for me", "I supped at
+   the deck table". Principle 10 favours precision inside a sprawling complex,
+   but principle 12 makes a ship one location. Reading 12 as overriding, so no
+   cabin or deck nodes. Confirm.
+4. **One node per named vessel** -- *Swiftsure*, *Naseby*, and later the
+   *London*, *Speaker*, *Plymouth*, *Essex*, *Assistance*, which Pepys visits
+   by boat. Confirm.
+5. **The *Naseby* is renamed *Royal Charles* on 23 May.** One node with a note,
+   or two nodes with an edge-less change of name? The same question will arise
+   for Pepys's own moves ashore.
+6. **30 March: was Pepys aboard?** "my Lord and many others went on board her
+   [the *Nazeby*]" -- the entry describes her new chimney in detail but does not
+   place Pepys among the party. Include the visit or not?
+7. **"the Ship tavern", 23 March** is a tavern in London, not a vessel. Noting
+   it so the name does not get read as one; Pepys did not go in.
+
