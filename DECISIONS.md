@@ -175,10 +175,10 @@ Rulings 1-9 above are settled. The four that needed data changes have been made:
 - **`house_of_commons` is now unused.** The review folded the 3 February
   "Houses sitting" visit into `westminster_hall`, which leaves the node with no
   edges, sitting awkwardly against ruling 3's endorsement of the Westminster
-  subdivision. Keep it for later months, or retire it?
+  subdivision. Keep it for later months, or retire it? retire it.
 - **Principle 13** (named watermen and coachmen count as companions) was added
   to `README.md` after the February draft was written. February applies it where
-  the review added names; earlier months have not been swept for it.
+  the review added names; earlier months have not been swept for it. Manually checked earlier months.
 
 ---
 
@@ -249,9 +249,9 @@ Epping (night of 27th) -> London.
 ### Still open from section 5
 
 - **Ruling 3, Mr Moore's dinner on 19 February** was not answered. It stands as
-  `john_crews_house`.
+  `john_crews_house`. Keep as john_crews_house.
 - **Ruling 4, "my partner" on 20 February** was not answered. It stands as the
-  descriptor "Pepys's office partner".
+  descriptor "Pepys's office partner". Keep "Pepys's office partner".
 
 ### A convention to settle: are edge ids stable or contiguous?
 
@@ -274,7 +274,7 @@ every id cited anywhere outside the file:
   expect a renumber whenever a leg is inserted mid-month. Section 1 needs
   rewriting to match, as do the worksheets already reviewed.
 
-Nothing has been renumbered pending that decision.
+Nothing has been renumbered pending that decision. Contiguous ids should be used.
 
 ---
 
@@ -294,43 +294,45 @@ which is why they lead.
    *staying* at Mr Crew's while his own quarters stood at Whitehall. On that
    reading the draft sends unqualified "my Lord's lodgings" and "my Lord's"
    (1, 9, 13, 14, 15 March) to `sandwich_lodgings`, and only the explicit "at
-   Mr. Crew's" (2, 6, 7 March) to `john_crews_house`.
+   Mr. Crew's" (2, 6, 7 March) to `john_crews_house`. 
    **network4 reads it the opposite way**, mapping every early-March visit to
    Mr Crew's. Its own notes say so. Both are defensible and the choice changes
-   six edges in this chunk alone, more in the rest of March. Please rule.
+   six edges in this chunk alone, more in the rest of March. Please rule. Unqualified "my Lord's lodgings" and "my Lord's"
+   (1, 9, 13, 14, 15 March) to `sandwich_lodgings`, and only the explicit "at
+   Mr. Crew's" (2, 6, 7 March) to `john_crews_house`. This has been manually checked by humans.
 2. **Mrs Jem in March.** Section 4 ruling 1 placed her at `scott_house` "in
    February". The draft carries that into March (2, 6, 10, 14, 15 March), since
    nothing says she moved, but the ruling did not cover it. network4 keeps her
-   at `sandwich_lodgings` throughout.
+   at `sandwich_lodgings` throughout. Mrs Jem remains at 'scott_house' for 1-15 March.
 3. **Four Sun taverns now.** `the_sun_tavern` (Chancery Lane),
    `sun_tavern_king_street`, and this chunk adds `sun_tavern_behind_exchange`
    ("the Sun behind the Exchange", 7 March) and
    `sun_tavern_fish_street_hill` ("the Sun tavern on Fish Street Hill",
    10 and 15 March). Each is named with its own location in the text, so they
-   are drafted as four houses. Confirm.
+   are drafted as four houses. Correct.
 4. **"the Swan tavern", 2 March** -- drafted as `swan_inn`, New Palace Yard,
-   though the party had just come from the Leg in King Street.
+   though the party had just come from the Leg in King Street. 
 5. **Mr Pierce the purser is not Mr Pierce the surgeon.** 3 March names the
    purser; `james_pearse_house` is the surgeon's. Recorded as the companion
    "Mr Pierce the purser"; he will need his own node and a first name when
-   Pepys visits him.
+   Pepys visits him. Correct they are not the same person.
 6. **"we three", 4 March** -- Pepys, his wife, and the third taken to be the
-   maid, Jane Birch, who is named as a companion in January.
-7. **Short's, 8 March** -- "To Whitehall to bespeak some firing for my father
-   at Short's" is drafted as `whitehall_palace` only. If Short's is a separate
-   shop it needs a node.
+   maid, Jane Birch, who is named as a companion in January. Correct.
+7. **Shott's, 8 March** -- "To Whitehall to bespeak some firing for my father
+   at Shott's" is drafted as `whitehall_palace` only. If Shott's is a separate
+   shop it needs a node. It is not 'whitehall_palace', manually renamed 'shotts_woodmonger_whitehall' in edges, create new node.
 8. **8 March does not say he went home.** The last stated movement is Harper's,
    so a closing leg to Axe Yard was added to keep the day continuous; 9 March
-   starts from home.
+   starts from home. Correct.
 9. **"the Exchange", 12 March** -- read as `new_exchange`, the Strand arcade,
    because he is shopping with his wife from Axe Yard. Flagged because section 4
-   ruling 6 asks for Exchange references to be checked by hand.
+   ruling 6 asks for Exchange references to be checked by hand. Correct.
 10. **Three more unnamed alehouses** -- `alehouse_unknown_8` (City, 3 March),
     `alehouse_unknown_9` (Drury Lane, 3 March), `alehouse_unknown_10` (City,
     7 March), each its own node per section 5 ruling 6. The series is growing
-    quickly; worth a glance at whether that is wanted at this rate.
+    quickly; worth a glance at whether that is wanted at this rate. Yes continue. 
 11. **`lion_tavern` and `cock_tavern` have no location.** The entries name
-    neither street.
+    neither street. Humans will manually check.
 12. **`navy_office` now exists**, Seething Lane. Pepys moves into the adjoining
     house in July 1660, and earlier network notes keep house and office as two
     nodes. Flagging now so that split is deliberate when we reach it.
