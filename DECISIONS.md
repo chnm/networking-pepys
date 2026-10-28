@@ -350,21 +350,21 @@ until 8 June. Nothing after 22 March has been drafted pending answers.
    nothing to carry the mode. Is `ship` meant for the legs where a named vessel
    carries him between two places he is recorded at ashore, with the small-boat
    trips out to a ship and between ships staying `boat`? Or should the mode name
-   the vessel itself (`naseby`) rather than the generic `ship`?
+   the vessel itself (`naseby`) rather than the generic `ship`? A ship is both a mode and a node. When Pepys boards or disembarks the ship it is a node, and while he is on board and it sails between two places it is a mode. When he disembarks to a smaller boat carrying him ashore, he left the ship (source) is travelling via small boat (mode) and arrives ashore (target). When he is ashore (source) and travels to the ship via small boat (mode), the ship is his destination (target). The node should refer to the named vessel itself ('naseby') and the mode should remain generic. Example, Pepys is on board the naseby and his destination is Kent, therefore the source is 'naseby_ship' the target is 'kent' and the mode is 'ship'.
 2. **Is an anchorage a node?** 23 March: the barges go "to the Long Reach, where
    the Swiftsure lay at anchor". Principle 12 implies Long Reach is where the
    ship happened to be, not a place visited, so the draft would read
-   `tower_of_london -> swiftsure` by boat with Long Reach in the notes. Confirm.
+   `tower_of_london -> swiftsure` by boat with Long Reach in the notes. Confirm. Yes an anchorage is a node. While a ship is at anchorage it is itself a place visited. If the anchorage is named then that is the node, if the anchorage is not named then the ship is the node and a general location is put in the notes. If unclear, flag for manual check.
 3. **Movement within a ship.** "I to the cabin allotted for me", "I supped at
    the deck table". Principle 10 favours precision inside a sprawling complex,
    but principle 12 makes a ship one location. Reading 12 as overriding, so no
-   cabin or deck nodes. Confirm.
+   cabin or deck nodes. Confirm. Correct, a ship is one location.
 4. **One node per named vessel** -- *Swiftsure*, *Naseby*, and later the
    *London*, *Speaker*, *Plymouth*, *Essex*, *Assistance*, which Pepys visits
-   by boat. Confirm.
+   by boat. Confirm. Correct, each named ship is a node.
 5. **The *Naseby* is renamed *Royal Charles* on 23 May.** One node with a note,
    or two nodes with an edge-less change of name? The same question will arise
-   for Pepys's own moves ashore.
+   for Pepys's own moves ashore. One node with a note, flag for manual check.
 6. **30 March: was Pepys aboard?** "my Lord and many others went on board her
    [the *Nazeby*]" -- the entry describes her new chimney in detail but does not
    place Pepys among the party. Include the visit or not?
