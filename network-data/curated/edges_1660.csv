@@ -721,3 +721,70 @@ id,source,target,year,month,day,mode,companions,notes
 100720,fox_tavern,westminster_hall,1659/60,3,15,walk,,
 100721,westminster_hall,fox_tavern,1659/60,3,15,walk,,"""To the Fox again"""
 100722,fox_tavern,home_axe_yard,1659/60,3,15,walk,Elizabeth Pepys,"""Home with my wife"""
+100723,home_axe_yard,priors_rhenish_wine_house,1659/60,3,16,walk,,"""Then to Mr. Sheply, to the Rhenish Tavern House"""
+100724,priors_rhenish_wine_house,home_axe_yard,1659/60,3,16,walk,,
+100725,home_axe_yard,john_pepys_house,1659/60,3,16,walk,Elizabeth Pepys,"""with my wife to London, we dined at my father's"""
+100726,john_pepys_house,rolls_office_chancery,1659/60,3,16,walk,Elizabeth Pepys,"""In my way home I went to the Chapel in Chancery Lane to bespeak papers ... against my voyage"""
+100727,rolls_office_chancery,home_axe_yard,1659/60,3,16,walk,Elizabeth Pepys,
+100728,home_axe_yard,admiralty,1659/60,3,16,walk,,
+100729,admiralty,home_axe_yard,1659/60,3,16,walk,,"""so home again"""
+100730,home_axe_yard,westminster_hall,1659/60,3,16,walk,,"""where I heard how the Parliament had this day dissolved themselves"""
+100731,westminster_hall,home_axe_yard,1659/60,3,16,walk,,
+100732,home_axe_yard,john_crews_house,1659/60,3,17,walk,Eliezer,"""went to my Lord's with my boy Eliezer to my Lord's lodging at Mr. Crew's"""
+100733,john_crews_house,home_axe_yard,1659/60,3,17,walk,Henry Moore,
+100734,home_axe_yard,chequer_inn_holborn,1659/60,3,17,coach,Elizabeth Pepys; Henry Moore,"""took my wife by coach to the Chequer in Holborn, where, after we had drank, &c., she took coach and so farewell"""
+100735,chequer_inn_holborn,john_crews_house,1659/60,3,17,walk,John Hawly,
+100736,john_crews_house,home_axe_yard,1659/60,3,17,walk,,"""all things were put up into the dining-room and locked up, and my wife took the keys along with her"""
+100737,home_axe_yard,admiralty,1659/60,3,17,walk,,
+100738,admiralty,sandwich_lodgings,1659/60,3,17,coach,Laud Crisp,"""went by coach taking Mr. Crips with me to my Lord"""
+100739,sandwich_lodgings,westminster_hall,1659/60,3,17,walk,Laud Crisp,
+100740,westminster_hall,crisp_house,1659/60,3,17,walk,Laud Crisp,"""I went home with him to his mother's house by me in Axe Yard"""
+100741,crisp_house,jervas_barber,1659/60,3,18,walk,,
+100742,jervas_barber,sandwich_lodgings,1659/60,3,18,walk,,"""Then to my Lord's lodging where I found Captain Williamson"""
+100743,sandwich_lodgings,home_axe_yard,1659/60,3,18,walk,,
+100744,home_axe_yard,sandwich_lodgings,1659/60,3,18,walk,,"""then to dinner with Mr. Shepley at my Lord's lodgings"""
+100745,sandwich_lodgings,robert_mossum_church,1659/60,3,18,walk,,"""a very gallant sermon upon 'Pray for the life of the King and the King's son'"""
+100746,robert_mossum_church,john_crews_house,1659/60,3,18,walk,,"""but my Lord not being within I did not stay"""
+100747,john_crews_house,alehouse_unknown_11,1659/60,3,18,walk,Mr Woodfine,
+100748,alehouse_unknown_11,blagrave_house,1659/60,3,18,walk,,
+100749,blagrave_house,crisp_house,1659/60,3,18,walk,,
+100750,crisp_house,sandwich_lodgings,1659/60,3,19,walk,,"""Early to my Lord, where infinity of business"""
+100751,sandwich_lodgings,admiralty,1659/60,3,19,walk,,
+100752,admiralty,wilkinsons_cookshop,1659/60,3,19,walk,,
+100753,wilkinsons_cookshop,swan_inn,1659/60,3,19,walk,,"""Thence with some sea officers to the Swan"" - the officers are not named"
+100754,swan_inn,home_axe_yard,1659/60,3,19,boat,Crockford,"""Going home the water was high, and so I got Crockford to carry me over it"" - a named waterman, per README principle 16"
+100755,home_axe_yard,admiralty,1659/60,3,19,walk,,
+100756,admiralty,roberts_whitehall,1659/60,3,19,walk,,"""then to Tony Robins's"" - taken to be the same house as ""Roberts at Whitehall"", 13 Mar. FLAG"
+100757,roberts_whitehall,crisp_house,1659/60,3,19,walk,,
+100758,crisp_house,home_axe_yard,1659/60,3,20,walk,,"""went to my house to put things in a little order against my going"""
+100759,home_axe_yard,sandwich_lodgings,1659/60,3,20,walk,,
+100760,sandwich_lodgings,admiralty,1659/60,3,20,coach,Captain Isham,
+100761,admiralty,marshes_whitehall,1659/60,3,20,walk,Captain Isham; James Chetwind; Thomas Doling; Peter Llewellyn,
+100762,marshes_whitehall,bull_head_tavern,1659/60,3,20,walk,Captain Isham; James Chetwind; Thomas Doling; Peter Llewellyn,"""I gave them my foy against my going to sea"" - a farewell feast"
+100763,bull_head_tavern,westminster_hall,1659/60,3,20,coach,,"the coach to London and the leave-taking of his parents are dated to the 21st, where Pepys corrects himself: ""which by a mistake I have put down yesterday"""
+100764,westminster_hall,sandwich_lodgings,1659/60,3,20,coach,,"""the water was so high that there was boats rowed in King Street and all our yard was drowned, that one could not go to my house"""
+100765,sandwich_lodgings,wright_house,1659/60,3,20,walk,Edward Shipley; William Howe,"""went with our swords to bring my Lord home from Sir H. Wright's"""
+100766,wright_house,sandwich_lodgings,1659/60,3,20,coach,Edward Montagu; Edward Shipley,
+100767,sandwich_lodgings,crisp_house,1659/60,3,20,walk,,
+100768,crisp_house,sandwich_lodgings,1659/60,3,21,walk,,"""but the wind very high against us, and the weather bad we could not go to-day"""
+100769,sandwich_lodgings,thomas_widdrington_house,1659/60,3,21,walk,,"""with his desire that he might have the disposal of the writs of the Cinque Ports"""
+100770,thomas_widdrington_house,tavern_unknown_1,1659/60,3,21,walk,Judge Advocate Fowler; Mr Burr,
+100771,tavern_unknown_1,john_crews_house,1659/60,3,21,walk,,"""to Mr. Crew's again"""
+100772,john_crews_house,john_pepys_house,1659/60,3,21,walk,,"""about my business to take leave of my father and mother, which by a mistake I have put down yesterday"" - dated here on Pepys's own correction"
+100773,john_pepys_house,crisp_house,1659/60,3,21,walk,,"""Thence to Westminster to Crisp's"""
+100774,crisp_house,home_axe_yard,1659/60,3,22,walk,,"""Up very early and set things in order at my house""; the leave-takings of Mrs Crisp and Mrs Hunt are in Axe Yard"
+100775,home_axe_yard,john_hunt_house,1659/60,3,22,walk,,"""took leave of Mrs. Crispe and her daughter (who was in bed) and of Mrs. Hunt"" - all three houses stand in Axe Yard"
+100776,john_hunt_house,sandwich_lodgings,1659/60,3,22,walk,,"""Then to my Lord's lodging at the gate"""
+100777,sandwich_lodgings,john_crews_house,1659/60,3,22,walk,John Hawly,"""I gave him the key of my house to keep, and he went with me to Mr. Crew's"""
+100778,john_crews_house,popes_head_tavern_chancery_lane,1659/60,3,22,walk,William Wotton; Mr Brigden,
+100779,popes_head_tavern_chancery_lane,westminster_hall,1659/60,3,22,walk,,"took leave of Kate Sterpin, Mr George Montagu and Mr Blackburne, and received his warrant as Secretary to the two Generals of the Fleet; no place is given for any of the three. FLAG"
+100780,westminster_hall,george_montagu_house,1659/60,3,22,walk,,"""took leave of Kate Sterpin ... and after that of Mr. George Mountagu""; no place is given for Kate Sterpin. FLAG"
+100781,george_montagu_house,admiralty,1659/60,3,22,walk,,"""received my warrant of Mr. Blackburne, to be Secretary to the two Generals of the Fleet"" - Blackburne was Secretary to the Admiralty"
+100782,admiralty,clerks_room_whitehall,1659/60,3,22,walk,,"""Then to take my leave of the Clerks of the Council"""
+100783,clerks_room_whitehall,mounts_chamber,1659/60,3,22,walk,Thomas Doling; Peter Llewellyn,
+100784,mounts_chamber,sandwich_lodgings,1659/60,3,22,walk,,"""So to my Lord ... where I lay all night with Mr. Andrews"" - unqualified, so the Whitehall lodgings per section 6 ruling 1, though Mr Andrews is elsewhere met at Mr Crew's. FLAG"
+100785,sandwich_lodgings,william_montagu_chamber,1659/60,3,23,walk,,"""carried my Lord's will in a black box to Mr. William Montagu"""
+100786,william_montagu_chamber,jervas_barber,1659/60,3,23,walk,,"""Then to the barber's and put on my cravat there"""
+100787,jervas_barber,sandwich_lodgings,1659/60,3,23,walk,,"""So to my Lord again, who was almost ready to be gone"". Shelston brought his wife to the Ship tavern hard by for Pepys to see, ""but I could not go"" - no edge"
+100788,sandwich_lodgings,tower_of_london,1659/60,3,23,coach,Edward Montagu; Captain Isham; Mr Thomas; John Crew; William Howe,"""my Lord in Sir H. Wright's coach ... and I in a Hackney to the Tower, where the barges staid for us"" - two vehicles, one party"
+100789,tower_of_london,swiftsure,1659/60,3,23,boat,William Howe,"""my Lord and the Captain in one, and W. Howe and I, &c., in the other, to the Long Reach, where the Swiftsure lay at anchor"" - Long Reach is where she lay, not a node (section 7 ruling 2)"

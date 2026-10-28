@@ -453,3 +453,60 @@ All seven ship questions are now answered, so the voyage can be drafted:
   sits against section 6 ruling 2 placing her at `scott_house` through
   15 March.
 
+---
+
+## 9. Flagged in the 16-31 March 1659/60 draft
+
+67 edges over 16-23 March, 11 new places, 0 errors. Cross-checked against
+network4: 193 curated edges for the month against their 191.
+
+**24-31 March carry no edges at all.** Pepys boards the *Swiftsure* on the 23rd
+and does not leave her again in March. She falls into the Hope on the 27th and
+lies below Gravesend from the 29th, but he changes no node, so under README
+13-14 no edge arises; cabins and decks are not nodes; and he does not board the
+*Naseby* on the 30th (section 7 ruling 6). **This is the conventions working as
+written, but it means the fleet's movement down the Thames leaves no trace in
+the network.** Worth knowing before the voyage proper, where weeks pass with
+Pepys aboard: if that movement should be visible, the conventions need another
+look, because nothing in the current scheme can carry it.
+
+1. **Five nights at Mrs Crisp's.** From 17 to 21 March Pepys sleeps at
+   `crisp_house`, "his mother's house by me in Axe Yard" -- his wife gone to
+   Huntsmoor and his own house locked up with her holding the keys. Each night
+   is modelled, so the run is continuous.
+2. **Pepys corrects his own dating, 20-21 March.** The leave-taking of his
+   parents is written under the 20th, but the 21st says "which by a mistake I
+   have put down yesterday". It is drafted on the 21st. The coach to London
+   that carries him there moves with it.
+3. **22 March: the leave-takings.** The first draft compressed them; the
+   cross-check showed network4 modelling four visits this draft lacked, and on
+   re-reading the entry names three places -- Mrs Hunt's, Mr George Montagu's,
+   and the Admiralty for the warrant from Mr Blackburne, its Secretary. Added.
+   **Kate Sterpin is still unmodelled**: "took leave of Kate Sterpin" gives no
+   place, and she may or may not be the Catan of `kate_petit_house`.
+4. **"Tony Robins's", 19 March** is drafted as `roberts_whitehall`, the same
+   house as "Roberts at Whitehall" on the 13th. network4 keeps them apart as
+   two places.
+5. **A fourth Chequer.** `chequer_inn_holborn`, where Elizabeth Pepys took the
+   coach for Huntsmoor on the 17th, joins `chequers_inn` and
+   `exchequer_tavern_charing_cross` at Charing Cross and `chequer_inn_fowlmere`.
+6. **Two Pope's Heads.** `popes_head_tavern_chancery_lane` (22 March) is
+   distinct from `popes_head_alley` in the City (7 March).
+7. **"my Lord" on 22 March.** "So to my Lord ... where I lay all night with
+   Mr. Andrews" is unqualified, so section 6 ruling 1 sends it to
+   `sandwich_lodgings` -- though Mr Andrews is met at Mr Crew's elsewhere, and
+   network4 reads it as Mr Crew's.
+8. **20 March, the flood.** "the water was so high that there was boats rowed
+   in King Street and all our yard was drowned, that one could not go to my
+   house". He goes to Westminster but cannot reach Axe Yard;
+   `westminster_hall` stands in for the Westminster leg.
+9. **Named watermen.** 19 March gives the first clean case of README principle
+   16: "I got Crockford to carry me over it", so Crockford is a companion and
+   the mode is `boat`.
+10. **Unnamed stops.** `alehouse_unknown_11` (Drury Lane, 18 March) and
+    `tavern_unknown_1` ("a tavern over against Mr. Pierce's", 21 March). The
+    Drury Lane alehouse is a separate occasion from `alehouse_unknown_9` on
+    3 March, per section 5 ruling 6; network4 reuses one node for both.
+11. **April must open aboard.** 23 March ends on the `swiftsure` and no later
+    March day moves, so whatever is drafted next has to depart from her.
+

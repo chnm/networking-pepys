@@ -63,8 +63,15 @@ def main():
 
     entries = diary.entries(args.year, args.month)
     month_name = diary.MONTHS[args.month - 1].title()
-    # Use the year exactly as the edges record it, Old Style included.
-    year_label = edges[0]["year"].strip() or args.year
+
+    def year_label(day):
+        """Old Style: 1 Jan - 24 Mar carries the split year, 25 Mar onwards the
+        plain one. Taking it from the first edge mislabels a month that spans
+        the boundary, which March does."""
+        cal = int(args.year)
+        if args.month < 3 or (args.month == 3 and day <= 24):
+            return "%d/%02d" % (cal - 1, cal % 100)
+        return str(cal)
 
     # A node counts as "new" on the first day an edge touches it this month,
     # provided no earlier chunk used it.
@@ -77,7 +84,11 @@ def main():
                     first_seen.setdefault(ref, d)
 
     L = []
-    L.append("# Review worksheet - %s %s" % (month_name, year_label))
+    span = sorted(d for (_, d) in entries if not days or d in days)
+    heading_year = year_label(span[0]) if span else args.year
+    if span and year_label(span[-1]) != heading_year:
+        heading_year = "%s-%s" % (heading_year, year_label(span[-1]))
+    L.append("# Review worksheet - %s %s" % (month_name, heading_year))
     L.append("")
     L.append("%d edges over %d days. Mark each day `OK`, `FIX: ...`, or "
              "`FLAG: ...` (a FLAG becomes a rule in DECISIONS.md)." %
@@ -89,7 +100,7 @@ def main():
             continue
         L.append("---")
         L.append("")
-        L.append("## %d %s %s" % (day, month_name, year_label))
+        L.append("## %d %s %s" % (day, month_name, year_label(day)))
         L.append("")
         L.append("**Verdict:** _______")
         L.append("")
