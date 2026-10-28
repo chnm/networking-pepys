@@ -345,11 +345,11 @@ disembarking only. Nothing after 22 March is drafted yet.
    nothing to carry the mode. Is `ship` meant for the legs where a named vessel
    carries him between two places he is recorded at ashore, with the small-boat
    trips out to a ship and between ships staying `boat`? Or should the mode name
-   the vessel itself (`naseby`) rather than the generic `ship`? 
+   the vessel itself (`naseby`) rather than the generic `ship`? 'mode' is 'boat'.
 2. **Is an anchorage a node?** 23 March: the barges go "to the Long Reach, where
    the Swiftsure lay at anchor". Principle 12 implies Long Reach is where the
    ship happened to be, not a place visited, so the draft would read
-   `tower_of_london -> swiftsure` by boat with Long Reach in the notes. 
+   `tower_of_london -> swiftsure` by boat with Long Reach in the notes. Anchorage is a node only when Pepys disembarks the ship, in which case the node is the name of the ship (e.g. Nazeby). 
 3. **Movement within a ship.** "I to the cabin allotted for me", "I supped at
    the deck table". Principle 10 favours precision inside a sprawling complex,
    but principle 12 makes a ship one location. Reading 12 as overriding, so no
@@ -362,7 +362,7 @@ disembarking only. Nothing after 22 March is drafted yet.
    for Pepys's own moves ashore. One node with a note, flag for manual check.
 6. **30 March: was Pepys aboard?** "my Lord and many others went on board her
    [the *Nazeby*]" -- the entry describes her new chimney in detail but does not
-   place Pepys among the party. Include the visit or not?
+   place Pepys among the party. Include the visit or not? No Pepys does not board the Nazeby.
 7. **"the Ship tavern", 23 March** is a tavern in London, not a vessel. Noting
    it so the name does not get read as one; Pepys did not go in.
 
