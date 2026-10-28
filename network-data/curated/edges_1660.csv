@@ -598,24 +598,24 @@ id,source,target,year,month,day,mode,companions,notes
 100597,home_axe_yard,sandwich_lodgings,1659/60,3,1,walk,,"""my Lord's lodgings"" unqualified, taken as the Whitehall lodgings; 6 March distinguishes them from my Lord staying at Mr Crew's. FLAG"
 100598,sandwich_lodgings,office_exchequer,1659/60,3,1,walk,,
 100599,office_exchequer,john_crews_house,1659/60,3,1,walk,Edward Shipley,
-100600,john_crews_house,laxton_apothecary,1659/60,3,1,walk,Edward Shipley,"""into London"""
-100601,laxton_apothecary,sun_tavern_king_street,1659/60,3,1,boat,Edward Shipley,"""so by water to Westminster, where at the Sun [tavern]"""
+100600,john_crews_house,john_layton_apothecary,1659/60,3,1,walk,Edward Shipley,"""into London"""
+100601,john_layton_apothecary,sun_tavern_king_street,1659/60,3,1,boat,Edward Shipley,"""so by water to Westminster, where at the Sun [tavern]"""
 100602,sun_tavern_king_street,home_axe_yard,1659/60,3,1,walk,,
 100603,home_axe_yard,john_crews_house,1659/60,3,2,walk,,"""I went early to my Lord at Mr. Crew's"""
 100604,john_crews_house,office_exchequer,1659/60,3,2,walk,,
-100605,office_exchequer,leg_tavern,1659/60,3,2,walk,Mr Eglin; James Chetwind; Mr Thomas,
-100606,leg_tavern,swan_inn,1659/60,3,2,walk,Mr Eglin; James Chetwind; Mr Thomas,"""After that to the Swan tavern"" - taken as swan_inn, New Palace Yard. FLAG"
-100607,swan_inn,scott_house,1659/60,3,2,walk,Henry Moore,"Mrs Jem taken to be still at Scott's, as in February. FLAG"
-100608,scott_house,westminster_hall,1659/60,3,2,walk,,
+100605,office_exchequer,leg_tavern_king_st,1659/60,3,2,walk,Samuel Edlin; James Chetwind; Mr Thomas,
+100606,leg_tavern_king_st,swan_inn,1659/60,3,2,walk,Samuel Edlin; James Chetwind; Mr Thomas,"""After that to the Swan tavern"" - taken as swan_inn, New Palace Yard. FLAG"
+100607,swan_inn,sandwich_lodgings,1659/60,3,2,walk,Henry Moore,"Mrs Jem taken to be still at Scott's, as in February. FLAG"
+100608,sandwich_lodgings,westminster_hall,1659/60,3,2,walk,,
 100609,westminster_hall,home_axe_yard,1659/60,3,2,walk,,
 100610,home_axe_yard,westminster_hall,1659/60,3,3,walk,,
-100611,westminster_hall,swan_inn,1659/60,3,3,walk,Mr Pierce the purser; Lieutenant Lambert; John Creed; William Howe,"""Mr. Pierce the purser"" is a different man from Mr Pierce the surgeon. FLAG"
+100611,westminster_hall,swan_inn,1659/60,3,3,walk,Andrew Pearse; Lieutenant David Lambert; John Creed; William Howe,"""Mr. Pierce the purser"" is a different man from Mr Pierce the surgeon."
 100612,swan_inn,office_exchequer,1659/60,3,3,walk,,
 100613,office_exchequer,home_axe_yard,1659/60,3,3,walk,,
 100614,home_axe_yard,warwick_house,1659/60,3,3,walk,,
 100615,warwick_house,john_crews_house,1659/60,3,3,coach,Edward Montagu,
 100616,john_crews_house,michael_hering_house,1659/60,3,3,walk,,"""went by appointment to Hering, the merchant, but missed of my money"""
-100617,michael_hering_house,alehouse_unknown_8,1659/60,3,3,walk,Mr Gifford,
+100617,michael_hering_house,alehouse_unknown_8,1659/60,3,3,walk,Henry Gifford,
 100618,alehouse_unknown_8,alehouse_unknown_9,1659/60,3,3,walk,Tom Harper,
 100619,alehouse_unknown_9,home_axe_yard,1659/60,3,3,walk,,
 100620,home_axe_yard,exeter_house_chapel,1659/60,3,4,walk,,"""to Mr. Gunning's"""
@@ -624,9 +624,9 @@ id,source,target,year,month,day,mode,companions,notes
 100623,robert_mossum_church,john_pepys_house,1659/60,3,4,walk,Elizabeth Pepys; Jane Birch,
 100624,john_pepys_house,home_axe_yard,1659/60,3,4,walk,Elizabeth Pepys; Jane Birch,
 100625,home_axe_yard,wills_alehouse,1659/60,3,5,walk,,
-100626,wills_alehouse,salutation_tavern,1659/60,3,5,boat,Edward Shipley; Mr Pinkney,"""who took me by water to Billingsgate"""
-100627,salutation_tavern,pinkney_house,1659/60,3,5,boat,Mr Pinkney,"""so to Westminster by water, only seeing Mr. Pinkney at his own house"""
-100628,pinkney_house,home_axe_yard,1659/60,3,5,walk,,
+100626,wills_alehouse,salutation_tavern,1659/60,3,5,boat,Edward Shipley; George Pinkney,"""who took me by water to Billingsgate"""
+100627,salutation_tavern,george_pinkney_house,1659/60,3,5,boat,George Pinkney,"""so to Westminster by water, only seeing Mr. Pinkney at his own house"""
+100628,george_pinkney_house,home_axe_yard,1659/60,3,5,walk,,
 100629,home_axe_yard,john_crews_house,1659/60,3,6,walk,,"""my Lord's lodgings at Mr. Crew's"""
 100630,john_crews_house,sandwich_lodgings,1659/60,3,6,walk,Edward Shipley,"""he bade us to go home again, and get a fire against an hour after. Which we did at White Hall"""
 100631,sandwich_lodgings,whitehall_garden,1659/60,3,6,walk,Edward Montagu,
@@ -635,10 +635,9 @@ id,source,target,year,month,day,mode,companions,notes
 100634,office_exchequer,wills_alehouse,1659/60,3,6,walk,Thomas Pepys,
 100635,wills_alehouse,bell_tavern,1659/60,3,6,walk,Mr Day,
 100636,bell_tavern,home_axe_yard,1659/60,3,6,walk,,
-100637,home_axe_yard,scott_house,1659/60,3,6,walk,,
-100638,scott_house,sandwich_lodgings,1659/60,3,6,walk,,"""called at my Lord's for Mr. Sheply"""
-100639,sandwich_lodgings,lion_tavern,1659/60,3,6,walk,,"""but found him at the Lion"""
-100640,lion_tavern,home_axe_yard,1659/60,3,6,walk,,
+100637,home_axe_yard,sandwich_lodgings,1659/60,3,6,walk,,
+100639,sandwich_lodgings,red_lion_tavern,1659/60,3,6,walk,,"""but found him at the Lion"""
+100640,red_lion_tavern,home_axe_yard,1659/60,3,6,walk,,
 100641,home_axe_yard,john_crews_house,1659/60,3,7,walk,,
 100642,john_crews_house,st_jamess_palace,1659/60,3,7,coach,Edward Montagu,"""my Lord overtook me in his coach, and called me in"""
 100643,st_jamess_palace,st_james_park,1659/60,3,7,walk,Edward Montagu,"""we walked over the Park thither"""
@@ -646,80 +645,79 @@ id,source,target,year,month,day,mode,companions,notes
 100645,whitehall_palace,office_exchequer,1659/60,3,7,walk,,
 100646,office_exchequer,westminster_hall,1659/60,3,7,walk,,
 100647,westminster_hall,angel_tavern,1659/60,3,7,walk,,
-100648,angel_tavern,michael_hering_house,1659/60,3,7,boat,Mr Thomas,"""by water to London, where I went to Herring's"""
+100648,angel_tavern,michael_hering_house,1659/60,3,7,boat,Mr Thomas,"mr thomas a govt clerk. ""by water to London, where I went to Herring's"""
 100649,michael_hering_house,popes_head_alley,1659/60,3,7,walk,Mr Thomas,
-100650,popes_head_alley,alehouse_unknown_10,1659/60,3,7,walk,Adam Chard,
-100651,alehouse_unknown_10,sun_tavern_behind_exchange,1659/60,3,7,walk,William Wight,"""meeting my uncle Wight by the way, took him with me thither"""
-100652,sun_tavern_behind_exchange,cock_tavern,1659/60,3,7,walk,William Wight; Mr Thomas,
+100650,popes_head_alley,alehouse_unknown_10,1659/60,3,7,walk,Adam Chard; Mr Thomas,
+100651,alehouse_unknown_10,sun_tavern_threadneedle_st,1659/60,3,7,walk,William Wight; Mr Thomas,"""meeting my uncle Wight by the way, took him with me thither"""
+100652,sun_tavern_threadneedle_st,cock_tavern,1659/60,3,7,walk,William Wight; Mr Thomas,
 100653,cock_tavern,fleet_street,1659/60,3,7,walk,William Wight,"""he and I homewards, parted at Fleet Street"""
 100654,fleet_street,john_pepys_house,1659/60,3,7,walk,,"""where I found my father newly come home from Brampton"""
 100655,john_pepys_house,william_wotton_shop,1659/60,3,7,walk,,"""Going home I called at Wotton's and took home a piece of cheese"""
 100656,william_wotton_shop,home_axe_yard,1659/60,3,7,walk,,
-100657,home_axe_yard,whitehall_palace,1659/60,3,8,walk,,"""To Whitehall to bespeak some firing for my father at Short's"" - Short's not modelled separately. FLAG"
-100658,whitehall_palace,westminster_hall,1659/60,3,8,walk,,
-100659,westminster_hall,commons_lobby,1659/60,3,8,walk,,"""to bring me to my Lord at the lobby"""
-100660,commons_lobby,dog_tavern,1659/60,3,8,walk,,"""This noon I met at the Dog tavern Captain Philip Holland"" - narrated at the end of the entry, placed at the noon it describes"
-100661,dog_tavern,home_axe_yard,1659/60,3,8,walk,,"""Home about two o'clock"""
-100662,home_axe_yard,paternoster_row,1659/60,3,8,walk,Elizabeth Pepys,"""by land"""
-100663,paternoster_row,home_axe_yard,1659/60,3,8,walk,Elizabeth Pepys,
-100664,home_axe_yard,whitehall_palace,1659/60,3,8,walk,Henry Moore,"""so back to Whitehall again, both of us"""
-100665,whitehall_palace,admiralty,1659/60,3,8,walk,,
-100666,admiralty,harpers_tavern,1659/60,3,8,walk,Mr King,
-100667,harpers_tavern,home_axe_yard,1659/60,3,8,walk,,return home not stated; the day must close at Axe Yard
-100668,home_axe_yard,sandwich_lodgings,1659/60,3,9,walk,,"""my Lord's lodgings"" unqualified, taken as the Whitehall lodgings; 6 March distinguishes them from my Lord staying at Mr Crew's. FLAG"
-100669,sandwich_lodgings,painted_chamber,1659/60,3,9,coach,Edward Montagu; Mr Dudley,"""came to Westminster with him in the coach"""
-100670,painted_chamber,office_exchequer,1659/60,3,9,walk,,
-100671,office_exchequer,john_crews_house,1659/60,3,9,walk,,
-100672,john_crews_house,navy_office,1659/60,3,9,coach,Mr Butler,
-100673,navy_office,council_chamber_whitehall,1659/60,3,9,coach,Mr Butler,"""Then by coach back again, and at White Hall at the Council Chamber"""
-100674,council_chamber_whitehall,harpers_tavern,1659/60,3,9,walk,Mr Butler,
-100675,harpers_tavern,home_axe_yard,1659/60,3,9,walk,,
-100676,home_axe_yard,john_pepys_house,1659/60,3,10,walk,,"""whom I took in his cutting house"""
-100677,john_pepys_house,navy_treasurer_office,1659/60,3,10,walk,,
-100678,navy_treasurer_office,rawlinson_house,1659/60,3,10,walk,,
-100679,rawlinson_house,sun_tavern_fish_street_hill,1659/60,3,10,walk,,
-100680,sun_tavern_fish_street_hill,home_axe_yard,1659/60,3,10,coach,,"""Then by coach home"""
-100681,home_axe_yard,scott_house,1659/60,3,10,walk,,"""to see Mrs. Jem and paid her maid L7"""
-100682,scott_house,blackburne_house,1659/60,3,10,walk,,
-100683,blackburne_house,wright_house,1659/60,3,10,walk,,"""Sir H. Wright's where my Lord dined"""
-100684,wright_house,office_exchequer,1659/60,3,10,walk,William Howe,"""Hither W. Howe comes to me and so to Westminster ... He went with me to my office"""
-100685,office_exchequer,whitehall_palace,1659/60,3,10,walk,,
-100686,whitehall_palace,home_axe_yard,1659/60,3,10,walk,,
-100687,home_axe_yard,john_pepys_house,1659/60,3,11,walk,Elizabeth Pepys,"""At night my wife and I went to my father's to supper"""
-100688,john_pepys_house,home_axe_yard,1659/60,3,11,walk,Elizabeth Pepys,
-100689,home_axe_yard,new_exchange,1659/60,3,12,walk,Elizabeth Pepys,"""My wife and I to the Exchange, where we bought a great many things"" - read as the New Exchange, the Strand shopping arcade. FLAG"
-100690,new_exchange,bedells_bookshop,1659/60,3,12,walk,,"""where I left her and went into London"""
-100691,bedells_bookshop,wilkinsons_cookshop,1659/60,3,12,walk,,"""So came back"""
-100692,wilkinsons_cookshop,white_horse_king_street,1659/60,3,12,walk,,
-100693,white_horse_king_street,bowyer_house,1659/60,3,12,horse,,"""I got Mr. Buddle's horse to ride to Huntsmore to Mr. Bowyer's""; ""Here I lay"""
-100694,bowyer_house,sandwich_lodgings,1659/60,3,13,horse,,"""It rained hard and I got up early, and got to London by 8 o'clock at my Lord's lodgings"""
-100695,sandwich_lodgings,john_pepys_house,1659/60,3,13,walk,,
-100696,john_pepys_house,william_wotton_shop,1659/60,3,13,walk,,"""and so at my shoemaker's"" - Wotton, cf. 18 Feb"
-100697,william_wotton_shop,roberts_whitehall,1659/60,3,13,walk,,"""At night to Whitehall"""
-100698,roberts_whitehall,admiralty,1659/60,3,13,walk,,
-100699,admiralty,home_axe_yard,1659/60,3,13,walk,,
-100700,home_axe_yard,sandwich_lodgings,1659/60,3,14,walk,,"""my Lord's lodgings"" unqualified, taken as the Whitehall lodgings; 6 March distinguishes them from my Lord staying at Mr Crew's. FLAG"
-100701,sandwich_lodgings,st_jamess_palace,1659/60,3,14,walk,James Pierce,
-100702,st_jamess_palace,marshes_whitehall,1659/60,3,14,walk,James Pierce,"""he and I to Whitehall, where with Luellin we dined at Marsh's"""
-100703,marshes_whitehall,home_axe_yard,1659/60,3,14,walk,,
-100704,home_axe_yard,admiralty,1659/60,3,14,walk,,
-100705,admiralty,creeds_chamber,1659/60,3,14,walk,,
-100706,creeds_chamber,harpers_tavern,1659/60,3,14,walk,,
-100707,harpers_tavern,sandwich_lodgings,1659/60,3,14,coach,old Beard,"""I took him by coach to my Lord's, but he was not at home"""
-100708,sandwich_lodgings,wright_house,1659/60,3,14,walk,old Beard,"""afterwards I found him out at Sir H. Wright's"""
-100709,wright_house,scott_house,1659/60,3,14,coach,,"""Thence by coach, it raining hard, to Mrs. Jem"""
-100710,scott_house,home_axe_yard,1659/60,3,14,walk,,
-100711,home_axe_yard,wills_alehouse,1659/60,3,15,walk,,"""where I took leave of some of my friends"""
-100712,wills_alehouse,anne_michell_shop,1659/60,3,15,walk,,"""in the Hall paid and made even with Mrs. Michell"""
-100713,anne_michell_shop,axe_brewhouse,1659/60,3,15,walk,,"""at the Axe paid him this quarter to Ladyday next"""
-100714,axe_brewhouse,home_axe_yard,1659/60,3,15,walk,,"""Dick Mathews comes to dine"""
-100715,home_axe_yard,harpers_tavern,1659/60,3,15,walk,Richard Matthews,
-100716,harpers_tavern,fish_street,1659/60,3,15,boat,Elizabeth Pepys,"""So into London by water"""
-100717,fish_street,sun_tavern_fish_street_hill,1659/60,3,15,walk,Elizabeth Pepys,"""went to the Sun Tavern and ate it"""
-100718,sun_tavern_fish_street_hill,sandwich_lodgings,1659/60,3,15,walk,,"""From thence homewards ... I went to my Lord's"""
-100719,sandwich_lodgings,scott_house,1659/60,3,15,coach,Jemima Montagu,"""So home with Mrs. Jem by coach"""
-100720,scott_house,home_axe_yard,1659/60,3,15,walk,,"""and then home to my own house"""
-100721,home_axe_yard,fox_tavern,1659/60,3,15,walk,,
-100722,fox_tavern,westminster_hall,1659/60,3,15,walk,,
-100723,westminster_hall,fox_tavern,1659/60,3,15,walk,,"""To the Fox again"""
-100724,fox_tavern,home_axe_yard,1659/60,3,15,walk,Elizabeth Pepys,"""Home with my wife"""
+100657,home_axe_yard,shotts_woodmonger_whitehall,1659/60,3,8,walk,,"""To Whitehall to bespeak some firing for my father at Shott's"" "
+100658,shotts_woodmonger_whitehall,westminster_hall,1659/60,3,8,walk,,
+100659,westminster_hall,dog_tavern,1659/60,3,8,walk,,"""This noon I met at the Dog tavern Captain Philip Holland"" - narrated at the end of the entry, placed at the noon it describes"
+100660,dog_tavern,home_axe_yard,1659/60,3,8,walk,,"""Home about two o'clock"""
+100661,home_axe_yard,paternoster_row,1659/60,3,8,walk,Elizabeth Pepys,"""by land"""
+100662,paternoster_row,home_axe_yard,1659/60,3,8,walk,Elizabeth Pepys,
+100663,home_axe_yard,whitehall_palace,1659/60,3,8,walk,Henry Moore,"""so back to Whitehall again, both of us"""
+100664,whitehall_palace,admiralty,1659/60,3,8,walk,,
+100665,admiralty,harpers_tavern,1659/60,3,8,walk,William King,Clerk to the Treasurers at War 1660
+100666,harpers_tavern,home_axe_yard,1659/60,3,8,walk,,return home not stated; the day must close at Axe Yard
+100667,home_axe_yard,sandwich_lodgings,1659/60,3,9,walk,,"""my Lord's lodgings"" unqualified, taken as the Whitehall lodgings; 6 March distinguishes them from my Lord staying at Mr Crew's. FLAG"
+100668,sandwich_lodgings,painted_chamber_westminster,1659/60,3,9,coach,Edward Montagu; William Dudley,"""came to Westminster with him in the coach"""
+100669,painted_chamber_westminster,office_exchequer,1659/60,3,9,walk,,
+100670,office_exchequer,john_crews_house,1659/60,3,9,walk,,
+100671,john_crews_house,navy_office,1659/60,3,9,coach,Mr Butler,
+100672,navy_office,council_chamber_whitehall,1659/60,3,9,coach,Mr Butler,"""Then by coach back again, and at White Hall at the Council Chamber"""
+100673,council_chamber_whitehall,harpers_tavern,1659/60,3,9,walk,Mr Butler,
+100674,harpers_tavern,home_axe_yard,1659/60,3,9,walk,,
+100675,home_axe_yard,john_pepys_house,1659/60,3,10,walk,,"""whom I took in his cutting house"""
+100676,john_pepys_house,navy_treasurer_office,1659/60,3,10,walk,,
+100677,navy_treasurer_office,daniel_rawlinson_house,1659/60,3,10,walk,,
+100678,daniel_rawlinson_house,sun_tavern_fish_street_hill,1659/60,3,10,walk,,
+100679,sun_tavern_fish_street_hill,home_axe_yard,1659/60,3,10,coach,,"""Then by coach home"""
+100680,home_axe_yard,sandwich_lodgings,1659/60,3,10,walk,,"""to see Mrs. Jem and paid her maid L7"""
+100681,sandwich_lodgings,robert_blackborne_house,1659/60,3,10,walk,,
+100682,robert_blackborne_house,wright_house,1659/60,3,10,walk,,"""Sir H. Wright's where my Lord dined"""
+100683,wright_house,office_exchequer,1659/60,3,10,walk,William Howe,"""Hither W. Howe comes to me and so to Westminster ... He went with me to my office"""
+100684,office_exchequer,whitehall_palace,1659/60,3,10,walk,,
+100685,whitehall_palace,home_axe_yard,1659/60,3,10,walk,,
+100686,home_axe_yard,john_pepys_house,1659/60,3,11,walk,Elizabeth Pepys,"""At night my wife and I went to my father's to supper"""
+100687,john_pepys_house,home_axe_yard,1659/60,3,11,walk,Elizabeth Pepys,
+100688,home_axe_yard,new_exchange,1659/60,3,12,walk,Elizabeth Pepys,"""My wife and I to the Exchange, where we bought a great many things"" - read as the New Exchange, the Strand shopping arcade. FLAG"
+100689,new_exchange,bedells_bookshop,1659/60,3,12,walk,,"""where I left her and went into London"""
+100690,bedells_bookshop,wilkinsons_cookshop,1659/60,3,12,walk,,"""So came back"""
+100691,wilkinsons_cookshop,white_horse_king_street,1659/60,3,12,walk,,
+100692,white_horse_king_street,robert_bowyer_house,1659/60,3,12,horse,,"""I got Mr. Buddle's horse to ride to Huntsmore to Mr. Bowyer's""; ""Here I lay"""
+100693,robert_bowyer_house,sandwich_lodgings,1659/60,3,13,horse,,"""It rained hard and I got up early, and got to London by 8 o'clock at my Lord's lodgings"""
+100694,sandwich_lodgings,john_pepys_house,1659/60,3,13,walk,,
+100695,john_pepys_house,william_wotton_shop,1659/60,3,13,walk,,"""and so at my shoemaker's"" - Wotton, cf. 18 Feb"
+100696,william_wotton_shop,roberts_whitehall,1659/60,3,13,walk,,"""At night to Whitehall"""
+100697,roberts_whitehall,admiralty,1659/60,3,13,walk,,
+100698,admiralty,home_axe_yard,1659/60,3,13,walk,,
+100699,home_axe_yard,sandwich_lodgings,1659/60,3,14,walk,,"""my Lord's lodgings"" unqualified, taken as the Whitehall lodgings; 6 March distinguishes them from my Lord staying at Mr Crew's. FLAG"
+100700,sandwich_lodgings,st_jamess_palace,1659/60,3,14,walk,James Pierce,
+100701,st_jamess_palace,marshes_whitehall,1659/60,3,14,walk,James Pierce,"""he and I to Whitehall, where with Luellin we dined at Marsh's"""
+100702,marshes_whitehall,home_axe_yard,1659/60,3,14,walk,,
+100703,home_axe_yard,admiralty,1659/60,3,14,walk,,
+100704,admiralty,john_creed_chamber,1659/60,3,14,walk,,
+100705,john_creed_chamber,harpers_tavern,1659/60,3,14,walk,,
+100706,harpers_tavern,sandwich_lodgings,1659/60,3,14,coach,Mr Beard,"""I took him by coach to my Lord's, but he was not at home"""
+100707,sandwich_lodgings,wright_house,1659/60,3,14,walk,Mr Beard,"""afterwards I found him out at Sir H. Wright's"""
+100708,wright_house,scott_house,1659/60,3,14,coach,,"""Thence by coach, it raining hard, to Mrs. Jem"""
+100709,scott_house,home_axe_yard,1659/60,3,14,walk,,
+100710,home_axe_yard,wills_alehouse,1659/60,3,15,walk,,"""where I took leave of some of my friends"""
+100711,wills_alehouse,anne_michell_shop,1659/60,3,15,walk,,"""in the Hall paid and made even with Mrs. Michell"""
+100712,anne_michell_shop,axe_brewhouse,1659/60,3,15,walk,,"""at the Axe paid him this quarter to Ladyday next"""
+100713,axe_brewhouse,home_axe_yard,1659/60,3,15,walk,,"""Dick Mathews comes to dine"""
+100714,home_axe_yard,harpers_tavern,1659/60,3,15,walk,Richard Matthews,
+100715,harpers_tavern,fish_street_london,1659/60,3,15,boat,Elizabeth Pepys,"""So into London by water"""
+100716,fish_street_london,sun_tavern_fish_street_hill,1659/60,3,15,walk,Elizabeth Pepys,"""went to the Sun Tavern and ate it"""
+100717,sun_tavern_fish_street_hill,sandwich_lodgings,1659/60,3,15,walk,,"""From thence homewards ... I went to my Lord's"""
+100718,sandwich_lodgings,scott_house,1659/60,3,15,coach,Jemima Montagu,"""So home with Mrs. Jem by coach"""
+100719,scott_house,home_axe_yard,1659/60,3,15,walk,,"""and then home to my own house"""
+100720,home_axe_yard,fox_tavern,1659/60,3,15,walk,,
+100721,fox_tavern,westminster_hall,1659/60,3,15,walk,,
+100722,westminster_hall,fox_tavern,1659/60,3,15,walk,,"""To the Fox again"""
+100723,fox_tavern,home_axe_yard,1659/60,3,15,walk,Elizabeth Pepys,"""Home with my wife"""

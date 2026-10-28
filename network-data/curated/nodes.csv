@@ -155,15 +155,15 @@ alehouse_unknown_9,Alehouse Unknown,Drury Lane,,,"""Tom Harper, who took me into
 salutation_tavern,The Salutation Tavern,Billingsgate,,,"""by water to Billingsgate, at the Salutation Tavern"" 5 Mar 1659/60"
 pinkney_house,Mr Pinkney House,Westminster,,,"""he shewed me how he had alway kept the Lion and Unicorn, in the back of his chimney, bright, in expectation of the King's coming again"" 5 Mar 1659/60"
 whitehall_garden,Whitehall Garden,Whitehall Palace,,,"""he called me by myself to go along with him into the garden"" - where my Lord first asked Pepys to go to sea as his secretary, 6 Mar 1659/60"
-bell_tavern,The Bell,Westminster,,,"""I went to the Bell"" for the carpenters' yearly Shrove Tuesday club, 6 Mar 1659/60"
-lion_tavern,The Lion,,,,"""found him at the Lion with a pewterer"" 6 Mar 1659/60"
+bell_tavern,The Bell,"King Street, Westminster",,,"""I went to the Bell"" for the carpenters' yearly Shrove Tuesday club, 6 Mar 1659/60"
+red_lion_tavern,The Red Lion,"King Street, Westminster",,,"""found him at the Lion with a pewterer"" 6 Mar 1659/60"
 st_jamess_palace,St James's Palace,Westminster,,,
 angel_tavern,The Angel,"King Street, Westminster",,,"""the Angel in King Street, where Chetwind, Mr. Thomas and Doling were at oysters"" 7 Mar 1659/60, the first day of Lent"
 popes_head_alley,Pope's Head Alley,City of London,,,"Adam Chard's, where Pepys bought a catcall, 7 Mar 1659/60"
 alehouse_unknown_10,Alehouse Unknown,City of London,,,"""Thence went and gave him a cup of ale"" 7 Mar 1659/60, unnamed"
-sun_tavern_behind_exchange,The Sun Tavern,"Behind the Royal Exchange, City of London",,,"""the Sun behind the Exchange"" 7 Mar 1659/60. A third Sun, distinct from the_sun_tavern (Chancery Lane) and sun_tavern_king_street"
-cock_tavern,The Cock,,,,"""a health or two round at the Cock"" 7 Mar 1659/60"
-dog_tavern,The Dog Tavern,Westminster,,,"""This noon I met at the Dog tavern Captain Philip Holland"" 8 Mar 1659/60"
+sun_tavern_threadneedle_st,The Sun Tavern,"Behind the Royal Exchange, City of London",,,"""the Sun behind the Exchange"" 7 Mar 1659/60. A third Sun, distinct from the_sun_tavern (Chancery Lane) and sun_tavern_king_street"
+cock_tavern,The Cock Tavern,,,,"""a health or two round at the Cock"" 7 Mar 1659/60"
+dog_tavern,The Dog Tavern,Westminster,,,"Next to the Mitre on King St and New Palace Yard. ""This noon I met at the Dog tavern Captain Philip Holland"" 8 Mar 1659/60"
 paternoster_row,Paternoster Row,City of London,,,"""took my wife by land to Paternoster Row, to buy some Paragon for a petticoat"" 8 Mar 1659/60"
 admiralty,The Admiralty,"Whitehall, Westminster",,,
 painted_chamber,The Painted Chamber,Westminster Palace,,,"St Edward's Chamber in the old Palace, named for its wall paintings"
@@ -173,9 +173,9 @@ navy_treasurer_office,Navy Treasurer Office,,,,"Mr Hutchinson, Treasurer for the
 rawlinson_house,Mr Rawlinson House,City of London,,,"""having left L200 of it with Mr. Rawlinson at his house for Sheply"" 10 Mar 1659/60"
 sun_tavern_fish_street_hill,The Sun Tavern,"Fish Street Hill, City of London",,,"""the Sun tavern on Fish Street Hill"" 10 Mar, and 15 Mar 1659/60. A fourth Sun"
 blackburne_house,Mr Blackburne House,,,,"Robert Blackburne, Secretary to the Admiralty"
-bedells_bookshop,Bedell Bookshop,Temple Gate,,,"""Bedells the bookseller's at the Temple gate"" 12 Mar 1659/60"
+bedells_bookshop,Bedell Bookshop,"Temple Gate, Fleet St",,,"""Bedells the bookseller's at the Temple gate"" 12 Mar 1659/60"
 white_horse_king_street,The White Horse,"King Street, Westminster",,,"""the White Horse in King Street, where I got Mr. Buddle's horse"" 12 Mar 1659/60"
-bowyer_house,Mr Bowyer House,"Huntsmore, Buckinghamshire",,,Where Elizabeth Pepys was to board while Pepys was at sea; he lodged here the night of 12 Mar 1659/60
+robert_bowyer_house,Mr Bowyer House,"Huntsmoor, Buckinghamshire",,,Where Elizabeth Pepys was to board while Pepys was at sea; he lodged here the night of 12 Mar 1659/60
 roberts_whitehall,Roberts,Whitehall Palace,,,"""at drink with them at Roberts at Whitehall"" 13 Mar 1659/60"
 creeds_chamber,Mr Creed Chamber,,,,"John Creed, deputy treasurer to the Fleet"
 fish_street,Fish Street,City of London,,,"""in Fish Street my wife and I bought a bit of salmon"" 15 Mar 1659/60"
