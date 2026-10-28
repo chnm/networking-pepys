@@ -59,9 +59,9 @@ network4,home_axe_yard,Home (Axe Yard),home_axe_yard,id-exact
 network4,jacobs_alehouse,Jacob's Alehouse,jacobs_alehouse,id-exact
 network4,kings_college_cambridge,King's College (fields and chapel yard),kings_college_cambridge,id-exact
 network4,lady_wrights_house,My Lady Wright's House,wright_house,manual
-network4,leg_kings_street,The Leg Tavern,leg_tavern,manual
+network4,leg_kings_street,The Leg Tavern,leg_tavern_king_st,manual
 network4,lincolns_inn,Lincoln's Inn,lincolns_inn,id-exact
-network4,lion_tavern_westminster,The Lion Tavern,lion_tavern,manual
+network4,lion_tavern_westminster,The Lion Tavern,red_lion_tavern,manual
 network4,lord_widdringtons,Lord Widdrington's,thomas_widdrington_house,id-folded
 network4,magdalene_college_cambridge,Magdalene College,magdalene_college_cambridge,id-exact
 network4,market_westminster,Market,,manual
@@ -72,11 +72,11 @@ network4,mertons_shop_cambridge,Mr. Merton's Shop,mertons_shop_cambridge,id-exac
 network4,mitre_fleet_street,Mitre Tavern,fleet_street,manual
 network4,moorfields,Moorfields,moorfields,id-exact
 network4,mother_lams,Mother Lam's,mother_lams_pub,id-folded
-network4,mr_blackburnes,Mr. Blackburne's,blackburne_house,id-folded
-network4,mr_bowyers_huntsmore,Mr. Bowyer's House,bowyer_house,manual
+network4,mr_blackburnes,Mr. Blackburne's,robert_blackborne_house,id-folded
+network4,mr_bowyers_huntsmore,Mr. Bowyer's House,robert_bowyer_house,manual
 network4,mr_calthrops_chancery_lane,Mr. Calthrop's,lestrange_calthorpe_chamber,manual
 network4,mr_calthrops_grocer_london_bridge,Mr. Calthrop the Grocer's,edward_calthrop_grocer,manual
-network4,mr_creeds_chamber,Mr. Creed's Chamber,creeds_chamber,id-folded
+network4,mr_creeds_chamber,Mr. Creed's Chamber,john_creed_chamber,id-folded
 network4,mr_crews_house,Mr. John Crew's House,john_crews_house,manual
 network4,mr_cumberlands,Mr. Cumberland's,richard_cumberland_lodgings,id-folded
 network4,mr_downings_lodgings,Mr. George Downing's Lodgings,george_downings_lodgings,manual
@@ -85,12 +85,12 @@ network4,mr_frosts,Mr. Frost's,,manual
 network4,mr_fullers_twickenham,Mr. Fuller's (school),,manual
 network4,mr_hunts_house,Mr. Hunt's House,john_hunt_house,manual
 network4,mr_jessops,Mr. Jessop's,william_jessop_lodging,manual
-network4,mr_laxtons,Mr. Laxton's (my Lord's apothecary),laxton_apothecary,manual
+network4,mr_laxtons,Mr. Laxton's (my Lord's apothecary),john_layton_apothecary,manual
 network4,mr_mossums_church,Mr. Mossum's Church,robert_mossum_church,manual
 network4,mr_phelps_house,Mr. Phelps's House,john_phelps_house,id-folded
 network4,mr_pierces_house,Mr. Pierce the Surgeon's House,james_pearse_house,manual
-network4,mr_pinkneys_house,Mr. Pinkney's House,pinkney_house,id-folded
-network4,mr_rawlinsons,Mr. Rawlinson's House (Mitre),rawlinson_house,id-folded
+network4,mr_pinkneys_house,Mr. Pinkney's House,george_pinkney_house,id-folded
+network4,mr_rawlinsons,Mr. Rawlinson's House (Mitre),daniel_rawlinson_house,id-folded
 network4,mr_sherwins,Mr. Sherwin's,richard_sherwin_office,manual
 network4,mr_stevens_silversmith,Mr. Stevens's (silversmith),mr_stevens_house,manual
 network4,mr_swans_house,Mr. Swan's House,swan_inn,id-folded
@@ -106,7 +106,7 @@ network4,navy_office,Navy Office,navy_office,id-exact
 network4,navy_treasury,Treasurer of the Navy's Office,navy_treasurer_office,manual
 network4,new_exchange,The New Exchange,new_exchange,manual
 network4,new_market_alehouse,Alehouse in the New Market,the_new_market,id-folded
-network4,parliament_house,Parliament House (House of Commons),house_of_commons,manual
+network4,parliament_house,Parliament House (House of Commons),,"REVIEW: house_of_commons retired, folded into westminster_hall"
 network4,paternoster_row,Paternoster Row (mercers' shops),paternoster_row,id-exact
 network4,playfords_shop,Playford's Music Shop,john_playford_shop,id-exact
 network4,plough_fleet_street,The Plough (hatter's),plough_fleet_street,id-exact
@@ -132,7 +132,7 @@ network4,st_pauls_churchyard,St Paul's Churchyard (booksellers),st_pauls_churchy
 network4,st_pauls_school,St Paul's School,st_pauls_school,id-exact
 network4,star_cheapside,The Star Tavern,star_tavern,manual
 network4,sugar_loaf_temple_bar,Sugar Loaf Tavern,sugar_loaf_tavern,manual
-network4,sun_behind_exchange,Sun Tavern behind the Exchange,sun_tavern_behind_exchange,id-folded
+network4,sun_behind_exchange,Sun Tavern behind the Exchange,sun_tavern_threadneedle_st,id-folded
 network4,sun_chancery_lane,Sun Tavern,the_sun_tavern,manual
 network4,sun_fish_street_hill,Sun Tavern,sun_tavern_fish_street_hill,id-folded
 network4,sun_tavern_westminster,Sun Tavern,sun_tavern_king_street,manual

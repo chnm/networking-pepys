@@ -17,7 +17,7 @@ repeated here. This file records what those principles resolved to in practice.
 | Rule | Detail |
 |---|---|
 | **Old Style years** | The legal year began 25 March, so 1 Jan - 24 Mar carries a split year: `1659/60`. From 25 March it is a plain `1660`. Enforced by `scripts/validate.py`. |
-| **Edge `id`** | A stable surrogate key in the `1xxxxx` block. Chronology comes from `year`/`month`/`day` plus **row order within a day**, never from the id. An edge inserted into an already-reviewed month takes the next free id and sits in the right row; ids are never renumbered, so nothing already reviewed or cited moves. |
+| **Edge `id`** | **Contiguous**, in row order, from `100001`. Row order carries chronology, and the id follows it, so the sequence is meaningful rather than arbitrary. The cost is that inserting or removing a leg mid-month renumbers everything after it: an id is therefore only good within the version of the file it was read from, and a worksheet or comment citing one goes stale. Cite a date and a leg rather than an id where it needs to last. Settled by the team, superseding the stable-key rule used up to October 2026. |
 | **One file per year** | `network-data/curated/edges_<year>.csv`, filed by calendar year. January 1659/60 lives in `edges_1660.csv` with the year string intact. |
 | **Nodes are cumulative** | One `nodes.csv` for the whole project. A new month appends to it; it is never split by year. |
 | **Continuity** | Travel is unbroken. Every departure leaves the node of the previous arrival, within a day *and* across consecutive diary days. A night spent away from home is modelled explicitly rather than assumed. |
@@ -27,6 +27,7 @@ repeated here. This file records what those principles resolved to in practice.
 | **`latitude` / `longitude`** | Human-filled only. Claude leaves them blank rather than guessing. |
 | **`notes`** | Claude drafts these from the text (who lived there, how the place was identified, the entry that first mentions it). Factual and checkable; no speculation presented as fact. A genuine uncertainty is written with a question mark. |
 | **Unknown places** | `<type>_unknown_<n>` per README principle 4, numbered sequentially per type across the whole project (not restarted each month). |
+| **Ships** | A named ship is one location however far she sails, and the node is the vessel's name (`naseby`), with no suffix. Water travel always takes `mode` = `boat` -- never the ship's name, and there is no `ship` mode. A ship is a location when Pepys embarks or disembarks; while he is aboard and she sails he changes no node, so no edge arises. No cabin or deck nodes. README principles 13-14, which supersede the retracted rulings in section 7. |
 
 ## 2. Place identifications
 
@@ -58,7 +59,8 @@ superseded by a dated successor.
   as a node separate from the adjoining house. During Aug-Dec 1660 "the office"
   at Whitehall means the Privy Seal Office.
 - **23 March - 8 June 1660**: the voyage. Ships are nodes and Pepys lives
-  aboard; per README principle 12 a ship is one location even while moving. The
+  aboard; per README principles 13-14 a ship is one location even while moving,
+  and water travel is always `boat`. The
   *Naseby* is renamed *Royal Charles* on 23 May -- same node or two is an open
   question.
 - **September 1666**: the Fire destroys much of the City. Places that move
@@ -253,28 +255,18 @@ Epping (night of 27th) -> London.
 - **Ruling 4, "my partner" on 20 February** was not answered. It stands as the
   descriptor "Pepys's office partner". Keep "Pepys's office partner".
 
-### A convention to settle: are edge ids stable or contiguous?
+### Settled: edge ids are contiguous
 
-Section 1 says an edge id is a stable surrogate key, never renumbered, so that
-a review worksheet or a commit message can cite one and still be right later.
-The February review instead renumbered the ids to run contiguously in row
-order, which is a reasonable thing to want but the opposite rule.
+Section 1 used to call an edge id a stable surrogate key, never renumbered. The
+team has ruled for contiguous ids instead, and the 1660 edges have been
+renumbered in row order: `100001`-`100722`, no gaps, 263 rows changed id.
 
-The two cannot both hold, and the data is currently in between: ids run
-100001-100596 with no gaps, except `100294` -- the 13 January leg added during
-the January corrections -- which sits in its correct row position between
-`100116` and `100117` and so is out of numerical sequence.
-
-Deciding this is the team's call, not Claude's, because renumbering invalidates
-every id cited anywhere outside the file:
-
-- **Stable ids** -- leave `100294` where it is, accept gaps and out-of-order
-  ids as normal, and let row order carry chronology. Nothing to do.
-- **Contiguous ids** -- renumber `100117`-`100294` to close the sequence, and
-  expect a renumber whenever a leg is inserted mid-month. Section 1 needs
-  rewriting to match, as do the worksheets already reviewed.
-
-Nothing has been renumbered pending that decision. Contiguous ids should be used.
+What that costs, so it is on the record: an id identifies a row only within the
+version of the file it was read from. Inserting or removing a leg mid-month
+shifts every id after it. The three review worksheets already annotated
+(`1660-02-a`, `1660-02-b`, `1660-03-a`) cite the old numbers and no longer line
+up. Cite a date and a leg, not an id, wherever a reference needs to outlive the
+next edit.
 
 ---
 
@@ -337,13 +329,16 @@ which is why they lead.
     house in July 1660, and earlier network notes keep house and office as two
     nodes. Flagging now so that split is deliberate when we reach it.
 
-## 7. Ships: what principle 12 still leaves open
+## 7. Ships (superseded by README principles 13-14)
 
-README principle 12 now reads that ships "are a single location, despite the
-fact that the ship itself moves, they are both a location and a mode of
-transportation". That settles the node question. Drafting the voyage needs a
-little more, because Pepys boards the *Swiftsure* on 23 March and lives aboard
-until 8 June. Nothing after 22 March has been drafted pending answers.
+**These questions are answered.** README principles 13 and 14 now carry the
+rules, and the two answers written here in October were retracted by the team in
+favour of them. The settled version lives in section 1; the questions are kept
+below only for the record of what was asked.
+
+The short of it: water travel is always `mode` = `boat`, the node is the
+vessel's name with no suffix, and a ship is a location at embarking and
+disembarking only. Nothing after 22 March is drafted yet.
 
 1. **When does `mode` take the value of a ship?** While Pepys is aboard and the
    vessel sails, he does not change node, so no edge is created and there is
@@ -370,4 +365,61 @@ until 8 June. Nothing after 22 March has been drafted pending answers.
    place Pepys among the party. Include the visit or not?
 7. **"the Ship tavern", 23 March** is a tavern in London, not a vessel. Noting
    it so the name does not get read as one; Pepys did not go in.
+
+---
+
+## 8. Applied 28 October 2026, and what is still open
+
+### Applied
+
+- **Edge ids renumbered contiguously**, `100001`-`100722`, no gaps; 263 rows
+  changed id. Section 1 and `CLAUDE.md` rewritten to match, and the cost is
+  recorded there.
+- **`house_of_commons` retired.** It had no edges after the February review
+  folded the "Houses sitting" visit into `westminster_hall`. network4's
+  Parliament House now maps to nothing in the crosswalk.
+- **`shotts_woodmonger_whitehall` created** and the 8 March legs point at it,
+  per section 6 ruling 7. The review had renamed it in `edges_1660.csv`; the
+  node row was missing.
+- **`nodes.csv` brought into line with eight more ids renamed in the edges**:
+  `laxton_apothecary` -> `john_layton_apothecary` (also Laxton -> Layton),
+  `leg_tavern` -> `leg_tavern_king_st`, `pinkney_house` ->
+  `george_pinkney_house`, `painted_chamber` -> `painted_chamber_westminster`,
+  `rawlinson_house` -> `daniel_rawlinson_house`, `blackburne_house` ->
+  `robert_blackborne_house` (also Blackburne -> Blackborne), `creeds_chamber`
+  -> `john_creed_chamber`, `fish_street` -> `fish_street_london`.
+- **Ship rules folded into section 1** from README principles 13-14, so drafting
+  applies them without re-reading section 7.
+
+### Noticed while reviewing
+
+- **README's principle numbering is broken.** Principle 12 was deleted and the
+  list now runs 1-11, 13, 14, 16 -- there is no 15, and nothing is numbered 12.
+  Worth renumbering, because this file and `CLAUDE.md` cite principles by
+  number; the references to "principle 12" have been repointed to 13-14, but
+  any new citation will be guessing.
+- **6 March no longer records the visit to Mrs Jem.** The review retargeted that
+  leg to `sandwich_lodgings` and dropped the following one, so the day reads
+  home -> my Lord's lodgings -> the Red Lion -> home. That is a defensible
+  reading of an entry whose "dining-room ... full of tag, rag, and bobtail,
+  dancing" sounds like my Lord's household rather than the Scotts'. It does sit
+  against section 6 ruling 2, which put Mrs Jem at `scott_house` for all of
+  1-15 March. Flagging the inconsistency, not reverting it.
+- **8 March: the Commons lobby leg was rightly removed.** "sending a note to my
+  Lord, he comes out to me" -- Pepys never went in. A good catch against the
+  draft.
+
+### Still open
+
+- **Section 6 ruling 4** -- "the Swan tavern", 2 March. The line was edited but
+  no ruling written; it stands as `swan_inn`.
+- **Section 6 ruling 12** -- whether `navy_office` and the house Pepys moves
+  into in July 1660 stay two nodes.
+- **Section 7 question 6** -- whether Pepys was aboard the *Naseby* on 30 March.
+- **Is a named anchorage a node?** The October answer (yes, if named) was
+  retracted along with the rest of section 7, and README 13-14 do not mention
+  anchorages. Taking the principles at face value, a ship is the location
+  wherever she lies, so 23 March reads `tower_of_london -> swiftsure` by boat
+  with Long Reach in the notes, and no `long_reach` node. That is the reading
+  the voyage will be drafted on unless the team says otherwise.
 

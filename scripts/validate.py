@@ -223,6 +223,9 @@ def check_edges(edges, node_ids):
         raw = e["companions"]
         if raw != raw.strip():
             warn("%s  companions %r has leading or trailing whitespace" % (where, raw))
+        if e["notes"] != e["notes"].strip():
+            warn("%s  notes have leading or trailing whitespace, which the "
+                 ".xlsx round-trip would silently normalise away" % where)
         if "," in raw and ";" not in raw:
             warn("%s  companions %r uses a comma -- separator is '; '" % (where, raw))
         for person in pepys.companion_list(raw):

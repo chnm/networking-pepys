@@ -49,8 +49,12 @@ Stdlib only, except the two `.xlsx` scripts, which need `openpyxl`.
 - **Continuity.** Every departure leaves the previous arrival, across day
   boundaries too. If a day cannot be closed, the night was spent elsewhere —
   model it, don't paper over it.
-- **Edge ids never get renumbered.** Insert at the right row with the next free
-  id.
+- **Edge ids are contiguous**, in row order from `100001`. Inserting or removing
+  a leg mid-month means renumbering everything after it, so never cite an id
+  where the reference has to last — cite a date and a leg.
+- **Ships.** A named ship is one location however far she sails; the node is the
+  vessel's name (`naseby`), no suffix. Water travel is always `mode` = `boat`;
+  there is no `ship` mode. No cabin or deck nodes.
 - **Companions** travel *with* Pepys; people met at the destination do not count.
 - **Never invent coordinates.** That field is the GRA's.
 - Full detail in `WORKFLOW.md`.

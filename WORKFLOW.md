@@ -7,7 +7,7 @@ May 1669.
 ## Setup (once)
 
 ```sh
-pip install openpyxl          # only needed for the .xlsx round-trip
+python3 -m pip install openpyxl          # only needed for the .xlsx round-trip
 ```
 
 ## Where the data lives
