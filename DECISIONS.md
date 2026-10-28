@@ -27,7 +27,8 @@ repeated here. This file records what those principles resolved to in practice.
 | **`latitude` / `longitude`** | Human-filled only. Claude leaves them blank rather than guessing. |
 | **`notes`** | Claude drafts these from the text (who lived there, how the place was identified, the entry that first mentions it). Factual and checkable; no speculation presented as fact. A genuine uncertainty is written with a question mark. |
 | **Unknown places** | `<type>_unknown_<n>` per README principle 4, numbered sequentially per type across the whole project (not restarted each month). |
-| **Ships** | A named ship is one location however far she sails, and the node is the vessel's name (`naseby`), with no suffix. Water travel always takes `mode` = `boat` -- never the ship's name, and there is no `ship` mode. A ship is a location when Pepys embarks or disembarks; while he is aboard and she sails he changes no node, so no edge arises. No cabin or deck nodes. README principles 13-14, which supersede the retracted rulings in section 7. |
+| **Ships** | A named ship is one location however far she sails, and the node is the vessel's name (`naseby`), with no suffix. Water travel always takes `mode` = `boat` -- never the ship's name, and there is no `ship` mode. A ship is a location when Pepys embarks or disembarks; while he is aboard and she sails he changes no node, so no edge arises. No cabin or deck nodes. README principles 13-14. |
+| **Anchorages** | Not nodes. An anchorage matters only where Pepys disembarks, and there the node is the ship, not the water she lies in. So 23 March reads `tower_of_london -> swiftsure` by boat, with Long Reach recorded in the notes and no `long_reach` node. Section 7 ruling 2. |
 
 ## 2. Place identifications
 
@@ -58,6 +59,10 @@ superseded by a dated successor.
 - **From July 1660**: "my office" becomes the Navy Office, Seething Lane, kept
   as a node separate from the adjoining house. During Aug-Dec 1660 "the office"
   at Whitehall means the Privy Seal Office.
+- **30 March 1660**: Pepys does **not** board the *Naseby*. "my Lord and many
+  others went on board her" does not include him, so the day carries no
+  `naseby` edge even though the entry describes her new chimney. Section 7
+  ruling 6.
 - **23 March - 8 June 1660**: the voyage. Ships are nodes and Pepys lives
   aboard; per README principles 13-14 a ship is one location even while moving,
   and water travel is always `boat`. The
@@ -422,4 +427,29 @@ disembarking only. Nothing after 22 March is drafted yet.
   wherever she lies, so 23 March reads `tower_of_london -> swiftsure` by boat
   with Long Reach in the notes, and no `long_reach` node. That is the reading
   the voyage will be drafted on unless the team says otherwise.
+
+### Settled 28 October 2026 (section 7)
+
+All seven ship questions are now answered, so the voyage can be drafted:
+
+| | |
+|---|---|
+| `mode` for water travel | always `boat` (ruling 1, README 13-14) |
+| Node for a vessel | the vessel's name, no suffix (ruling 4) |
+| Anchorages | not nodes; the ship is the node where Pepys disembarks (ruling 2) |
+| Cabins, decks | not nodes (ruling 3) |
+| *Naseby* / *Royal Charles* | one node with a note; flag at the 23 May renaming (ruling 5) |
+| 30 March | Pepys does not board the *Naseby* (ruling 6) |
+| "the Ship tavern", 23 March | a tavern, not a vessel; Pepys did not go in (ruling 7) |
+
+### Still open
+
+- **Section 6 ruling 4** -- "the Swan tavern", 2 March. Stands as `swan_inn`.
+- **Section 6 ruling 12** -- whether `navy_office` and the house Pepys moves
+  into in July 1660 stay two nodes.
+- **README numbering** -- the principle list runs 1-11, 13, 14, 16, with no 12
+  and no 15. Both this file and `CLAUDE.md` cite principles by number.
+- **6 March and Mrs Jem** -- the day no longer records the visit to her, which
+  sits against section 6 ruling 2 placing her at `scott_house` through
+  15 March.
 
