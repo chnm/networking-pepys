@@ -13,8 +13,9 @@ __Principles for unique identifiers:__
 9. when referring to a person's home, include the honorific unless Pepys visits the family more generally (e.g. both Thomas and Elizabeth Stradwick so their location is stradwick_house)
 10. when referring to a palace or other sprawling complex, use the most precise location possible within it (e.g. Westminster, Whitehall, Tower of London, etc.)
 11. when referring to a semi-known location, it is acceptable to use higher-level labels (e.g. "city of London")
-12. ships are a single location, despite the fact that the ship itself moves, they are both a location and a mode of transportation
-13. when travelling by boat or coach, include the people who transport Pepys as companions only if they are explicitly named by Pepys (e.g. Mr White named as a waterman)
+13. named ships are a single location despite the fact that the ship itself moves, the mode of transportation is recorded as 'boat'
+14. named ships are a location when Pepys embarks or disembarks and nodes should be recorded as the name of the vessel (e.g. naseby), mode of transportation remains 'boat' if Pepys is travelling via water, not the name of the ship itself
+16. when travelling by boat or coach, include the people who transport Pepys as companions only if they are explicitly named by Pepys (e.g. Mr White named as a waterman)
 
 Project Team:
 Jessica Otis
