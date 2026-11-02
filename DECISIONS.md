@@ -570,3 +570,56 @@ it was reviewing:
 Not propagated, since extending an identification across dates is a
 curatorial judgement.
 
+---
+
+## 11. Flagged in the April 1660 draft
+
+10 edges over 4 days, 7 new places, 0 errors across 200 nodes and 799 edges.
+April is wholly New Style, the year having turned on 25 March.
+
+**26 of the 30 days carry no edges.** Pepys moves into the *Naseby* on the 2nd
+and, apart from visits to three other ships and one afternoon ashore at Deal,
+never leaves the ship he is on. The fleet sails from Long Reach to Lee roads on
+the 5th, past the Spitts on the 6th, the Nore and South Forelands on the 9th,
+and anchors at the Castles about Deal -- none of which is Pepys changing node,
+so none of it is an edge. **network4 read the same month independently and got
+9 edges over the same 4 days**, which is about as good a corroboration of the
+zero-edge days as the method allows.
+
+That makes the shipboard blindness raised in section 9 concrete: the voyage runs
+to 8 June, and on current conventions those weeks are nearly empty. The question
+is not whether the drafting is right -- it follows the rules -- but whether the
+rules should let the fleet's movement be recorded at all.
+
+1. **`london` collides with `city_of_london`.** README 14 gives a ship the
+   vessel's name with no suffix, which for the *London* (visited 24 April)
+   yields `london` -- which any reader will take for the city. network4 names
+   its vessels `london_ship`, `speaker_ship`, `assistance_ship`, and the
+   retracted October ruling proposed `naseby_ship` too. Drafted per the README
+   as it stands. **Two independent reasons to reconsider the no-suffix rule.**
+2. **3 April: an aborted landing, not modelled.** "my Lord went on shore, and
+   after him I and Capt. Sparling went in his boat, but the water being almost
+   at low water we could not stay for fear of not getting into our boat again.
+   So back again." Whether Pepys set foot ashore is unclear and no place is
+   named, so no edge was drafted. If it counts, it needs a node for an unnamed
+   shore.
+3. **`deal` as a shore node, 30 April.** "we took boat and first went on shore,
+   it being very pleasant in the fields; but a very pitiful town Deal is", then
+   Fuller's and Poole's. network4 goes straight from the boat to Fuller's. The
+   extra node is the one edge by which this draft exceeds theirs.
+4. **"the Captain", 24 April** -- "with the Captain on board our own ship" read
+   as Captain Cuttance, the *Naseby*'s own captain, named elsewhere in the
+   month.
+5. **The *Naseby* is renamed the *Royal Charles* on 23 May.** One node with a
+   note, per section 7 ruling 5. Flagging here so May's draft handles it
+   deliberately.
+6. **Everyone else moves and Pepys does not.** Shipley goes to Sheppy on the
+   7th, Stayner and others to Dover on the 18th, Burr ashore on the 19th,
+   Pickering and Balty away on the 9th. None generates an edge, since the
+   network records Pepys's movements. Worth confirming that is intended for the
+   voyage, where his people are often the ones travelling.
+7. **Within-ship places named and not modelled**, per section 7 ruling 3: the
+   Round-house (10th), the coach (10th and 21st), the great cabin below, the
+   half-deck table (20th), the Lieutenant's cabin, my Lord's storeroom of wine
+   (26th).
+

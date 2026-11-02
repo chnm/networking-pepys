@@ -5,6 +5,7 @@ network4,alehouse_holborn,Alehouse (unspecified),alehouse_unknown_4,manual
 network4,alehouse_westminster,Alehouse (unspecified),,manual
 network4,almshouse_saffron_walden,Old Almshouse,almshouse_saffron_walden,id-exact
 network4,angel_kings_street,The Angel Tavern,angel_tavern,manual
+network4,assistance_ship,The Assistance (ship),assistance,manual
 network4,audley_end_house,Audley End House,audley_end_house,id-exact
 network4,axe_tavern,The Axe,axe_brewhouse,manual
 network4,bedells_bookseller,Bedell's Bookseller,bedells_bookshop,manual
@@ -45,6 +46,7 @@ network4,falcon_cambridge,The Falcon Inn,falcon_inn_cambridge,id-folded
 network4,father_house_salisbury_court,John Pepys Sr.'s House (father's),john_pepys_house,manual
 network4,fox_kings_street,The Fox Tavern,fox_tavern,manual
 network4,french_ordinary,French Ordinary,french_ordinary,id-exact
+network4,fullers_ale_house_deal,Fuller's Ale House,fullers_alehouse_deal,manual
 network4,g_montagus_house,Mr. George Montagu's House,george_montagu_house,manual
 network4,golden_lion_charing_cross,Golden Lion Tavern,golden_lion_pub,manual
 network4,grays_inn,Gray's Inn,grays_inn,id-exact
@@ -64,6 +66,7 @@ network4,lady_wrights_house,My Lady Wright's House,wright_house,manual
 network4,leg_kings_street,The Leg Tavern,leg_tavern_king_st,manual
 network4,lincolns_inn,Lincoln's Inn,lincolns_inn,id-exact
 network4,lion_tavern_westminster,The Lion Tavern,red_lion_tavern,manual
+network4,london_ship,The London (ship),london,manual
 network4,lord_widdringtons,Lord Widdrington's,thomas_widdrington_house,id-folded
 network4,magdalene_college_cambridge,Magdalene College,magdalene_college_cambridge,id-exact
 network4,market_westminster,Market,,manual
@@ -107,6 +110,7 @@ network4,mrs_jems_lodgings,Mrs. Jem's Lodgings (Jemima and Anne Montagu),sandwic
 network4,mrs_johnsons,Mrs. Johnson's (my Lord's sempstress),mrs_johnson_house,id-folded
 network4,mrs_turner_house,Mrs. Jane Turner's House,turner_house,id-folded
 network4,my_lords_lodgings_whitehall,My Lord Montagu's Lodgings,sandwich_lodgings,manual
+network4,naseby,The Naseby / Royal Charles (ship),naseby,id-exact
 network4,navy_office,Navy Office,navy_office,id-exact
 network4,navy_treasury,Treasurer of the Navy's Office,navy_treasurer_office,manual
 network4,new_exchange,The New Exchange,new_exchange,manual
@@ -115,6 +119,7 @@ network4,parliament_house,Parliament House (House of Commons),,manual
 network4,paternoster_row,Paternoster Row (mercers' shops),paternoster_row,id-exact
 network4,playfords_shop,Playford's Music Shop,john_playford_shop,id-exact
 network4,plough_fleet_street,The Plough (hatter's),plough_fleet_street,id-exact
+network4,pooles_tavern_deal,Poole's Tavern,pooles_tavern_deal,id-exact
 network4,popes_head_alley,Pope's Head Alley (Adam Chard's shop),popes_head_alley,id-exact
 network4,popes_head_chancery_lane,Pope's Head Tavern,popes_head_tavern_chancery_lane,id-folded
 network4,priors_rhenish_wine_house,Prior's Rhenish Wine House,priors_rhenish_wine_house,id-exact
@@ -129,6 +134,7 @@ network4,scotts_house,Scott's House (Madam Scott's),scott_house,id-folded
 network4,sir_harry_wrights,Sir Harry Wright's House,wright_house,manual
 network4,sir_n_wheelers,Sir Nicholas Wheeler's,william_wheeler_house,manual
 network4,somerset_house_stairs,Somerset House Stairs,the_strand,manual
+network4,speaker_ship,The Speaker (ship),speaker,manual
 network4,st_brides_church,St Bride's Church (Mr. Herring's),st_brides_church,id-exact
 network4,st_clements,St Clement's (St Clement Danes),st_clements_church,manual
 network4,st_jamess_palace,St James's Palace,st_jamess_palace,id-exact
@@ -151,7 +157,7 @@ network4,thomas_pepys_house,Cousin Thomas Pepys's House,thomas_pepys_house,id-ex
 network4,three_tun_tavern_city,Three Tun Tavern,three_tuns_tavern,manual
 network4,three_tuns_cambridge,Three Tuns Tavern,three_tuns_tavern_cambridge,id-folded
 network4,tom_pepys_turner_shop,Cousin Tom Pepys the Turner's Shop,thomas_pepys_shop,manual
-network4,tony_robins,Tony Robins's,roberts_whitehall,manual: this draft merges Tony Robins's with Roberts at Whitehall; network4 keeps them apart
+network4,tony_robins,Tony Robins's,roberts_whitehall,manual
 network4,torrianos_house,Signor Torriano's House,mr_torriano_house,id-folded
 network4,tower_of_london,The Tower of London (barge stairs),tower_of_london,id-exact
 network4,uncle_wights_house,Uncle Wight's House,william_wight_house,manual
