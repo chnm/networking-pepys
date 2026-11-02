@@ -53,9 +53,11 @@ Stdlib only, except the two `.xlsx` scripts, which need `openpyxl`.
 - **Edge ids are contiguous**, in row order from `100001`. Inserting or removing
   a leg mid-month means renumbering everything after it, so never cite an id
   where the reference has to last — cite a date and a leg.
-- **Ships.** A named ship is one location however far she sails; the node is the
-  vessel's name (`naseby`), no suffix. Water travel is always `mode` = `boat`;
-  there is no `ship` mode. No cabin or deck nodes.
+- **Ships.** A named ship is one location however far she sails; the node is
+  `the_` plus the vessel's name — `the_naseby`, `the_london`. The prefix keeps
+  the ship *London* apart from `city_of_london`. Water travel is always
+  `mode` = `boat`; there is no `ship` mode. No cabin or deck nodes. (README
+  principle 14 still shows the older unprefixed form.)
 - **Companions** travel *with* Pepys; people met at the destination do not count.
 - **Never invent coordinates.** That field is the GRA's.
 - Full detail in `WORKFLOW.md`.

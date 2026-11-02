@@ -27,8 +27,8 @@ repeated here. This file records what those principles resolved to in practice.
 | **`latitude` / `longitude`** | Human-filled only. Claude leaves them blank rather than guessing. |
 | **`notes`** | Claude drafts these from the text (who lived there, how the place was identified, the entry that first mentions it). Factual and checkable; no speculation presented as fact. A genuine uncertainty is written with a question mark. |
 | **Unknown places** | `<type>_unknown_<n>` per README principle 4, numbered sequentially per type across the whole project (not restarted each month). |
-| **Ships** | A named ship is one location however far she sails, and the node is the vessel's name (`naseby`), with no suffix. Water travel always takes `mode` = `boat` -- never the ship's name, and there is no `ship` mode. A ship is a location when Pepys embarks or disembarks; while he is aboard and she sails he changes no node, so no edge arises. No cabin or deck nodes. README principles 13-14. |
-| **Anchorages** | Not nodes. An anchorage matters only where Pepys disembarks, and there the node is the ship, not the water she lies in. So 23 March reads `tower_of_london -> swiftsure` by boat, with Long Reach recorded in the notes and no `long_reach` node. Section 7 ruling 2. |
+| **Ships** | A named ship is one location however far she sails, and the node is `the_` plus the vessel's name: `the_swiftsure`, `the_naseby`, `the_london`, `the_speaker`, `the_assistance`. The prefix is what keeps the ship *London* apart from `city_of_london`. Water travel always takes `mode` = `boat` -- never the ship's name, and there is no `ship` mode. A ship is a location when Pepys embarks or disembarks; while he is aboard and she sails he changes no node, so no edge arises. No cabin or deck nodes. README principles 13-14, with the prefix settled 2 November 2026. |
+| **Anchorages** | Not nodes. An anchorage matters only where Pepys disembarks, and there the node is the ship, not the water she lies in. So 23 March reads `tower_of_london -> the_swiftsure` by boat, with Long Reach recorded in the notes and no `long_reach` node. Section 7 ruling 2. |
 
 ## 2. Place identifications
 
@@ -63,7 +63,7 @@ superseded by a dated successor.
   at Whitehall means the Privy Seal Office.
 - **30 March 1660**: Pepys does **not** board the *Naseby*. "my Lord and many
   others went on board her" does not include him, so the day carries no
-  `naseby` edge even though the entry describes her new chimney. Section 7
+  `the_naseby` edge even though the entry describes her new chimney. Section 7
   ruling 6.
 - **23 March - 8 June 1660**: the voyage. Ships are nodes and Pepys lives
   aboard; per README principles 13-14 a ship is one location even while moving,
@@ -437,7 +437,7 @@ All seven ship questions are now answered, so the voyage can be drafted:
 | | |
 |---|---|
 | `mode` for water travel | always `boat` (ruling 1, README 13-14) |
-| Node for a vessel | the vessel's name, no suffix (ruling 4) |
+| Node for a vessel | `the_` plus the vessel's name, e.g. `the_swiftsure` (settled 2 Nov 2026) |
 | Anchorages | not nodes; the ship is the node where Pepys disembarks (ruling 2) |
 | Cabins, decks | not nodes (ruling 3) |
 | *Naseby* / *Royal Charles* | one node with a note; flag at the 23 May renaming (ruling 5) |
@@ -509,7 +509,7 @@ look, because nothing in the current scheme can carry it.
     `tavern_unknown_1` ("a tavern over against Mr. Pierce's", 21 March). The
     Drury Lane alehouse is a separate occasion from `alehouse_unknown_9` on
     3 March, per section 5 ruling 6; network4 reuses one node for both.
-11. **April must open aboard.** 23 March ends on the `swiftsure` and no later
+11. **April must open aboard.** 23 March ends on `the_swiftsure` and no later
     March day moves, so whatever is drafted next has to depart from her.
 
 ---
@@ -622,4 +622,31 @@ rules should let the fleet's movement be recorded at all.
    Round-house (10th), the coach (10th and 21st), the great cabin below, the
    half-deck table (20th), the Lieutenant's cabin, my Lord's storeroom of wine
    (26th).
+
+---
+
+## 12. Ship nodes take a `the_` prefix (2 November 2026)
+
+Every ship node is now `the_` plus the vessel's name:
+
+| was | now |
+|---|---|
+| `swiftsure` | `the_swiftsure` |
+| `naseby` | `the_naseby` |
+| `london` | `the_london` |
+| `speaker` | `the_speaker` |
+| `assistance` | `the_assistance` |
+
+15 edge references and 5 crosswalk rows followed. This settles section 11
+flag 1: `the_london` can no longer be mistaken for `city_of_london`, which was
+the only real objection to the bare names.
+
+**README principle 14 still reads "nodes should be recorded as the name of the
+vessel (e.g. naseby)"**, which now describes the superseded form. Worth editing
+so the README and the data agree -- this file and `CLAUDE.md` have been brought
+into line, but the README is the document the principles are cited from.
+
+Note also that the prefix is not a reliable marker of a ship: `the_sun_tavern`,
+`the_half_moon_alehouse`, `the_swan_pub` and `the_temple` all carry it and none
+is a vessel. A ship is identified by its node row, not by its id.
 
