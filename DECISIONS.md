@@ -42,6 +42,8 @@ superseded by a dated successor.
 | "Mrs. Jem", "my Lord's lodgings" | `sandwich_lodgings` | Jan 1659/60 | Jemima Montagu lodged at the Earl of Sandwich's Whitehall lodgings |
 | "Mrs. Jem", "Mrs. Ann" | `scott_house` | Feb 1659/60 | Mrs Jem lodges at the Scotts' through February (section 4 ruling 1). Mrs Ann lodges with her: 4 Feb puts both at Scott's, and 6 Feb has them in the same chamber |
 | "my Lord's lodgings" *in so many words* | `sandwich_lodgings` | from 1 Jan 1659/60 | Only where the diary names my Lord's lodgings, not where it names Mrs Jem -- 1 Feb does both, and they are two places |
+| "my Lord's", "my Lord" | `john_crews_house` | 17-21 Mar 1659/60 | My Lord was staying at Mr Crew's over those days (section 10) |
+| "my Lord's lodging at the gate" | `sandwich_lodgings` | 22-23 Mar 1659/60 | Back in his own Whitehall lodgings for the departure |
 | "my father's" | `john_pepys_house` | from 1 Jan 1659/60 | John Pepys Sr., tailor, Salisbury Court |
 | "Mr. Calthrop's", "the Temple" | `lestrange_calthorpe_chamber` | from 2 Jan 1659/60 | Chancery Lane, Temple district |
 | "Will's" | `wills_alehouse` | from 2 Jan 1659/60 | Old Palace Yard |
@@ -509,4 +511,62 @@ look, because nothing in the current scheme can carry it.
     3 March, per section 5 ruling 6; network4 reuses one node for both.
 11. **April must open aboard.** 23 March ends on the `swiftsure` and no later
     March day moves, so whatever is drafted next has to depart from her.
+
+---
+
+## 10. From the 16-23 March review, 2 November 2026
+
+### Applied
+
+- **"my Lord's" is now dated within March.** The review moved 17-21 March from
+  `sandwich_lodgings` to `john_crews_house`, leaving 22 March ("my Lord's
+  lodging **at the gate**") and 23 March at `sandwich_lodgings`. That reads as
+  my Lord staying at Mr Crew's until about the 21st and back in his own
+  Whitehall lodgings for the departure, which refines section 6 ruling 1 rather
+  than reversing it. Section 2 records the dates.
+- **Three node renames completed.** `crisp_house` ->
+  `crisp_house_axe_yard`, `jervas_barber` -> `richard_jervas_barber`,
+  `blagrave_house` -> `thomas_blagrave_house`. Each was renamed on some edges
+  and not others, which would have left two ids for one house.
+- **"Tony Robins's" is a separate house after all.** The review renamed only
+  the 19 March references, leaving 13 March's `roberts_whitehall` alone, so
+  `anthony_robins_whitehall` is now its own node -- which is how network4 reads
+  it, and what section 9 flag 4 asked.
+- **One companion spelling normalised**: "Edward Sheply" (1) to "Edward
+  Shipley" (7), which is the spelling in `sandwich_lodgings`'s own note.
+
+### Seven companion near-misses for the team
+
+`validate.py` now compares companion names pairwise and reports close ones,
+because folding by case and plural missed "Edward Sheply" beside "Edward
+Shipley". It ignores a differing honorific, since "Mr Sheply" and "Mrs Sheply"
+are two people. That turned up seven pairs already in the data, none of them
+touched:
+
+| | likely |
+|---|---|
+| `Jemima Montagu` / `Jemimah Montagu` | one person, two spellings |
+| `John Hawley` / `John Hawly` | one person |
+| `Mr Hawley` / `Mr Hawly` | one person, same man as above |
+| `Matthew Lock` / `Matthew Locke` | one person |
+| `Mr Shepley` / `Mr Sheply` | one person |
+| `William Simons` / `William Symons` | one person |
+| `William Howe` / `William Howell` | **probably two different people** |
+
+Choosing the canonical spelling for each is the team's call, as is whether the
+bare `Mr Hawly` / `Mr Shepley` forms should become the full names used
+elsewhere.
+
+### Two identifications made for one day only
+
+The review named people the draft had left as honorifics, but only on the day
+it was reviewing:
+
+- **"Mr Thomas" (7 edges) / "Thomas Crew" (2)** -- named on 23 March as John
+  Crew's son. If that holds for 1, 2 and 7 March too, the other five should
+  follow.
+- **"Mr Woodfine" (2) / "Thomas Woodfine" (1)** -- named on 18 March.
+
+Not propagated, since extending an identification across dates is a
+curatorial judgement.
 

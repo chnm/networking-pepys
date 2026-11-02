@@ -276,6 +276,28 @@ def check_people(edges):
             warn("companion spelled %d ways: %s"
                  % (len(spellings), " | ".join(sorted(spellings))))
 
+    # Folding by case and plural misses a genuine misspelling of the same
+    # person ("Edward Sheply" beside "Edward Shipley"), which is the likelier
+    # error once a few hundred names have accumulated. Compare the distinct
+    # names pairwise and report close ones.
+    names = sorted({p for s in by_norm.values() for p in s})
+    for i, a in enumerate(names):
+        for b in names[i + 1:]:
+            if norm(a) == norm(b):
+                continue                      # already reported above
+            TITLES = ("mr", "mrs", "miss", "dr", "sir", "lady", "captain",
+                      "lieutenant", "colonel", "major")
+            def title(x):
+                head = x.lower().split()[0].rstrip(".")
+                return head if head in TITLES else ""
+            # "Mr Sheply" and "Mrs Sheply" are two people, not one spelling, so
+            # a differing honorific is not a near miss.
+            if title(a) != title(b):
+                continue
+            if difflib.SequenceMatcher(None, a.lower(), b.lower()).ratio() >= 0.88:
+                warn("companions %r and %r are nearly the same -- one person "
+                     "or two?" % (a, b))
+
 
 def check_crosswalk(node_ids):
     """The first-gen crosswalk stores curated ids, so a node rename can leave it
