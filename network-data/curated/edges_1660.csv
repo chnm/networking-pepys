@@ -793,8 +793,8 @@ id,source,target,year,month,day,mode,companions,notes
 100792,the_london,the_naseby,1660,4,24,boat,Captain Cuttance,"""After that, with the Captain on board our own ship"" - the Naseby's own captain"
 100793,the_naseby,the_speaker,1660,4,25,boat,,"""Dined to-day with Captain Clerke on board the Speaker"""
 100794,the_speaker,the_naseby,1660,4,25,boat,,"""After dinner home"""
-100795,the_naseby,deal,1660,4,30,boat,William Howe; Edward Shipley,"""got my Lord's leave to go to see Captain Sparling. So we took boat and first went on shore"""
-100796,deal,fullers_alehouse_deal,1660,4,30,walk,William Howe; Edward Shipley,
+100795,the_naseby,deal_kent,1660,4,30,boat,William Howe; Edward Shipley,"""got my Lord's leave to go to see Captain Sparling. So we took boat and first went on shore"""
+100796,deal_kent,fullers_alehouse_deal,1660,4,30,walk,William Howe; Edward Shipley,
 100797,fullers_alehouse_deal,pooles_tavern_deal,1660,4,30,walk,William Howe; Edward Shipley,
 100798,pooles_tavern_deal,the_assistance,1660,4,30,boat,William Howe; Edward Shipley,"""so to boat again, and went to the Assistance"""
 100799,the_assistance,the_naseby,1660,4,30,boat,William Howe; Edward Shipley,"""After that on board the Nazeby, where we found my Lord at supper"""
