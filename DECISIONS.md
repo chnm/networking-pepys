@@ -641,12 +641,158 @@ Every ship node is now `the_` plus the vessel's name:
 flag 1: `the_london` can no longer be mistaken for `city_of_london`, which was
 the only real objection to the bare names.
 
-**README principle 14 still reads "nodes should be recorded as the name of the
-vessel (e.g. naseby)"**, which now describes the superseded form. Worth editing
-so the README and the data agree -- this file and `CLAUDE.md` have been brought
-into line, but the README is the document the principles are cited from.
+README principle 14 now reads "e.g. the_naseby", so the README, this file and
+`CLAUDE.md` agree.
 
 Note also that the prefix is not a reliable marker of a ship: `the_sun_tavern`,
 `the_half_moon_alehouse`, `the_swan_pub` and `the_temple` all carry it and none
 is a vessel. A ship is identified by its node row, not by its id.
 
+
+## 13. Flagged in the May 1660 draft
+
+67 edges over 11 days, 33 new nodes, 0 errors. May is the largest chunk so far
+by a wide margin — the fleet lies off Scheveling for a fortnight, Pepys goes
+ashore in Holland five times, and the King is carried to Dover. The
+cross-check against network4 is unusually close: 63 edges over the same 11
+days, and every remaining difference is either my draft being finer-grained or
+one over-identification on their side (flag 6).
+
+### 1. Three ships the diary will not name
+
+On 3 May Pepys visits most of the fleet. Two vessels are named outright, so
+`the_plymouth` and `the_essex` are safe. The rest are not:
+
+- Sir Richard Stayner's ship, where the commanders dined — "took all the
+  Commanders and myself on board him to dinner". Drafted as `ship_unknown_1`.
+- "After dinner, to the rest of the ships ... quite through the fleet." Visits
+  to an unnamed and uncountable number of vessels. I have drafted **only** the
+  Assistance, which the entry does name ("staid at the Assistance to hear the
+  harper a good while"), and dropped the rest. The day is therefore an
+  undercount by construction.
+
+On 22 May the same ship recurs: "the Dukes and my Lord to see the Vice and
+Rear-Admirals; and I in a boat after them." The Vice-Admiral's ship is
+identifiable as the London from 24 April ("we were on board the London, which
+hath a state-room much bigger than the Nazeby"). The Rear-Admiral's is not
+named anywhere, so it is `ship_unknown_1` again, on the reading that Stayner
+is the Rear-Admiral. **If that reading is wrong, both 3 May and 22 May are
+wrong together**, which is the risk of folding them into one node.
+
+The alternative is a separate `ship_unknown_n` per occasion, which loses the
+(probable) identity. I have taken identity over caution and flagged it here.
+
+### 2. Five nights ashore in Holland
+
+14-19 May is the first sustained run of nights off the ship since Pepys
+embarked. He sleeps ashore on the 14th, 17th, 18th and 19th, and the entries
+call the place only "our lodging" — "the Judge and I to another house ... he
+and I lay in one press bed" (14th), "After that to our lodging where W. Howe
+and I exceeding troubled" (18th). I have drafted one node,
+`lodging_unknown_1`, for all four nights.
+
+The 14th and the 17th-19th are separated by two nights aboard (the 15th and
+16th), so treating them as the same lodging is an inference, not a statement.
+It is a reasonable one — "our lodging" on the 18th implies a standing
+arrangement — but if the GRA prefers it split, the second stay needs
+`lodging_unknown_2` and the continuity on 17 and 20 May re-pointed.
+
+### 3. Ten unnamed places of new types
+
+May needs more `_unknown_` nodes than every previous month put together,
+because Pepys records Dutch places by what they were rather than what they
+were called: `eating_house_unknown_1`, `bookshop_unknown_1`,
+`tavern_unknown_2` (Scheveling, "a house of entertainment"),
+`tavern_unknown_3` (the Hague, flag 4), `house_unknown_1` (the shell-work
+woman's), `picture_shop_unknown_1`, `barber_unknown_1`,
+`drinking_house_unknown_1` (Lausdune), `dutch_house_unknown_1`, and
+`cliff_unknown_1` (flag 5).
+
+Two notes on what I did **not** create. On 19 May "out to buy some linen to
+wear against to-morrow, and so to the barber's" gives the barber a place but
+the linen shop none, so there is no linen-shop node and no edge for it. On 20
+May "I went to lie down in a chamber in the house" at Scheveling is folded
+into `scheveling` rather than given a chamber node, per the no-cabin-or-deck
+rule read across to rooms generally.
+
+### 4. "the Dr.'s" on 17 May
+
+"going to see the Queen of Bohemia, I met with Dr. Fullers whom I sent to a
+tavern with Mr. Edw. Pickering, while I and the rest went to see the Queen ...
+After that to the Dr.'s, where we drank a while or so."
+
+I have read "the Dr.'s" as the tavern he had just sent Dr Fuller to, and so
+drafted one node (`tavern_unknown_3`) reached once. It could instead be Dr
+Fuller's own lodging, or Dr Cade's — Cade appears in the next sentence
+supplying the coach. If it is a lodging rather than the tavern, the node's
+type and name are wrong, though the edge count does not change.
+
+### 5. The cliff on 29 May is not Dover
+
+network4 calls it `dover_cliff`. The entry never mentions Dover, and three
+details point north of it: the barge lay at Deal and Deal is passed on the way
+back ("From thence toward the barge again, and in our way found the people at
+Deal"), the fleet is visible from the top, and the cliff measures "not above
+thirty-five yards high" — about a third of the Dover cliffs. I have drafted
+`cliff_unknown_1`, located "Between Deal and the South Foreland". The landing
+place itself is unnamed and I have taken it as Deal, which is the other half of
+this flag.
+
+### 6. The 22 May Rear-Admiral's ship: a disagreement with network4
+
+network4 identifies it as `the_speaker`. The diary rules this out: on 25 April
+"Dined to-day with Captain Clerke on board the Speaker (a very brave ship)
+where was the Vice-Admiral, Rear-Admiral, and many other commanders" — both
+admirals are *guests* aboard Captain Clerke's ship. I have not followed
+network4 here.
+
+### 7. The boat that never landed, 22 May
+
+"they made to the shore in the Dutch boat that brought them, and I got into
+the boat with them ... When we came near the shore, my Lord left them and came
+into his own boat, and General Pen and I with him." Pepys gets into a boat,
+travels towards the shore, and returns without touching land. Per the April
+ruling on the aborted landing there is no edge, and a note on the
+`ship_unknown_1` -> `the_naseby` leg records it. This is the second instance;
+if the rule is to hold, it is worth promoting from a per-chunk note to section
+1.
+
+### 8. Two ships renamed on 23 May
+
+"the King and Duke altered the name of some of the ships, viz. the Nazeby into
+Charles; the Richard, James; the Speakers Mary" — and six more. Per section 7
+ruling 5 each stays one node with a note, so `the_naseby` and `the_speaker`
+both now carry their new names in `notes`. Note the diary says **Charles**, not
+*Royal Charles*; she is renamed again later, which this ruling will have to
+absorb a second time.
+
+Pepys himself does not move on the 23rd — "My Lord, Mr. Crew, and others, go
+on shore to meet the King", not Pepys — so the day has no edges despite being
+the most eventful of the month.
+
+### 9. Twenty days with no movement at all
+
+1, 2, 4, 5, 7-13, 16, 21, 23, 24, 26-28, 30 and 31 May produce nothing. That
+is 20 of 31 days, and it continues the problem raised in sections 9 and 11
+rather than being new: the conventions make the voyage itself invisible. The
+fleet crosses from the Downs to Holland and back with the King aboard, and
+because a named ship is one location however far she sails, none of it is an
+edge. May at least has the Holland excursions to record; March 24-31 produced
+zero edges and April ten.
+
+**This is still the open question, and it is now three chunks old.** It is not
+a drafting problem — it is whether the rules should permit fleet movement to be
+recorded at all. June ends the voyage on the 8th, so if the answer is yes, June
+is the last chunk where it matters for 1660.
+
+### 10. Still open from earlier chunks
+
+- The README's principle numbering runs 1-11, 13, 14, 16. There is no 12 and
+  no 15, and both this file and `CLAUDE.md` cite principles by number.
+- "the Swan tavern", 2 March (section 6 flag 4).
+- Whether `navy_office` and the July 1660 house stay two nodes (section 6
+  flag 12).
+- Whether the "Mr Thomas"/"Thomas Crew" and "Mr Woodfine"/"Thomas Woodfine"
+  identifications propagate back to earlier dates.
+- 6 March no longer records the Mrs Jem visit, which conflicts with the
+  section 6 ruling 2.

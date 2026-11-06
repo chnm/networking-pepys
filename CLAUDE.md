@@ -56,8 +56,7 @@ Stdlib only, except the two `.xlsx` scripts, which need `openpyxl`.
 - **Ships.** A named ship is one location however far she sails; the node is
   `the_` plus the vessel's name — `the_naseby`, `the_london`. The prefix keeps
   the ship *London* apart from `city_of_london`. Water travel is always
-  `mode` = `boat`; there is no `ship` mode. No cabin or deck nodes. (README
-  principle 14 still shows the older unprefixed form.)
+  `mode` = `boat`; there is no `ship` mode. No cabin or deck nodes.
 - **Companions** travel *with* Pepys; people met at the destination do not count.
 - **Never invent coordinates.** That field is the GRA's.
 - Full detail in `WORKFLOW.md`.

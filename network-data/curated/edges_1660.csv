@@ -798,3 +798,70 @@ id,source,target,year,month,day,mode,companions,notes
 100797,fullers_alehouse_deal,pooles_tavern_deal,1660,4,30,walk,William Howe; Edward Shipley,
 100798,pooles_tavern_deal,the_assistance,1660,4,30,boat,William Howe; Edward Shipley,"""so to boat again, and went to the Assistance"""
 100799,the_assistance,the_naseby,1660,4,30,boat,William Howe; Edward Shipley,"""After that on board the Nazeby, where we found my Lord at supper"""
+100800,the_naseby,ship_unknown_1,1660,5,3,boat,,"""Sir R. Stayner ... took all the Commanders and myself on board him to dinner"""
+100801,ship_unknown_1,the_plymouth,1660,5,3,boat,Captain Hayward,"""which not being ready, I went with Captain Hayward to the Plimouth and Essex"""
+100802,the_plymouth,the_essex,1660,5,3,boat,Captain Hayward,
+100803,the_essex,ship_unknown_1,1660,5,3,boat,,"""and did what I had to do there and returned, where very merry at dinner"""
+100804,ship_unknown_1,the_assistance,1660,5,3,boat,,"""After dinner, to the rest of the ships (staid at the Assistance to hear the harper a good while) quite through the fleet"" - the rest of the fleet is not named ship by ship. FLAG"
+100805,the_assistance,the_london,1660,5,3,boat,,"""In the evening as I was going on board the Vice-Admiral"""
+100806,the_london,the_naseby,1660,5,3,boat,,"""I returned to the Nazeby"""
+100807,the_naseby,the_assistance,1660,5,6,boat,,"""my Lord writ a letter to the King and give it to me to carry privately to Sir William Compton on board the Assistance"""
+100808,the_assistance,the_naseby,1660,5,6,boat,,"""Back again and found them at sermon"""
+100809,the_naseby,scheveling,1660,5,14,boat,Mr North; Dr Clerke; Eliezer; Judge Advocate Fowler,"""we were sadly washed when we came near the shore, it being very hard to land there"""
+100810,scheveling,the_hague,1660,5,14,coach,John Creed; Eliezer; Judge Advocate Fowler,"""Mr. Creed and I went in the fore part of a coach wherein were two very pretty ladies"""
+100811,the_hague,prince_of_orange_court_the_hague,1660,5,14,walk,,
+100812,prince_of_orange_court_the_hague,eating_house_unknown_1,1660,5,14,walk,,
+100813,eating_house_unknown_1,lodging_unknown_1,1660,5,14,walk,Judge Advocate Fowler,"""the Judge and I to another house, leaving them there, and he and I lay in one press bed"""
+100814,lodging_unknown_1,grande_salle_the_hague,1660,5,15,walk,Judge Advocate Fowler,
+100815,grande_salle_the_hague,bookshop_unknown_1,1660,5,15,walk,Judge Advocate Fowler,
+100816,bookshop_unknown_1,scheveling,1660,5,15,coach,Judge Advocate Fowler; Eliezer,"""the judge, I and my boy by coach to Scheveling again"""
+100817,scheveling,tavern_unknown_2,1660,5,15,walk,Judge Advocate Fowler; Eliezer,"""we saw two boats overset and the gallants forced to be pulled on shore by the heels"""
+100818,tavern_unknown_2,the_naseby,1660,5,15,boat,,"""I hired a Dutch boat for four rixdollars to carry us on board"""
+100819,the_naseby,scheveling,1660,5,17,boat,Edward Pickering; William Howe; Mr Pim; Edward Montagu the younger,
+100820,scheveling,the_hague,1660,5,17,coach,Edward Pickering; William Howe; Mr Pim; Edward Montagu the younger,"""where we took coach, and so to the Hague"""
+100821,the_hague,french_house_the_hague,1660,5,17,walk,Edward Pickering; William Howe; Mr Pim; Edward Montagu the younger,
+100822,french_house_the_hague,kings_lodging_the_hague,1660,5,17,walk,Edward Montagu the younger; Captain Whittington; Dr Cade,"""they two after dinner got the child and me (the others not being able to crowd in) to see the King, who kissed the child very affectionately"""
+100823,kings_lodging_the_hague,lord_chancellor_lodging_the_hague,1660,5,17,walk,Edward Montagu the younger,
+100824,lord_chancellor_lodging_the_hague,queen_of_bohemia_court_the_hague,1660,5,17,walk,,
+100825,queen_of_bohemia_court_the_hague,tavern_unknown_3,1660,5,17,walk,,"""After that to the Dr.'s, where we drank a while or so"""
+100826,tavern_unknown_3,princess_dowagers_house,1660,5,17,coach,Dr Cade; William Howe,"""In a coach of a friend's of Dr. Cade we went to see a house of the Princess Dowager's"""
+100827,princess_dowagers_house,voorhout_the_hague,1660,5,17,coach,William Howe,"""back to the Hague and took a tour or two about the Forehault"""
+100828,voorhout_the_hague,scheveling,1660,5,17,wagon,William Howe,"""taking leave of the Doctor, we took wagon to Scheveling, where we had a fray with the Boatswain of the Richmond"""
+100829,scheveling,the_hague,1660,5,17,wagon,William Howe,"""it was so late we durst not go. So we returned between 10 and 11 at night in the dark with a wagon with one horse to the Hague"""
+100830,the_hague,lodging_unknown_1,1660,5,17,walk,William Howe,"""we went to bed as well as we could be accommodated"""
+100831,lodging_unknown_1,scheveling,1660,5,18,wagon,Edward Pickering,"""hearing that the Duke of York, our Lord High Admiral, would go on board to-day, Mr. Pickering and I took waggon for Scheveling"""
+100832,scheveling,the_hague,1660,5,18,wagon,Edward Pickering,"""the wind being very high that no boats could get off from shore, we returned to the Hague"""
+100833,the_hague,delft,1660,5,18,boat,Edward Pickering; Mr Ibbott,"""we all and Mr. Ibbott, the Minister, took a schuit"" - a trekschuit along the canal"
+100834,delft,old_church_delft,1660,5,18,walk,Edward Pickering; Mr Ibbott,"""we got a smith's boy of the town to go along with us, but could speak nothing but Dutch"""
+100835,old_church_delft,great_church_delft,1660,5,18,walk,Edward Pickering; Mr Ibbott,
+100836,great_church_delft,guesthouse_delft,1660,5,18,walk,Edward Pickering; Mr Ibbott,
+100837,guesthouse_delft,english_house_delft,1660,5,18,walk,Edward Pickering; Mr Ibbott,
+100838,english_house_delft,the_hague,1660,5,18,boat,Edward Pickering; Mr Ibbott,"""Back by water, where a pretty sober Dutch lass sat reading all the way"""
+100839,the_hague,princess_dowagers_house,1660,5,18,coach,Commissioner Pett; Mr Ackworth; Mr Dawes,"""They having a coach I left the Parson and my boy and went along with Commissioner Pett ... to the Princess Dowager's house again"""
+100840,princess_dowagers_house,the_hague,1660,5,18,coach,,"""Back to the Hague, where not finding Mr. Edward, I was much troubled"""
+100841,the_hague,commissioner_petts_lodging_the_hague,1660,5,18,walk,Mr Ibbott,
+100842,commissioner_petts_lodging_the_hague,lodging_unknown_1,1660,5,18,walk,,"""After that to our lodging where W. Howe and I exceeding troubled not to know what is become of our young gentleman"""
+100843,lodging_unknown_1,scheveling,1660,5,19,wagon,,"""went to Scheveling, where I found no getting on board"""
+100844,scheveling,house_unknown_1,1660,5,19,wagon,Mr Pinkney; sons of Mr Pinkney,"""in our way lighting and going to see a woman that makes pretty rock-work in shells"""
+100845,house_unknown_1,the_hague,1660,5,19,wagon,Mr Pinkney; sons of Mr Pinkney,
+100846,the_hague,picture_shop_unknown_1,1660,5,19,walk,Mr Pinkney; sons of Mr Pinkney,"""a great wager laid by young Pinkney and me whether it was a principal or a copy"""
+100847,picture_shop_unknown_1,lodging_unknown_1,1660,5,19,walk,,"""To our lodging to dinner"""
+100848,lodging_unknown_1,barber_unknown_1,1660,5,19,walk,,
+100849,barber_unknown_1,lausdune,1660,5,19,wagon,Edward Montagu the younger; Mr Ibbott; William Howe; Mr Pinkney,"""by waggon to Lausdune, where the 365 children were born"""
+100850,lausdune,drinking_house_unknown_1,1660,5,19,walk,Edward Montagu the younger; Mr Ibbott; William Howe; Mr Pinkney,
+100851,drinking_house_unknown_1,the_hague,1660,5,19,wagon,Edward Montagu the younger; Mr Ibbott; William Howe; Mr Pinkney,"""From thence to the Hague again playing at crambo in the waggon"""
+100852,the_hague,dutch_house_unknown_1,1660,5,19,walk,Charles Anderson; Mr Wright,
+100853,dutch_house_unknown_1,lodging_unknown_1,1660,5,19,walk,,"""Going to my lodging we met with the bellman"""
+100854,lodging_unknown_1,scheveling,1660,5,20,wagon,Edward Pickering; Edward Montagu the younger,"""with Mr. Pickering and the child by waggon to Scheveling, where it not being yet fit to go off"""
+100855,scheveling,church_scheveling,1660,5,20,walk,,
+100856,church_scheveling,scheveling,1660,5,20,walk,,"""Commissioner Pett at last came to our lodging, and caused the boats to go off"""
+100857,scheveling,the_naseby,1660,5,20,boat,Commissioner Pett,"""through badness of weather we were in great danger, and a great while before we could get to the ship"""
+100858,the_naseby,the_london,1660,5,22,boat,,"""the Dukes and my Lord to see the Vice and Rear-Admirals; and I in a boat after them"""
+100859,the_london,ship_unknown_1,1660,5,22,boat,,the Rear-Admiral's ship
+100860,ship_unknown_1,the_naseby,1660,5,22,boat,,"""they made to the shore in the Dutch boat ... When we came near the shore, my Lord left them and came into his own boat"" - the boat went towards the shore but no one landed, so no edge for it"
+100861,the_naseby,dover,1660,5,25,boat,Mr Mansell; one of the King's footmen,"""I went, and Mr. Mansell, and one of the King's footmen, with a dog that the King loved ... in a boat by ourselves, and so got on shore when the King did"""
+100862,dover,the_naseby,1660,5,25,boat,,"""I got into a boat, and so into his barge ... we back to the ship"""
+100863,the_naseby,deal_kent,1660,5,29,boat,Edward Montagu; Edward Montagu the younger; Mr Hetley,"""abroad to shore with my Lord"" - the landing place is not named, taken as Deal, where the fleet lay. FLAG"
+100864,deal_kent,cliff_unknown_1,1660,5,29,horse,Edward Montagu; Edward Montagu the younger; Mr Hetley,"""On shore we took horses ... At last we came upon a very high cliff by the sea-side, and rode under it"""
+100865,cliff_unknown_1,deal_kent,1660,5,29,horse,Edward Montagu; Edward Montagu the younger; Mr Hetley,"""in our way found the people at Deal going to make a bonfire for joy of the day"""
+100866,deal_kent,the_naseby,1660,5,29,boat,Edward Montagu; Edward Montagu the younger; Mr Hetley,"""Being returned on board"""
