@@ -9,7 +9,7 @@ john_crews_house,Mr Crews House,Lincoln's Inn Fields?,,,John Crew
 office_exchequer,Office Exchequer,Westminster Palace,51.500305,-0.124485,"Palace of Westminster, east side of New Palace Yard"
 westminster_hall,Westminster Hall,Westminster Palace,51.500047,-0.125216,Palace of Westminster
 the_new_market,The New Market,,,,
-fleet_street,Fleet Street,,,,
+fleet_street,Fleet Street,"Temple Bar, London",51.514216,-0.10878,
 wills_alehouse,Wills Ale House,Westminster Palace,,,Old Palace Yard
 whitehall_palace,Whitehall Palace,Whitehall Palace,51.504444,-0.125556,
 swan_inn,Swan Inn,Westminster Palace,,,New Palace Yard
@@ -39,12 +39,12 @@ kate_petit_house,Kate Petit House,,,,
 market_unknown_1,Market Unknown,London,,,
 alehouse_unknown_3,Alehouse Unknown,London,,,
 salisbury_court,Salisbury Court,Blackfriars,51.513824,-0.106214,Between Fleet Street and Dorset Stairs on the Thames
-parish_clerks_hall,Parish Clerks Hall,,,,
+parish_clerks_hall,Parish Clerks Hall,,51.510739,-0.093341,"Brode Lane, Upper Thames"
 green_dragon_pub,Green Dragon Pub,Lambeth Hill,,,"Lambeth Hill, Upper Thames Street"
 golden_lion_pub,Golden Lion Pub,Charing Cross,,,
-twickenham,Twickenham,Twickenham,,,
+twickenham,Twickenham,Twickenham,51.44464,-0.335252,"Borough of Richmond, southwest London"
 william_fuller_lodging,William Fuller Lodging,,,,
-brentford,Brentford,Brentford,,,
+brentford,Brentford,Middlesex,51.486131,-0.31012,
 wilkinsons_cookshop,Wilkinson's Cookshop,"King Street, Westminster",,,"Between Sea Alley and Axe Yard, kept by William Wilkinson"
 harp_and_ball_tavern,Harp And Ball Tavern,Charing Cross,,,
 french_ordinary,French Ordinary,,,,
@@ -66,7 +66,7 @@ st_pauls_churchyard,St Pauls Churchyard,St. Paul's Churchyard,51.514344,-0.09777
 william_jessop_lodging,William Jessop Lodging,,,,
 crown_pub,Crown Pub,"New Palace Yard, Westminster",,,
 george_montagu_house,George Montagu House,,,,
-royal_exchange,Royal Exchange,,,,
+royal_exchange,Royal Exchange,"Cornhill Lane, City of London",51.513667,-0.087141,Near Leadenhall Market
 heaven_alehouse,Heaven Alehouse,"Old Palace Yard, Westminster",,,Adjacent to Westminster Hall
 st_clements_church,St Clement Danes Church,"Westminster, London",51.513107,-0.113898,
 wright_house,Wright House,,,,"Henry and Anne Wright, Anne sister of Jemima Montagu, wife of Sir Henry Wright"
@@ -81,7 +81,7 @@ edward_calthrop_grocer,Edward Calthrop Grocer,London Bridge,,,"Mr Calthrop, a gr
 bridge_tavern,Bridge Tavern,London Bridge,,,
 the_strand,The Strand,Westminster,,,"Landing place, ""over against Somerset House"", 2 Feb 1659/60"
 mrs_johnson_house,Mrs Johnson House,The Strand,,,"Mrs Johnson, the Earl of Sandwich's seamstress"
-st_james_park,St James's Park,Westminster,,,
+st_james_park,St James's Park,"Westminster, London",51.503159,-0.133719,"East of Buckingham Palace, west of Whitehall"
 guard_chamber_whitehall,Guard Chamber Whitehall,Whitehall Palace,,,
 priors_rhenish_wine_house,Priors Rhenish Wine House,Westminster,,,"Cannon Row, Westminster, at the end of passage leading from King Street. ""Priors, the Rhenish wine-house"" 3 Feb; ""a Rhenish wine house"" 8 Feb 1659/60"
 palace_yard_westminster,Palace Yard Westminster,Westminster Palace,,,The entry does not say whether New or Old Palace Yard
@@ -107,16 +107,16 @@ commons_lobby,House of Commons Lobby,Westminster Palace,,,
 cookshop_unknown_2,Cookshop Unknown,Temple Bar,,,"""within Temple Bar, we found a pullet ready roasted"" 11 Feb 1659/60"
 rolls_office_chancery,The Rolls Office,Chancery Lane,,,Rolls Office and Chapel
 james_chetwind_office,James Chetwind Office,Chancery Lane,,,
-guildhall,Guildhall,City of London,,,
-three_tuns_tavern,Three Tuns Tavern,Guildhall Yard,,,"""the 3 Tun tavern"", near Guildhall"
+guildhall,Guildhall,City of London,51.515419,-0.091478,
+three_tuns_tavern,Three Tuns Tavern,Guildhall Yard,51.51555,-0.09253,By the gate of Guildhall Yard
 alehouse_unknown_5,Alehouse Unknown,City of London,,,"Unnamed alehouse near Guildhall, 11 Feb 1659/60"
 merchant_house_unknown_1,Merchant House Unknown,City of London,,,"""a merchant's house hard by"" Guildhall, 11 Feb 1659/60; Sir Nicholas Crisp was there"
 moorfields,Moorfields,City of London,51.519038,-0.086882,"Near the Moorgate, divided into three areas Moorfields proper, Middle and Upper, near Bethlem Hospital Moorfields"
 john_playford_shop,John Playford Shop,,,,"John Playford, music seller"
 richard_cumberland_lodgings,Richard Cumberland Lodgings,,,,"Richard Cumberland, ""newly come out of the country from his living"" 5 Feb 1659/60"
 michael_hering_house,Michael Hering House,City of London,,,"Possibly located on Coleman Street, Hering the merchant, concerned in my Lord's Worcester money"
-new_exchange,The New Exchange,The Strand,,,Shopping arcade on the south side of the Strand; distinct from the Royal Exchange in the City
-new_palace_yard_westminster,New Palace Yard,Westminster Palace,,,"""then to the Hall, where in the Palace I saw Monk's soldiers abuse Billing and all the Quakers"" 7 Feb 1659/60"
+new_exchange,The New Exchange,The Strand,51.509393,-0.12316,Shopping arcade on the south side of the Strand; distinct from the Royal Exchange in the City
+new_palace_yard_westminster,New Palace Yard,Westminster Palace,51.500585,-0.125533,"northwest of the Houses of Parliament, Westminster"
 exchequer_tavern_charing_cross,The Exchequer Tavern,Charing Cross,,,"""drank with him at the Exchequer at Charing Cross"" 2 Feb 1659/60; kept distinct from chequers_inn"
 jacobs_alehouse,Jacob's Alehouse,Westminster,,,"""drank a cup of ale at Jacob's"" 17 Feb 1659/60, after walking in the park"
 william_wotton_shop,William Wotton Shop,,,,"William Wotton, shoemaker"
@@ -125,23 +125,23 @@ marshes_whitehall,Marsh's,Whitehall Palace,,,"A drinking house at Whitehall; ""t
 alehouse_unknown_7,Alehouse Unknown,Westminster,,,"""thence I took them to drink, and so put off my uncle"" 23 Feb 1659/60, unnamed"
 scotland_yard_stable,Mr Garthwayt Stable,"Scotland Yard, Whitehall",,,"""taking horse at Scotland Yard, at Mr. Garthwayt's stable"" 24 Feb 1659/60; the horse was lent to Pepys for the Cambridge journey"
 anne_michell_shop,Anne Michell Shop,Westminster Hall,,,"Mrs Anne Michell's shop, within Westminster Hall"
-ware_hertfordshire,Ware,Hertfordshire,,,"""About Ware we overtook Mr. Blayton"" 24 Feb 1659/60"
-puckeridge_hertfordshire,Puckeridge,Hertfordshire,,,"""at Puckeridge we baited, where we had a loin of mutton fried"" 24 Feb 1659/60"
-chequer_inn_fowlmere,The Chequer Inn,"Fowlmere, Cambridgeshire",,,"""as far as Foulmer, within six miles of Cambridge ... here we lay at the Chequer"" 24 Feb 1659/60. Distinct from chequers_inn and exchequer_tavern_charing_cross, both at Charing Cross"
-falcon_inn_cambridge,The Falcon Inn,"Petty Cury, Cambridge",,,"Pepys's lodging in Cambridge, 25-27 Feb 1659/60; ""my Inn"" throughout those entries"
-christs_college_cambridge,Christ's College,Cambridge,,,Mr Widdrington's chamber; Pepys's brother John was admitted here 25 Feb 1659/60
-magdalene_college_cambridge,Magdalene College,Cambridge,,,Pepys's own college; Mr Hill's chambers
+ware_hertfordshire,Ware,Hertfordshire,51.810437,-0.028177,
+puckeridge_hertfordshire,Puckeridge,Hertfordshire,51.891898,0.011746,
+chequer_inn_fowlmere,The Chequer Inn,"Fowlmere, Cambridgeshire",52.092989,0.073098,"Chequers Inn, Fowlmere, Cambridgeshire; Distinct from chequers_inn and exchequer_tavern_charing_cross, both at Charing Cross"
+falcon_inn_cambridge,The Falcon Inn,"Petty Cury, Cambridge",52.20498,0.120579,Pepys's lodging in Cambridge
+christs_college_cambridge,Christ's College,Cambridge,52.205415,0.1224,Mr Widdrington's chamber; Pepys's brother John was admitted here 25 Feb 1659/60
+magdalene_college_cambridge,Magdalene College,Cambridge,52.210453,0.116228,Pepys's own college; Mr Hill's chambers
 john_angier_house_cambridge,John Angier House,Cambridge,,,Cousin John Angier
 mertons_shop_cambridge,Mr Merton Shop,Cambridge,,,Bookseller; Pepys bought 'Elenchus Motuum' here 25 Feb 1659/60
 three_tuns_tavern_cambridge,Three Tuns Tavern,Cambridge,,,"Distinct from three_tuns_tavern in Guildhall Yard, City of London"
 kings_college_cambridge,King's College,Cambridge,,,"""the fields behind King's College, and in King's College Chapel Yard"" 26 Feb 1659/60"
-st_botolphs_church_cambridge,St Botolph's Church,Cambridge,,,"Mr Nicholas of Queen's College preached, 26 Feb 1659/60"
+st_botolphs_church_cambridge,St Botolph's Church,Cambridge,52.202494,0.118125,
 rose_tavern_cambridge,Rose Tavern,Cambridge,,,
 white_hart_saffron_walden,The White Hart Inn,"Saffron Walden, Essex",,,"""at the White Hart, we set up our horses"" 27 Feb 1659/60"
 audley_end_house,Audley End House,"Saffron Walden, Essex",,,"""the stateliness of the ceilings, chimney-pieces, and form of the whole was exceedingly worth seeing"" 27 Feb 1659/60"
 almshouse_saffron_walden,Almshouse,"Saffron Walden, Essex",,,"""a very old hospital or almshouse, where forty poor people was maintained"" 27 Feb 1659/60"
 inn_epping,Inn at Epping,"Epping, Essex",,,Unnamed inn; Pepys lodged here the night of 27 Feb 1659/60
-st_pauls_cathedral,St Paul's Cathedral,St. Paul's Churchyard,,,"""At Paul's I light ... I found Dr. Reynolds in the pulpit, and General Monk there"" 28 Feb 1659/60"
+st_pauls_cathedral,St Paul's Cathedral,St. Paul's Churchyard,51.513829,-0.098218,"Ludgate Hill, City of London"
 plough_fleet_street,The Plough,Fleet Street,,,"A hatter's; Pepys bought a hat here by my Lord's direction, 28 Feb 1659/60"
 greyhound_tavern,Greyhound Tavern,Fleet Street,,,
 sun_tavern_king_street,The Sun Tavern,"King Street, Westminster",,,"""we went to the Sun Tavern in expectation of a dinner"" 16 Feb 1659/60; separate from the_sun_tavern in Chancery Lane"
@@ -156,16 +156,16 @@ george_pinkney_house,George Pinkney House,Westminster,,,"""he shewed me how he h
 whitehall_garden,Whitehall Garden,Whitehall Palace,,,"""he called me by myself to go along with him into the garden"" - where my Lord first asked Pepys to go to sea as his secretary, 6 Mar 1659/60"
 bell_tavern,The Bell,"King Street, Westminster",,,"""I went to the Bell"" for the carpenters' yearly Shrove Tuesday club, 6 Mar 1659/60"
 red_lion_tavern,The Red Lion,"King Street, Westminster",,,"""found him at the Lion with a pewterer"" 6 Mar 1659/60"
-st_jamess_palace,St James's Palace,Westminster,,,
+st_jamess_palace,St James's Palace,Westminster,51.504411,-0.137774,"Pall Mall, north of St. James's Park"
 angel_tavern,The Angel,"King Street, Westminster",,,"""the Angel in King Street, where Chetwind, Mr. Thomas and Doling were at oysters"" 7 Mar 1659/60, the first day of Lent"
 popes_head_alley,Pope's Head Alley,City of London,,,"Adam Chard's, where Pepys bought a catcall, 7 Mar 1659/60"
 alehouse_unknown_10,Alehouse Unknown,City of London,,,"""Thence went and gave him a cup of ale"" 7 Mar 1659/60, unnamed"
 sun_tavern_threadneedle_st,The Sun Tavern,"Behind the Royal Exchange, City of London",,,"""the Sun behind the Exchange"" 7 Mar 1659/60. A third Sun, distinct from the_sun_tavern (Chancery Lane) and sun_tavern_king_street"
 cock_tavern,The Cock Tavern,,,,"""a health or two round at the Cock"" 7 Mar 1659/60"
 dog_tavern,The Dog Tavern,Westminster,,,"Next to the Mitre on King St and New Palace Yard. ""This noon I met at the Dog tavern Captain Philip Holland"" 8 Mar 1659/60"
-paternoster_row,Paternoster Row,City of London,,,"""took my wife by land to Paternoster Row, to buy some Paragon for a petticoat"" 8 Mar 1659/60"
+paternoster_row,Paternoster Row,City of London,51.514524,-0.099041,"Street running east/west, north of St. Paul's cathedral"
 admiralty,The Admiralty,"Whitehall, Westminster",,,
-painted_chamber_westminster,The Painted Chamber,Westminster Palace,,,"St Edward's Chamber in the old Palace, named for its wall paintings"
+painted_chamber_westminster,The Painted Chamber,Westminster Palace,51.499,-0.1251,"St Edward's Chamber in the old Palace, named for its wall paintings"
 navy_office,The Navy Office,"Seething Lane, City of London",,,"""by coach, taking Mr. Butler with me to the Navy Office"" 9 Mar 1659/60. Pepys moves into the adjoining house in July 1660"
 council_chamber_whitehall,Council Chamber Whitehall,Whitehall Palace,,,
 navy_treasurer_office,Navy Treasurer Office,,,,"Mr Hutchinson, Treasurer for the Navy, cf. 8 Mar 1659/60"
