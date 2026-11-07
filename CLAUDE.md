@@ -13,7 +13,8 @@ Claude drafts, the project GRA reviews, rulings are written down.
    16 — there is no 12 or 15, so read all of it rather than a range.
 3. Check `network-data/curated/nodes.csv` for an existing node before inventing
    one. Variant spellings and honorific differences are the main source of
-   accidental duplicates.
+   accidental duplicates, so search the `variants` column as well as `name` and
+   `id` — that column exists to catch exactly this.
 
 ## Canonical data
 
@@ -59,4 +60,14 @@ Stdlib only, except the two `.xlsx` scripts, which need `openpyxl`.
   `mode` = `boat`; there is no `ship` mode. No cabin or deck nodes.
 - **Companions** travel *with* Pepys; people met at the destination do not count.
 - **Never invent coordinates.** That field is the GRA's.
+- **`notes` vs `evidence` vs `variants`.** `evidence` holds the diary passage
+  that warrants an identification — quote it, with the date. `notes` is
+  locational and curatorial gloss supporting the coordinate work; the GRA owns
+  it and rewrites it freely, so never put a warrant there, it will be
+  overwritten. `variants` holds the diary's *other spellings for the same
+  place* ("the 3 Tun tavern" for `three_tuns_tavern`, "Mr Laxton's" for
+  `john_layton_apothecary`), `; `-separated — not narrative fragments and not a
+  restatement of the name. The validator cross-checks every node's name and id
+  against it, so a variant recorded here stops that spelling becoming a second
+  node.
 - Full detail in `WORKFLOW.md`.

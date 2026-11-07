@@ -801,3 +801,67 @@ is the last chunk where it matters for 1660.
   identifications propagate back to earlier dates.
 - 6 March no longer records the Mrs Jem visit, which conflicts with the
   section 6 ruling 2.
+
+## 14. The nodes schema splits notes, evidence and variants (7 November 2026)
+
+Ruled after the coordinate pass of 7 November overwrote the `notes` field on
+eight nodes, replacing the diary passages that warranted their identifications
+with locational description. `st_pauls_cathedral` lost "At Paul's I light ... I
+found Dr. Reynolds in the pulpit, and General Monk there"; `ware_hertfordshire`
+and `puckeridge_hertfordshire` were emptied outright; `three_tuns_tavern` lost
+the variant spelling "the 3 Tun tavern".
+
+That was not a mistake to be reverted — it showed the column was carrying two
+jobs that pull in opposite directions. `notes` has to be free for the GRA to
+rewrite while placing coordinates; the warrant for an identification has to be
+stable. So `nodes.csv` now has eight columns:
+
+```
+id,name,variants,location,latitude,longitude,notes,evidence
+```
+
+| column | holds | whose |
+|---|---|---|
+| `evidence` | the diary passage justifying the identification, quoted, with its date | Claude drafts, GRA verifies |
+| `notes` | locational and curatorial gloss, to support the coordinate work | **GRA owns and rewrites freely** |
+| `variants` | the diary's other spellings for this same place, `; `-separated | Claude drafts, GRA rules |
+
+Nothing is lost in the move: all 106 quotations, the eight overwritten ones
+recovered from commit `dd45803`, are now in `evidence`. The non-quotation prose
+stayed in `notes`.
+
+### Why `variants` is a column and not a habit
+
+Variant spellings have been the one recurring source of duplicate nodes across
+every chunk so far, and finding them has depended on remembering to look.
+`validate.py` now checks each node's `name` and `id` against every recorded
+variant and warns on a match, and errors if one spelling is claimed by two
+nodes. Eleven are recorded so far, the load-bearing ones being:
+
+- `three_tuns_tavern` — "the 3 Tun tavern"
+- `john_layton_apothecary` — "Mr Laxton's" (Laxton against Layton)
+- `stephens_chamber_temple` — "Mr Stevens" (Stevens against Stephens)
+- `anthony_robins_whitehall` — "Tony Robins's", "Roberts at Whitehall"
+- `the_naseby` — "the Nazeby" (the diary's usual spelling), "the Charles"
+- `the_plymouth` — "the Plimouth"
+
+The check paid for itself immediately by flagging `chequer_inn_holborn` against
+`chequers_inn`. That one was a false positive of my own making — I had recorded
+"the Chequers" as a variant of `chequers_inn`, which merely restates its name —
+and the validator's own "just repeats the name" warning caught it. Three such
+empty variants were dropped. **Note for anyone adding to this column: a variant
+that restates the name is worse than no variant, because it manufactures
+collisions.** The four Chequers (Charing Cross, Holborn, Fowlmere, and the
+Exchequer Tavern) are genuinely four places and all remain distinct.
+
+### Open
+
+- Only 11 of 234 nodes have variants. The column should be filled as chunks are
+  re-read, not in one pass, and the ones above came from quotations that
+  happened to be in `notes` already — earlier chunks were drafted before the
+  column existed and will have more.
+- `notes` still carries some curatorial warnings that are not locational
+  ("kept distinct from chequers_inn", "A fourth Chequer, distinct from ..."). By
+  the ruling these sit in a field the GRA rewrites freely, so they are at risk.
+  If they should be stable, they want a home in `evidence` or a column of their
+  own — say which and I will move them.

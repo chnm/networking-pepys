@@ -11,7 +11,11 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CURATED = os.path.join(REPO, "network-data", "curated")
 NODES = os.path.join(CURATED, "nodes.csv")
 
-NODE_COLS = ["id", "name", "location", "latitude", "longitude", "notes"]
+NODE_COLS = ["id", "name", "variants", "location", "latitude", "longitude",
+             "notes", "evidence"]
+# notes  -- locational and curatorial gloss; supports the GRA's coordinate work
+# evidence -- the diary passage that warrants the identification
+# variants -- the diary's other spellings for this same place, "; "-separated
 EDGE_COLS = ["id", "source", "target", "year", "month", "day", "mode",
              "companions", "notes"]
 
@@ -86,11 +90,16 @@ def companion_list(raw):
 
 
 def next_edge_id(existing):
-    """Edge ids are stable surrogate keys in the 1xxxxx block.
+    """The next free edge id in the 1xxxxx block.
 
-    Chronology comes from (year, month, day) plus row order within a day, NOT
-    from the id -- so an edge inserted into an already-reviewed month gets the
-    next free id and is placed in the correct row position. See DECISIONS.md.
+    Ids are CONTIGUOUS in row order from 100001, so inserting or removing a leg
+    mid-month means renumbering everything after it. Never cite an id where the
+    reference has to last -- cite a date and a leg. See DECISIONS.md.
     """
     nums = [int(e["id"]) for e in existing if str(e.get("id", "")).isdigit()]
     return max(nums) + 1 if nums else 100001
+
+
+def variant_list(raw):
+    """Node variants are a single '; '-separated field, like companions."""
+    return [p.strip() for p in (raw or "").split(";") if p.strip()]

@@ -156,7 +156,66 @@ def check_nodes(nodes):
             warn("nodes.csv:%d  id %r has %s, which is in neither its name %r "
                  "nor its location %r"
                  % (i + 2, nid, "/".join(sorted(missing)), name, n["location"]))
+
+    check_variants(nodes)
+    check_evidence(nodes)
     return seen
+
+
+def check_variants(nodes):
+    """The diary's other spellings for a place, so a variant cannot quietly
+    become a second node. This is the duplicate risk CLAUDE.md warns about."""
+    owner = {}
+    for i, n in enumerate(nodes):
+        line, nid = i + 2, n["id"].strip()
+        for v in pepys.variant_list(n.get("variants", "")):
+            if v != v.strip():
+                warn("nodes.csv:%d  variant %r has leading or trailing "
+                     "whitespace" % (line, v))
+            key = norm(v)
+            if not key:
+                warn("nodes.csv:%d  node %r has a blank variant" % (line, nid))
+                continue
+            if key in owner and owner[key][0] != nid:
+                err("variant %r is claimed by both %r (line %d) and %r (line "
+                    "%d) -- one spelling cannot name two places"
+                    % (v, owner[key][0], owner[key][1], nid, line))
+            else:
+                owner[key] = (nid, line)
+            # A variant that merely restates the node's own name carries no
+            # information and makes the next check useless.
+            if key == norm(n["name"]):
+                warn("nodes.csv:%d  variant %r for %r just repeats the name"
+                     % (line, v, nid))
+
+    # A node whose own name or id matches another node's recorded variant is
+    # very likely the duplicate that variant exists to prevent.
+    for i, n in enumerate(nodes):
+        nid = n["id"].strip()
+        for field in ("name", "id"):
+            key = norm(n[field])
+            if key in owner and owner[key][0] != nid:
+                warn("nodes.csv:%d  node %r's %s matches a variant recorded "
+                     "for %r (line %d) -- the same place twice?"
+                     % (i + 2, nid, field, owner[key][0], owner[key][1]))
+
+
+def check_evidence(nodes):
+    """Since the GRA's ruling, notes carries locational and curatorial gloss
+    and evidence carries the diary passage. A quotation left in notes is a
+    migration miss, and it is the warrant that gets lost when notes is
+    rewritten during the coordinate pass."""
+    for i, n in enumerate(nodes):
+        line, nid = i + 2, n["id"].strip()
+        for field in ("notes", "evidence", "variants"):
+            raw = n.get(field, "")
+            if raw != raw.strip():
+                warn("nodes.csv:%d  %s for %r has leading or trailing "
+                     "whitespace, which the .xlsx round-trip will drop"
+                     % (line, field, nid))
+        if '"' in n.get("notes", ""):
+            warn("nodes.csv:%d  notes for %r still quotes the diary -- that "
+                 "belongs in evidence" % (line, nid))
 
 
 # --------------------------------------------------------------- edges

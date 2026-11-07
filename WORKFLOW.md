@@ -17,7 +17,8 @@ you can see exactly what changed in a review:
 
 ```
 network-data/curated/
-  nodes.csv          cumulative, all months   (id,name,location,latitude,longitude,notes)
+  nodes.csv          cumulative, all months
+                     (id,name,variants,location,latitude,longitude,notes,evidence)
   edges_1660.csv     one file per calendar year (id,source,target,year,month,day,mode,companions,notes)
   crosswalk.csv      first-gen ids -> curated ids, for the cross-check
 ```
@@ -103,7 +104,9 @@ January is the yardstick: 294 edges, 77 places, 30 days.
 | | Claude | You |
 |---|---|---|
 | Draft edges and new nodes | ✓ | |
-| `notes` field | drafts | verifies |
+| `evidence` field | drafts | verifies |
+| `variants` field | drafts what the diary shows | adds, rules on spellings |
+| `notes` field | drafts a first gloss | owns it, rewrites freely |
 | `latitude` / `longitude` | leaves blank | fills |
 | Place identifications | applies `DECISIONS.md` | rules on anything new |
 | Machine checks | runs before handoff | |

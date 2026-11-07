@@ -131,7 +131,11 @@ def main():
             for nid in sorted(fresh):
                 n = nodes.get(nid)
                 if n:
-                    bits = [b for b in (n["name"], n["location"], n["notes"]) if b]
+                    # evidence is the diary passage warranting the
+                    # identification, so the reviewer can check it in place.
+                    bits = [b for b in (n["name"], n["location"],
+                                        n.get("variants", ""),
+                                        n["notes"], n.get("evidence", "")) if b]
                     L.append("- `%s` - %s" % (nid, " / ".join(bits)))
                 else:
                     L.append("- `%s` - **MISSING from nodes.csv**" % nid)
