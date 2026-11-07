@@ -310,7 +310,7 @@ which is why they lead.
    10 and 15 March). Each is named with its own location in the text, so they
    are drafted as four houses. Correct.
 4. **"the Swan tavern", 2 March** -- drafted as `swan_inn`, New Palace Yard,
-   though the party had just come from the Leg in King Street. 
+   though the party had just come from the Leg in King Street. New node different from swan_inn, name new node swan_tavern_king_st.
 5. **Mr Pierce the purser is not Mr Pierce the surgeon.** 3 March names the
    purser; `james_pearse_house` is the surgeon's. Recorded as the companion
    "Mr Pierce the purser"; he will need his own node and a first name when
