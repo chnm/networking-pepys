@@ -604,8 +604,8 @@ id,source,target,year,month,day,mode,companions,notes
 100603,home_axe_yard,john_crews_house,1659/60,3,2,walk,,"""I went early to my Lord at Mr. Crew's"""
 100604,john_crews_house,office_exchequer,1659/60,3,2,walk,,
 100605,office_exchequer,leg_tavern_king_st,1659/60,3,2,walk,Samuel Edlin; James Chetwind; Mr Thomas,
-100606,leg_tavern_king_st,swan_inn,1659/60,3,2,walk,Samuel Edlin; James Chetwind; Mr Thomas,"""After that to the Swan tavern"" - taken as swan_inn, New Palace Yard. FLAG"
-100607,swan_inn,sandwich_lodgings,1659/60,3,2,walk,Henry Moore,"Mrs Jem taken to be still at Scott's, as in February. FLAG"
+100606,leg_tavern_king_st,swan_tavern_king_st,1659/60,3,2,walk,Samuel Edlin; James Chetwind; Mr Thomas,"""After that to the Swan tavern, where we drank a quart or two of wine, and so parted"" - a separate place from swan_inn in New Palace Yard, per the ruling at DECISIONS section 6 flag 4"
+100607,swan_tavern_king_st,sandwich_lodgings,1659/60,3,2,walk,Henry Moore,"Mrs Jem taken to be still at Scott's, as in February. FLAG"
 100608,sandwich_lodgings,westminster_hall,1659/60,3,2,walk,,
 100609,westminster_hall,home_axe_yard,1659/60,3,2,walk,,
 100610,home_axe_yard,westminster_hall,1659/60,3,3,walk,,

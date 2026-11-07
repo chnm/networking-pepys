@@ -310,7 +310,13 @@ which is why they lead.
    10 and 15 March). Each is named with its own location in the text, so they
    are drafted as four houses. Correct.
 4. **"the Swan tavern", 2 March** -- drafted as `swan_inn`, New Palace Yard,
-   though the party had just come from the Leg in King Street. New node different from swan_inn, name new node swan_tavern_king_st.
+   though the party had just come from the Leg in King Street. New node
+   different from swan_inn, name new node swan_tavern_king_st.
+   **Applied 7 November 2026**: `swan_tavern_king_st` created at King Street,
+   Westminster, and the two 2 March legs re-pointed to it. The other 20
+   `swan_inn` legs are untouched, so New Palace Yard keeps every other
+   visit. If any of those is also meant to be the King Street house, say
+   which dates.
 5. **Mr Pierce the purser is not Mr Pierce the surgeon.** 3 March names the
    purser; `james_pearse_house` is the surgeon's. Recorded as the companion
    "Mr Pierce the purser"; he will need his own node and a first name when
@@ -789,7 +795,6 @@ is the last chunk where it matters for 1660.
 
 - The README's principle numbering runs 1-11, 13, 14, 16. There is no 12 and
   no 15, and both this file and `CLAUDE.md` cite principles by number.
-- "the Swan tavern", 2 March (section 6 flag 4).
 - Whether `navy_office` and the July 1660 house stay two nodes (section 6
   flag 12).
 - Whether the "Mr Thomas"/"Thomas Crew" and "Mr Woodfine"/"Thomas Woodfine"
