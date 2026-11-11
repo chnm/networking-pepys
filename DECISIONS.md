@@ -731,7 +731,7 @@ I have read "the Dr.'s" as the tavern he had just sent Dr Fuller to, and so
 drafted one node (`tavern_unknown_3`) reached once. It could instead be Dr
 Fuller's own lodging, or Dr Cade's — Cade appears in the next sentence
 supplying the coach. If it is a lodging rather than the tavern, the node's
-type and name are wrong, though the edge count does not change.
+type and name are wrong, though the edge count does not change. Manually checked by GRA.
 
 ### 5. The cliff on 29 May is not Dover
 
@@ -742,7 +742,7 @@ Deal"), the fleet is visible from the top, and the cliff measures "not above
 thirty-five yards high" — about a third of the Dover cliffs. I have drafted
 `cliff_unknown_1`, located "Between Deal and the South Foreland". The landing
 place itself is unnamed and I have taken it as Deal, which is the other half of
-this flag.
+this flag. Rename to cliff_unknown_deal.
 
 ### 6. The 22 May Rear-Admiral's ship: a disagreement with network4
 
@@ -761,7 +761,7 @@ travels towards the shore, and returns without touching land. Per the April
 ruling on the aborted landing there is no edge, and a note on the
 `ship_unknown_1` -> `the_naseby` leg records it. This is the second instance;
 if the rule is to hold, it is worth promoting from a per-chunk note to section
-1.
+1. Manually checked by GRA. 
 
 ### 8. Two ships renamed on 23 May
 
@@ -770,7 +770,7 @@ Charles; the Richard, James; the Speakers Mary" — and six more. Per section 7
 ruling 5 each stays one node with a note, so `the_naseby` and `the_speaker`
 both now carry their new names in `notes`. Note the diary says **Charles**, not
 *Royal Charles*; she is renamed again later, which this ruling will have to
-absorb a second time.
+absorb a second time. 
 
 Pepys himself does not move on the 23rd — "My Lord, Mr. Crew, and others, go
 on shore to meet the King", not Pepys — so the day has no edges despite being
@@ -784,23 +784,23 @@ rather than being new: the conventions make the voyage itself invisible. The
 fleet crosses from the Downs to Holland and back with the King aboard, and
 because a named ship is one location however far she sails, none of it is an
 edge. May at least has the Holland excursions to record; March 24-31 produced
-zero edges and April ten.
+zero edges and April ten. This is correct. 
 
 **This is still the open question, and it is now three chunks old.** It is not
 a drafting problem — it is whether the rules should permit fleet movement to be
 recorded at all. June ends the voyage on the 8th, so if the answer is yes, June
-is the last chunk where it matters for 1660.
+is the last chunk where it matters for 1660. Continue with the current conventions.
 
 ### 10. Still open from earlier chunks
 
 - The README's principle numbering runs 1-11, 13, 14, 16. There is no 12 and
-  no 15, and both this file and `CLAUDE.md` cite principles by number.
+  no 15, and both this file and `CLAUDE.md` cite principles by number. The README's principles have been manually renumbered by the GRA.
 - Whether `navy_office` and the July 1660 house stay two nodes (section 6
   flag 12).
 - Whether the "Mr Thomas"/"Thomas Crew" and "Mr Woodfine"/"Thomas Woodfine"
   identifications propagate back to earlier dates.
 - 6 March no longer records the Mrs Jem visit, which conflicts with the
-  section 6 ruling 2.
+  section 6 ruling 2. Manually checked by GRA.
 
 ## 14. The nodes schema splits notes, evidence and variants (7 November 2026)
 
@@ -864,4 +864,4 @@ Exchequer Tavern) are genuinely four places and all remain distinct.
   ("kept distinct from chequers_inn", "A fourth Chequer, distinct from ..."). By
   the ruling these sit in a field the GRA rewrites freely, so they are at risk.
   If they should be stable, they want a home in `evidence` or a column of their
-  own — say which and I will move them.
+  own — say which and I will move them. Do not write in the 'notes' column, only GRA writes in 'notes'. 
