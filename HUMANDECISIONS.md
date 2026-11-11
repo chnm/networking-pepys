@@ -2,8 +2,11 @@
 
 **The GRA's file.** Everything here is a decision only a person can make: a
 historical judgement, a curatorial convention, or a ruling on an ambiguity the
-diary does not resolve. Claude reads this file before drafting and applies what
-it says; Claude does not add rulings to it.
+diary does not resolve. It is the complete record of those decisions from
+January 1659/60 onward — questions still open in section A, rules in force in
+B and C, and every decision already made, chunk by chunk, in section D.
+Claude applies what it says and may add questions to section A; Claude does not
+write rulings into this file.
 
 Claude's own drafting reasoning — the defaults it applies when the text is
 silent, the readings it takes, the corrections it makes to its own work — lives
@@ -188,31 +191,254 @@ Things to do every time, not one-off rulings.
 
 ---
 
-# D. Answered, for the record
+# D. The decision record
 
-Questions that were live and are now shut. Full reasoning in `DECISIONS.md`.
+Every decision made so far, in the order the chunks were drafted, with the
+question as it was put and the ruling as it was given. Decisions already
+answered are kept here in full rather than summarised, so this file is the
+record and nothing has to be reconstructed from `DECISIONS.md`.
 
-| Question | Ruling |
+**Legend:** ✅ ruled · ⏳ still open (cross-referenced to section A) ·
+↩︎ later superseded.
+
+---
+
+## D1. January 1659/60 — migration
+
+The month was migrated from the workbooks unchanged; `validate.py` then
+reported 77 errors. The corrections were applied in the same commit as the
+migration, so they are not visible as a git diff. **Spot-checked and confirmed
+correct.** After: 77 nodes, 294 edges, 0 errors. Full detail in
+`network-data/curated/january-corrections.md`.
+
+| | Decision |
 |---|---|
-| Should fleet movement be recordable? | **No.** Continue with the current conventions. *(10 Nov 2026)* |
-| Mrs Jem's location in February | `scott_house`, not `sandwich_lodgings`. Extended to Mrs Ann. |
-| Mrs Ann as a separate node | No, unless she travels with Pepys as a companion. |
-| How finely to divide the Temple | Keep them separate; precise where named, area-level where not. |
-| "the Exchequer at Charing Cross" and "the Chequers" | Two houses, not one. |
-| `downings_counsellor_chamber` | Merged into `stephens_chamber_temple`. |
-| Unnamed drinking stops | Accept the inference; each occasion its own node. |
-| Out-of-order narration | Draft on the sequence described, not the order narrated. |
-| `house_of_commons` | Retired. |
-| Edge ids | Contiguous, superseding the stable-key rule. |
-| `peter_gunning_church` | Retired into `exeter_house_chapel`. |
-| `the_new_market` and `market_unknown_1` | Do not overlap. |
-| Shared coordinates between nodes | Intended behaviour. |
-| Role descriptors as companions | Keep them. |
-| Ship node naming | `the_` prefix, settled 2 Nov 2026. |
-| "the Swan tavern", 2 March | A separate house: `swan_tavern_king_st`. Applied 7 Nov 2026; the other 20 `swan_inn` legs untouched. |
-| Shott's, 8 March | A separate shop: `shotts_woodmonger_whitehall`. |
-| "my Lord's" in early March | Unqualified to `sandwich_lodgings`; explicit "at Mr. Crew's" to `john_crews_house`. Refined for 17–21 March. |
-| Mr Moore's dinner, 19 February | Stands as `john_crews_house`. |
-| "my partner", 20 February | Stands as the descriptor "Pepys's office partner". |
-| "the Dr.'s", 17 May | Dr Fuller's lodging: `thomas_fuller_lodging`. |
-| The cliff of 29 May | `cliff_unknown_deal`. |
+| ✅ | **53 edge endpoints had drifted from the node ids.** `wills_ale_house`→`wills_alehouse` (28 edges), `george_downings_lodging`→`...lodgings` (15), `mr_mossum_church`→`robert_mossum_church` (4), `mother_lams`→`mother_lams_pub` (2), `the_half_moon`→`the_half_moon_alehouse` (2), `william_fuller_lodgings`→`...lodging` (1), `tower_of_menagerie`→`tower_menagerie` (1). Edge endpoints renamed to the canonical node id; **no node ids changed.** These also caused 17 of the 18 continuity breaks. |
+| ✅ | **Two nodes were missing entirely.** `the_sun_pub` (The Sun, Chancery Lane; 20 and 23 Jan) and `richard_sherwin_office` (27 Jan) added. |
+| ✅ | **One trip was missing, 13 January.** "Thence I went to Mrs. Jem" — `home_axe_yard → sandwich_lodgings`, walk, added. network4 reads the day the same way. |
+| ✅ | **One companion casing fixed:** "Clerk of Sandwich troop" → "Clerk of Sandwich Troop". |
+
+### Early rulings arising from January
+
+| | Question | Ruling |
+|---|---|---|
+| ✅ | `peter_gunning_church` vs `exeter_house_chapel` — one place or two? | **One.** "Call them Exeter House Chapel." `peter_gunning_church` retired; its two 29 January edges repointed. |
+| ✅ | `the_new_market` vs `market_unknown_1` — do these overlap? | **No.** |
+| ✅ | `city_of_london`'s `name` field held a query, "Referencing the Royal Exchange?" | Resolved; the uncertainty moved out of the name. |
+| ✅ | Several nodes share coordinates (`john_pepys_house` and `turner_house` are both Salisbury Court). | **Intended behaviour.** |
+| ✅ | Should role descriptors like "Clerk of Sandwich Troop" be kept as companions? | **Yes, keep them.** |
+| ⏳ | Names against ids — `john_pepys_house` is named "Father House", `john_crews_house` "Mr Crews House". | A disjunction between how Pepys referred to people and their most specific historical name. Noted, never ruled. *(A1 #9)* |
+
+---
+
+## D2. 1–15 February 1659/60
+
+Drafted by Claude, validated clean. All nine were ruled.
+
+| | Question | Ruling |
+|---|---|---|
+| ✅ | **1. Is "Mrs. Jem" at `sandwich_lodgings`?** 1 Feb makes them two places; 4 Feb puts Mrs Jem at Scott's. | **`scott_house`.** Eighteen February endpoints moved, covering 1, 3, 6, 7, 8, 9, 13, 14, 15 Feb. The one explicit "my Lord's lodgings" (1 Feb) stays. Extended to Mrs Ann on the strength of 4 and 6 Feb. |
+| ✅ | **2. How finely should the Temple be divided?** Four nodes against network4's one. | **Keep them separate.** Use the precise location when given; area-level labels are acceptable when it is not. |
+| ✅ | **3. Same for Westminster and Whitehall** — `palace_yard_westminster` is unavoidably vague. | **Correct as drafted.** |
+| ✅ | **4. The Chequers** — is "the Exchequer at Charing Cross" the same house as "the Chequers"? | **Two.** `exchequer_tavern_charing_cross` added for 2 Feb. |
+| ✅ | **5. Is `downings_counsellor_chamber` the same as `stephens_chamber_temple`?** | **Merge** for these dates into `stephens_chamber_temple`. |
+| ✅ | **6. "The Exchange", 11 February** — New or Royal? | **`new_exchange` is correct for February.** Standing instruction: every Exchange reference is flagged for human check. *(now C2)* |
+| ✅ | **7. An unnamed drinking stop was inferred** to keep the walk continuous (4 Feb). | **Accept the inference.** |
+| ✅ | **8. Out-of-order narration, 13 February** — drafted on the sequence described, not narrated. | **Yes**, that is the general rule. |
+| ✅ | **9. Mr Swan's house vs the Swan tavern.** | **Distinct locations.** |
+| ✅ | `house_of_commons` was left unused after the review folded its one visit into `westminster_hall`. | **Retire it.** |
+| ✅ | Named watermen and coachmen as companions — the principle postdated the February draft. | Earlier months **manually checked**. |
+
+---
+
+## D3. 16–29 February 1659/60 — the Cambridge journey
+
+116 edges, 26 new places. One unbroken walk: London → Foulmere → Cambridge
+(three nights at the Falcon) → Saffron Walden and Audley End → Epping → London.
+
+| | Question | Ruling |
+|---|---|---|
+| ✅ | **1. Which Sun, 16 February?** | **Two Suns.** 16 Feb is the Sun on King Street — `sun_tavern_king_street` — separate from `the_sun_tavern`, Chancery Lane. |
+| ✅ | **2. "the park", 17 February** — drafted `st_james_park`. | **`park_unknown_1`.** 3 and 12 Feb keep `st_james_park`. |
+| ✅ | **3. Mr Moore's dinner, 19 February.** | **Keep as `john_crews_house`.** |
+| ✅ | **4. "my partner", 20 February** — no name given. | **Keep the descriptor** "Pepys's office partner". |
+| ✅ | **5. Mr Wotton has no first name.** | **Correct** as drafted. |
+| ✅ | **6. Unnamed alehouses — new node or shared?** | **Each occasion gets its own node.** Reused nodes fixed by hand. |
+| ✅ | **7. Boat landing, 29 February** — unnamed, drafted `city_of_london`. | **Correct.** |
+| ✅ | **8. Named waypoints on the road** — `ware` is a node, network4 omits it. | **Correct.** Standing instruction: flag named waypoints on long journeys for approval. *(now C2)* |
+| ✅ | **9. Three Chequers, all distinct?** | **Confirmed separate.** |
+| ✅ | **10. The White Hart's master as a companion** (a role descriptor). | **Correct.** |
+| ✅ | **11. "the Old Exchange", 28 February** — read as `royal_exchange`. | **Correct.** |
+| ✅ | **12. Queens' College is not a node** — an affiliation, not a place visited. | **Correct.** |
+
+Six node ids renamed in the edges during review were synced back to
+`nodes.csv`: `wotton_shop`→`william_wotton_shop`,
+`mrs_michells_shop`→`anne_michell_shop`, `ware`→`ware_hertfordshire`,
+`puckeridge`→`puckeridge_hertfordshire`,
+`chequer_inn_foulmere`→`chequer_inn_fowlmere`,
+`angier_house_cambridge`→`john_angier_house_cambridge`. One read
+`ware_hertforshire`, a missing "d", which had broken 24 February's continuity.
+
+---
+
+## D4. 1–15 March 1659/60
+
+128 edges against network4's 124 over the same fifteen days.
+
+| | Question | Ruling |
+|---|---|---|
+| ✅ | **1. "my Lord's lodgings" or "my Lord at Mr Crew's"?** 6 March distinguishes them. network4 read it the opposite way; the choice changed six edges in this chunk alone. | **Unqualified "my Lord's lodgings" and "my Lord's" (1, 9, 13, 14, 15 Mar) → `sandwich_lodgings`; the explicit "at Mr. Crew's" (2, 6, 7 Mar) → `john_crews_house`.** Manually checked. |
+| ✅ | **2. Mrs Jem in March** — does the February ruling carry? | **Yes. She remains at `scott_house` for 1–15 March.** |
+| ✅ | **3. Four Sun taverns now** — each named with its own location. | **Correct**, four houses. |
+| ✅ | **4. "the Swan tavern", 2 March** — drafted `swan_inn`, though the party had come from the Leg in King Street. | **A new node:** `swan_tavern_king_st`. Applied 7 Nov 2026; the two 2 March legs repointed, the other 20 `swan_inn` legs untouched. |
+| ✅ | **5. Mr Pierce the purser is not Mr Pierce the surgeon.** | **Correct, not the same person.** |
+| ✅ | **6. "we three", 4 March** — the third taken to be Jane Birch. | **Correct.** |
+| ✅ | **7. Shott's, 8 March** — drafted as `whitehall_palace`. | **Not Whitehall.** A separate node, `shotts_woodmonger_whitehall`. |
+| ✅ | **8. 8 March does not say he went home** — a closing leg was added. | **Correct.** |
+| ✅ | **9. "the Exchange", 12 March** — read as `new_exchange`. | **Correct.** |
+| ✅ | **10. Three more unnamed alehouses** — the series is growing fast. | **Yes, continue.** |
+| ⏳ | **11. `lion_tavern` and `cock_tavern` have no location.** | Humans will check by hand. *(A1 #8)* |
+| ⏳ | **12. `navy_office` exists; Pepys moves into the adjoining house in July 1660.** | Flagged so the split is deliberate when we reach it. *(A1 #1 — due now)* |
+
+---
+
+## D5. 16–31 March 1659/60
+
+67 edges over 16–23 March; 193 curated edges for the month against network4's
+191. **24–31 March carry no edges**: Pepys boards the *Swiftsure* on the 23rd
+and changes no node again that month.
+
+| | Item | Outcome |
+|---|---|---|
+| ✅ | **Five nights at Mrs Crisp's**, 17–21 March, each modelled so the run is continuous. | As drafted. |
+| ✅ | **Pepys corrects his own dating, 20–21 March**: "which by a mistake I have put down yesterday". Drafted on the 21st. | As drafted. |
+| ✅ | **22 March, the leave-takings.** The first draft compressed them; the cross-check showed network4 modelling four visits this draft lacked. Three had named places. | Day grew 8 → 11 edges. |
+| ⏳ | **Kate Sterpin**, 22 March — "took leave of Kate Sterpin" gives no place. | Unmodelled. *(A1 #5)* |
+| ✅ | **"Tony Robins's", 19 March** — drafted as the same house as "Roberts at Whitehall". | **A separate house.** `anthony_robins_whitehall` created in review. |
+| ✅ | **A fourth Chequer:** `chequer_inn_holborn`. | Accepted. |
+| ✅ | **Two Pope's Heads:** `popes_head_tavern_chancery_lane` and `popes_head_alley`. | Accepted. |
+| ✅ | **"my Lord" on 22 March** — unqualified, so sent to `sandwich_lodgings`. | Refined in review: 17–21 March → `john_crews_house`; 22–23 March stays `sandwich_lodgings` ("my Lord's lodging **at the gate**"). |
+| ✅ | **20 March, the flood.** "boats rowed in King Street and all our yard was drowned"; `westminster_hall` stands in. | As drafted. |
+| ✅ | **Named watermen** — "I got Crockford to carry me over it". First clean case. | Companion, mode `boat`. |
+| ✅ | **Two more unnamed stops**, each its own node per D3 #6. | As drafted. |
+
+### From the 16–23 March review, 2 November 2026
+
+| | Item | Outcome |
+|---|---|---|
+| ✅ | **8 March, the Commons lobby leg removed.** "sending a note to my Lord, **he comes out to me**" — Pepys never went in. | A correct catch against the draft. |
+| ✅ | **Three node renames completed**, each half-applied in the edges: `crisp_house`→`crisp_house_axe_yard`, `jervas_barber`→`richard_jervas_barber`, `blagrave_house`→`thomas_blagrave_house`. | Synced. |
+| ✅ | **One companion spelling normalised:** "Edward Sheply" → "Edward Shipley". | Applied. |
+| ⏳ | **Seven companion near-misses** found by the new fuzzy check. | Untouched; canonical spelling is a curatorial call. *(A1 #3)* |
+| ⏳ | **Two identifications made for one day only** — "Mr Thomas"/"Thomas Crew", "Mr Woodfine"/"Thomas Woodfine". | Not propagated. *(A1 #4)* |
+| ⏳ | **6 March no longer records the visit to Mrs Jem**, which sits against D4 #2. | Flagged, not reverted. *(A1 #2)* |
+
+---
+
+## D6. Ships — settled 28 October and 2 November 2026
+
+Seven questions were asked in October; two October answers were retracted in
+favour of README principles 13–14, and the rest confirmed.
+
+| | Question | Ruling |
+|---|---|---|
+| ✅ | **1. When does `mode` take the value of a ship?** | **Never. `mode` is `boat`** for all water travel. |
+| ✅ | **2. Is an anchorage a node?** | **No.** An anchorage is a node only where Pepys disembarks, and there the node is the ship. 23 March reads `tower_of_london → the_swiftsure` with Long Reach in the notes. |
+| ✅ | **3. Movement within a ship** — cabins, decks, round-houses. | **One location. No cabin or deck nodes.** |
+| ✅ | **4. One node per named vessel.** | **Correct**, each named ship is a node. |
+| ✅ | **5. The *Naseby* renamed on 23 May** — one node or two? | **One node with a note**; flag at the renaming. Applied to the *Naseby*→*Charles* and the *Speaker*→*Mary*. |
+| ✅ | **6. 30 March — was Pepys aboard the *Naseby*?** | **No.** The day carries no `the_naseby` edge. |
+| ✅ | **7. "the Ship tavern", 23 March** is a tavern, not a vessel. | Noted; Pepys did not go in. |
+| ✅ ↩︎ | **Ship node naming.** README 14 gave the bare vessel name, which made the *London* collide with `city_of_london`. | **`the_` prefix**, 2 Nov 2026: `the_swiftsure`, `the_naseby`, `the_london`, `the_speaker`, `the_assistance`. 15 edges and 5 crosswalk rows followed. README 14 now reads "e.g. the_naseby". |
+
+Note: the prefix is **not** a reliable marker of a ship — `the_sun_tavern`,
+`the_half_moon_alehouse`, `the_swan_pub` and `the_temple` all carry it. A ship
+is identified by its node row, not its id.
+
+---
+
+## D7. Applied 28 October 2026
+
+| | Item |
+|---|---|
+| ✅ | **Edge ids renumbered contiguously**, `100001`–`100722`, no gaps; 263 rows changed id. Supersedes the stable-key rule used to October 2026. The cost is on the record: an id is good only within the version of the file it was read from, and three already-annotated worksheets cite numbers that no longer line up. |
+| ✅ | **`house_of_commons` retired** (D2). |
+| ✅ | **`shotts_woodmonger_whitehall` created** and the 8 March legs repointed (D4 #7). |
+| ✅ | **Eight more half-applied renames synced** to `nodes.csv`: `laxton_apothecary`→`john_layton_apothecary` (also Laxton→Layton), `leg_tavern`→`leg_tavern_king_st`, `pinkney_house`→`george_pinkney_house`, `painted_chamber`→`painted_chamber_westminster`, `rawlinson_house`→`daniel_rawlinson_house`, `blackburne_house`→`robert_blackborne_house` (also Blackburne→Blackborne), `creeds_chamber`→`john_creed_chamber`, `fish_street`→`fish_street_london`. |
+
+---
+
+## D8. April 1660
+
+10 edges over 4 days, 7 new places. **26 of 30 days carry no edges.** network4
+read the same month independently and got 9 edges over the same 4 days.
+
+| | Item | Outcome |
+|---|---|---|
+| ✅ | **1. `london` collides with `city_of_london`.** | Settled by the `the_` prefix (D6). |
+| ⏳ | **2. 3 April, an aborted landing** — "we could not stay for fear of not getting into our boat again". | No edge. *(A1 #6)* |
+| ✅ | **3. `deal` as a shore node, 30 April** — the one edge by which this draft exceeds network4's. | As drafted. |
+| ✅ | **4. "the Captain", 24 April** read as Captain Cuttance, the *Naseby*'s own captain. | As drafted. |
+| ✅ | **5. The *Naseby* renaming** flagged forward to May. | Handled per D6 #5. |
+| ⏳ | **6. Everyone else moves and Pepys does not** — Shipley to Sheppy, Stayner to Dover, Burr ashore, none an edge. | Correct, since the network records Pepys. Worth confirming for the voyage. *(A1 #7)* |
+| ✅ | **7. Within-ship places named and not modelled** — the Round-house, the coach, the great cabin, the half-deck table. | Per D6 #3. |
+
+---
+
+## D9. May 1660
+
+67 edges over 11 days, 33 new nodes, against network4's 63 over the same days.
+
+| | Item | Ruling |
+|---|---|---|
+| ✅ | **1. Three ships the diary will not name.** Stayner's (3 May) and the Rear-Admiral's (22 May) drafted as one `ship_unknown_1`, choosing identity over caution. | **Split in review:** `dutch_ship_unknown` created for 22 May. |
+| ✅ | **2. Five nights ashore in Holland**, 14–19 May, folded into one `lodging_unknown_1` on the strength of "**our** lodging". | Manually checked. |
+| ✅ | **3. Ten unnamed places of new types** — May needed more `_unknown_` nodes than every previous month together. | Accepted. |
+| ✅ | **4. "the Dr.'s", 17 May** — the tavern he had sent Dr Fuller to, or Dr Fuller's own lodging? | **Dr Fuller's lodging:** `thomas_fuller_lodging`. Manually checked. |
+| ✅ | **5. The cliff of 29 May is not Dover** — the barge lay at Deal, the fleet was visible from the top, and it measured "not above thirty-five yards". network4 called it `dover_cliff`. | **Rename to `cliff_unknown_deal`.** |
+| ✅ | **6. The 22 May Rear-Admiral's ship** — network4 identified it as the Speaker; 25 April shows both admirals merely dining aboard Captain Clerke's Speaker. | network4 not followed. |
+| ✅ | **7. The boat that never landed, 22 May.** | No edge; noted on the surrounding leg. Manually checked. |
+| ✅ | **8. Two ships renamed on 23 May** — the *Nazeby* into **Charles** (not *Royal Charles*), the *Speaker* into *Mary*. | One node each with a note, per D6 #5. |
+| ✅ | **9. Twenty days with no movement at all** — the third chunk running to raise whether the rules should let fleet movement be recorded. | **"This is correct. Continue with the current conventions."** The question is shut. |
+
+---
+
+## D10. June 1660
+
+197 edges over 23 days, 42 new nodes, against network4's 190. The voyage ends
+on the 8th. **All ten flags are awaiting review — see section A3.**
+
+| | Item | Where it stands |
+|---|---|---|
+| ⏳ | **Where my Lord lodged**, 11–22 June — the bare "my Lord's" to Mr Crew's, the fuller "my Lord's lodgings" to Whitehall. | *(A3 #13)* |
+| ✅ | **Pepys changes lodging twice**: his father's 9–21 June, Axe Yard from the 22nd — "To bed, the first time since my coming from sea, in my own house". | As drafted. |
+| ✅ | **Four nights closed by inference** (9, 10, 11, 15 June), each noted on the edge. | As drafted. |
+| ⏳ | **Rochester and Chatham, 8 June**, drafted in road order against the order narrated. | *(A3 #14)* |
+| ⏳ | **Which Sun, which Leg, which Bell** — three unqualified house names. | *(A3 #15–17)* |
+| ⏳ | **The Exchequer at Charing Cross is the King's Head** — recorded as a variant, not a new house. | *(A3 #18)* |
+| ⏳ | **`tavern_unknown_3` reused** after the Hague tavern was renamed. | *(A2 #12)* |
+| ⏳ | **Rooms inside a complex** — `shield_gallery_whitehall` is a node, the Nursery is not. | *(A3 #19)* |
+| ⏳ | **Mrs Brown's, 18 June** — the entry says my Lord went, not Pepys. | *(A3 #20)* |
+| ✅ | **The Banqueting House, 23 June** — whether Pepys followed the King is not stated. | No edge. |
+
+---
+
+## D11. Schema and tooling
+
+| | Decision | Date |
+|---|---|---|
+| ✅ | **Edge ids are contiguous**, superseding stable surrogate keys. | 28 Oct 2026 |
+| ✅ | **Ship nodes take a `the_` prefix.** | 2 Nov 2026 |
+| ✅ | **`nodes.csv` splits into `notes`, `evidence` and `variants`.** Prompted by a coordinate pass overwriting the diary passages on eight nodes. `notes` becomes locational gloss the GRA owns and rewrites freely; `evidence` holds the warrant, quoted with its date; `variants` holds the diary's other spellings. All 106 quotations preserved, the eight overwritten ones recovered. | 7 Nov 2026 |
+| ✅ | **Claude does not write in the `notes` column.** | 10 Nov 2026 |
+| ⏳ | **`<type>_unknown_<place>` beside `<type>_unknown_<n>`.** Accepted by the validator, warned on, because principle 4 still asks for a number. | *(A2 #10)* |
+| ✅ | **The README principles are complete.** Reports that principles 6, 12 and 15 were missing were Claude's error — Markdown renumbers ordered lists on render, so a source reading `1 2 3 4 5 7 8 9 10 11 13 14 16` displays as a consecutive 1–13. Withdrawn 11 Nov 2026. Source and rendered numbering diverge from the sixth principle on; this project cites source numbers. | 11 Nov 2026 |
+
+---
+
+## D12. Standing items with no date
+
+| | Item |
+|---|---|
+| ✅ | **Combined diary entries.** July 1661 has "8th, 9th, Loth, 11th, 12th, 13th." (six days) and "16th, 17th, 18th, 19th." (four). Their edges are flagged for human dating from a manual read. |
+| ✅ | **1–10 October 1668 has no entries** in Wheatley. Confirmed a genuine gap in the source, not a parsing artefact; there will be no edges. |
