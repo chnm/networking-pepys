@@ -1,5 +1,6 @@
 network,firstgen_id,firstgen_name,curated_id,status
 network4,admiralty,The Admiralty,admiralty,id-exact
+network4,alehouse_brewers_yard,New Alehouse in Brewer's Yard,alehouse_unknown_12,manual
 network4,alehouse_city,Alehouse (unspecified),alehouse_unknown_5,manual
 network4,alehouse_holborn,Alehouse (unspecified),alehouse_unknown_4,manual
 network4,alehouse_westminster,Alehouse (unspecified),,manual
@@ -8,13 +9,18 @@ network4,angel_kings_street,The Angel Tavern,angel_tavern,manual
 network4,assistance_ship,The Assistance (ship),the_assistance,manual
 network4,audley_end_house,Audley End House,audley_end_house,id-exact
 network4,axe_tavern,The Axe,axe_brewhouse,manual
+network4,backwells,Alderman Backwell's (goldsmith),backwell_goldsmith,id-partial
+network4,bear_tavern,Bear Tavern,bear_tavern,id-exact
 network4,bedells_bookseller,Bedell's Bookseller,bedells_bookshop,manual
 network4,bell_tavern_kings_street,The Bell Tavern,bell_tavern,manual
 network4,botolphs_church_cambridge,St Botolph's Church,st_botolphs_church_cambridge,manual
 network4,bridge_tavern,Bridge Tavern,bridge_tavern,id-exact
+network4,brighams,Brigham's (the King's coach-maker),brigham_house,id-folded
 network4,bull_head_tavern,Bull Head Tavern,bull_head_tavern,id-exact
+network4,canterbury,Canterbury (cathedral and city),canterbury,id-exact
 network4,capt_matthews_lodging,Captain Dick Matthews's Lodging,richard_matthews_house,manual
 network4,capt_stones,Captain Stone's,john_stone_office,manual
+network4,cardinals_cap,Cardinal's Cap Tavern,cardinals_cap_tavern,id-folded
 network4,catans_lodging,Catan Sterpin's Lodging,john_stone_office,manual
 network4,charing_cross,Charing Cross,charing_cross,id-exact
 network4,chequer_foulmer,The Chequer Inn,chequer_inn_fowlmere,manual
@@ -22,8 +28,9 @@ network4,chequer_holborn,The Chequer Inn,chequer_inn_holborn,id-folded
 network4,chequers_charing_cross,The Chequers,chequers_inn,manual
 network4,chetwinds_office_chancery_lane,Mr. Chetwind's Office,james_chetwind_office,manual
 network4,christs_college_cambridge,Christ's College,christs_college_cambridge,id-exact
-network4,church_scheveningen,Church at Scheveningen,church_scheveling,id-fuzzy
+network4,church_scheveningen,Church at Scheveningen,church_scheveningen,id-fuzzy
 network4,clerks_hall,Clerks' Hall,parish_clerks_hall,manual
+network4,clothworkers_hall,Clothworkers' Hall,clothworkers_hall,id-exact
 network4,cock_tavern_city,Cock Tavern,cock_tavern,manual
 network4,cockpit_whitehall,The Cockpit (Mr. Mount's chamber),cockpit_whitehall,id-exact
 network4,coffee_club_westminster,Coffee House / Rota Club (Turk's Head),turks_head_coffee_house,manual
@@ -33,13 +40,17 @@ network4,cooks_shop_westminster,Cook's Shop (unspecified),,manual
 network4,court_of_wards,Court of Wards,court_of_wards,id-exact
 network4,cousin_angiers_cambridge,Cousin Angier's House,john_angier_house_cambridge,id-folded
 network4,cousin_stradwick_house,Cousin Thomas Stradwick's House,stradwick_house,id-folded
+network4,covent_garden,Covent Garden,covent_garden,id-exact
 network4,crowlys,Crowly's,,manual
 network4,crown_palace_yard,The Crown Tavern,crown_pub,manual
 network4,deal,Deal (shore and town),deal_kent,id-partial
 network4,delft,Delft (town),delft,id-exact
+network4,devil_tavern,Devil Tavern,devils_tavern,id-folded
 network4,dog_tavern_westminster,Dog Tavern,dog_tavern,manual
+network4,dolphin_tavern,Dolphin Tavern,dolphin_tavern,id-exact
+network4,dorset_house,Dorset House (Lord Chancellor's),dorset_house,id-exact
 network4,dover,Dover (landing place),dover,id-exact
-network4,dover_cliff,High Cliff by the Sea,cliff_unknown_1,manual
+network4,dover_cliff,High Cliff by the Sea,cliff_unknown_deal,manual
 network4,downings_counsellor,Mr. Downing's Counsellor's Chamber,stephens_chamber_temple,manual
 network4,dr_whores_house,Dr. Whore's House,dr_hoares_house,manual
 network4,drinking_house_drury_lane,Drinking House (unspecified),alehouse_unknown_9,manual
@@ -51,6 +62,7 @@ network4,exchequer_court,Court of Exchequer,exchequer_court,id-exact
 network4,exchequer_office,Pepys's Office (Mr. Downing's,office_exchequer,id-folded
 network4,exchequer_tavern_charing_cross,Exchequer Tavern,chequers_inn,manual
 network4,exeter_house_chapel,Mr. Gunning's Chapel at Exeter House,exeter_house_chapel,id-exact
+network4,faithornes,Faithorne's (print shop),faithorne_shop,id-partial
 network4,falcon_cambridge,The Falcon Inn,falcon_inn_cambridge,id-folded
 network4,father_house_salisbury_court,John Pepys Sr.'s House (father's),john_pepys_house,manual
 network4,fox_kings_street,The Fox Tavern,fox_tavern,manual
@@ -60,29 +72,35 @@ network4,fullers_ale_house_deal,Fuller's Ale House,fullers_alehouse_deal,manual
 network4,g_montagus_house,Mr. George Montagu's House,george_montagu_house,manual
 network4,golden_lion_charing_cross,Golden Lion Tavern,golden_lion_pub,manual
 network4,grande_salle_hague,Grande Salle (Binnenhof),grande_salle_the_hague,manual
+network4,gravesend_inn,Inn at Gravesend,gravesend,id-folded
 network4,grays_inn,Gray's Inn,grays_inn,id-exact
 network4,green_dragon_lambeth_hill,Green Dragon Tavern,green_dragon_pub,manual
 network4,greyhound_fleet_street,Greyhound Tavern,greyhound_tavern,manual
 network4,guesthouse_delft,The Guest House (Gasthuis),guesthouse_delft,id-exact
 network4,guildhall,Guildhall,guildhall,id-exact
 network4,half_moon_tavern,Half Moon Tavern,the_half_moon_alehouse,id-folded
+network4,hargraves_st_martins,Hargrave's the Cornchandler,hargrave_house_st_martins_lane,id-partial
 network4,harp_and_ball,Harp and Ball Tavern,harp_and_ball_tavern,id-folded
 network4,harpers_alehouse,Mrs. Harper's Alehouse,harpers_tavern,id-folded
+network4,harveys_tavern,Harvey's (by Salisbury Court),harveys_alehouse,id-folded
 network4,heaven_tavern,Heaven Tavern,heaven_alehouse,id-folded
 network4,herings_merchant,Hering the Merchant's,michael_hering_house,manual
 network4,home_axe_yard,Home (Axe Yard),home_axe_yard,id-exact
 network4,jacobs_alehouse,Jacob's Alehouse,jacobs_alehouse,id-exact
 network4,jervas_barber,Jervas the Barber's,richard_jervas_barber,id-exact
 network4,kings_college_cambridge,King's College (fields and chapel yard),kings_college_cambridge,id-exact
-network4,kings_court_hague,King Charles II's Court,kings_lodging_the_hague,id-partial
+network4,kings_court_hague,King Charles II's Court,kings_court_the_hague,id-partial
+network4,kings_head_charing_cross,King's Head Tavern,exchequer_tavern_charing_cross,manual
+network4,lady_pickerings,My Lady Pickering's House,lady_pickering_house,id-folded
 network4,lady_wrights_house,My Lady Wright's House,wright_house,manual
 network4,leg_kings_street,The Leg Tavern,leg_tavern_king_st,manual
 network4,lincolns_inn,Lincoln's Inn,lincolns_inn,id-exact
 network4,lion_tavern_westminster,The Lion Tavern,red_lion_tavern,manual
 network4,lodging_the_hague,Pepys's Lodging,lodging_unknown_1,manual
 network4,london_ship,The London (ship),the_london,manual
-network4,loosduinen,Loosduinen (church of the 365 children),lausdune,manual
-network4,lord_chancellors_hague,Lord Chancellor Hyde's Lodging,lord_chancellor_lodging_the_hague,manual
+network4,loosduinen,Loosduinen (church of the 365 children),loosduinen,manual
+network4,lord_chancellors_hague,Lord Chancellor Hyde's Lodging,edward_hyde_lodging_the_hague,manual
+network4,lord_frezendorfes,Lord Frezendorf's,frezendorf_house,name-exact
 network4,lord_widdringtons,Lord Widdrington's,thomas_widdrington_house,id-folded
 network4,magdalene_college_cambridge,Magdalene College,magdalene_college_cambridge,id-exact
 network4,market_westminster,Market,,manual
@@ -119,8 +137,10 @@ network4,mr_swans_house,Mr. Swan's House,swan_inn,id-folded
 network4,mr_vernons,Mr. Vernon's,mr_vernon_lodging,id-folded
 network4,mr_vines_house,Mr. Vines's House,george_vines_house,manual
 network4,mr_wades_house,Mr. Wade's House,thomas_wade_house,manual
+network4,mr_watkins,Mr. Watkins's (Privy Seal),watkins_lodging,id-folded
 network4,mr_william_montagus,Mr. William Montagu's,william_montagu_chamber,manual
 network4,mr_woottons_shop,Mr. Wotton's Shop (shoemaker),william_wotton_shop,manual
+network4,mrs_browns,Mrs. Brown's House,mrs_brown_lodging,id-folded
 network4,mrs_crisps_house,Mrs. Crisp's House,crisp_house_axe_yard,id-folded
 network4,mrs_jems_lodgings,Mrs. Jem's Lodgings (Jemima and Anne Montagu),sandwich_lodgings,manual
 network4,mrs_johnsons,Mrs. Johnson's (my Lord's sempstress),mrs_johnson_house,id-folded
@@ -133,7 +153,7 @@ network4,new_exchange,The New Exchange,new_exchange,manual
 network4,new_market_alehouse,Alehouse in the New Market,the_new_market,id-folded
 network4,nieuwe_kerk_delft,Nieuwe Kerk (tomb of the Prince of Orange),great_church_delft,manual
 network4,oude_kerk_delft,Oude Kerk (Van Tromp's tomb),old_church_delft,manual
-network4,parliament_house,Parliament House (House of Commons),,manual
+network4,parliament_house,Parliament House (House of Commons),parliament_house,manual
 network4,paternoster_row,Paternoster Row (mercers' shops),paternoster_row,id-exact
 network4,playfords_shop,Playford's Music Shop,john_playford_shop,id-exact
 network4,plough_fleet_street,The Plough (hatter's),plough_fleet_street,id-exact
@@ -147,17 +167,23 @@ network4,puckeridge,Puckeridge (baiting inn),puckeridge_hertfordshire,id-exact
 network4,queen_of_bohemias_hague,Queen of Bohemia's Lodging,queen_of_bohemia_court_the_hague,id-partial
 network4,queens_college_cambridge,Queens' College,,manual
 network4,roberts_whitehall,Roberts's,roberts_whitehall,id-exact
+network4,rochester_chatham,Rochester and Chatham (bridge and dockyard),rochester,id-partial
 network4,rolls_chancery_lane,The Rolls,rolls_office_chancery,manual
 network4,rose_tavern_cambridge,Rose Tavern,rose_tavern_cambridge,id-exact
 network4,salutation_billingsgate,Salutation Tavern,salutation_tavern,manual
-network4,scheveningen,Scheveningen (shore and village),scheveling,id-fuzzy
+network4,scheveningen,Scheveningen (shore and village),scheveningen,id-fuzzy
 network4,scotland_yard_stable,Mr. Garthwayt's Stable,scotland_yard_stable,id-exact
 network4,scotts_house,Scott's House (Madam Scott's),scott_house,id-folded
-network4,shell_womans_house,Shell Rock-work Woman's House,house_unknown_1,manual
+network4,shell_womans_house,Shell Rock-work Woman's House,scheveningen,manual
+network4,sir_edward_walkers,Sir Edward Walker's Lodgings,edward_walker_lodging_st_giles,name-exact
+network4,sir_geoffrey_palmers,Sir Geoffrey Palmer's,geffery_palmer_lodging,name-fuzzy
 network4,sir_harry_wrights,Sir Harry Wright's House,wright_house,manual
 network4,sir_n_wheelers,Sir Nicholas Wheeler's,william_wheeler_house,manual
+network4,sir_r_fanshawes,Sir Richard Fanshawe's,fanshawe_lodging,id-partial
+network4,sittingbourne,Sittingbourne,sittingbourne,id-exact
 network4,somerset_house_stairs,Somerset House Stairs,the_strand,manual
 network4,speaker_ship,The Speaker (ship),the_speaker,manual
+network4,speakers_house,The Speaker's House,speakers_house,id-exact
 network4,st_brides_church,St Bride's Church (Mr. Herring's),st_brides_church,id-exact
 network4,st_clements,St Clement's (St Clement Danes),st_clements_church,manual
 network4,st_jamess_palace,St James's Palace,st_jamess_palace,id-exact
@@ -171,27 +197,34 @@ network4,sun_behind_exchange,Sun Tavern behind the Exchange,sun_tavern_threadnee
 network4,sun_chancery_lane,Sun Tavern,the_sun_tavern,manual
 network4,sun_fish_street_hill,Sun Tavern,sun_tavern_fish_street_hill,id-folded
 network4,sun_tavern_westminster,Sun Tavern,sun_tavern_king_street,manual
+network4,swan_dowgate,Swan Tavern,swan_tavern_dowgate,id-folded
 network4,swan_fish_street,Swan Tavern,the_swan_pub,manual
 network4,swan_kings_street,The Swan Tavern,swan_inn,manual
 network4,swiftsure,The Swiftsure (ship),the_swiftsure,id-exact
 network4,tavern_against_mr_pierces,Tavern over against Mr. Pierce's,tavern_unknown_1,manual
-network4,tavern_hague,Tavern (Dr. Fuller's),tavern_unknown_3,manual
+network4,tavern_hague,Tavern (Dr. Fuller's),thomas_fuller_lodging,manual
 network4,temple,The Temple (Mr. Calthrop's chamber),lestrange_calthorpe_chamber,manual
 network4,the_hague,The Hague (town),the_hague,id-exact
+network4,the_wardrobe,The King's Great Wardrobe,great_wardrobe,id-partial
 network4,thomas_pepys_house,Cousin Thomas Pepys's House,thomas_pepys_house,id-exact
 network4,three_tun_tavern_city,Three Tun Tavern,three_tuns_tavern,manual
 network4,three_tuns_cambridge,Three Tuns Tavern,three_tuns_tavern_cambridge,id-folded
+network4,three_tuns_charing_cross,Old Three Tuns Tavern,three_tuns_tavern_charing_cross,id-folded
 network4,tom_pepys_turner_shop,Cousin Tom Pepys the Turner's Shop,thomas_pepys_shop,manual
 network4,tony_robins,Tony Robins's,roberts_whitehall,manual
 network4,torrianos_house,Signor Torriano's House,mr_torriano_house,id-folded
 network4,tower_of_london,The Tower of London (barge stairs),tower_of_london,id-exact
+network4,trinity_house_stepney,Trinity House,trinity_house_stepney,id-exact
+network4,uncle_fenners,Uncle Fenner's House,fenner_house,id-partial
 network4,uncle_wights_house,Uncle Wight's House,william_wight_house,manual
 network4,w_joyces_house,William Joyce's House,william_joyce_house,manual
+network4,w_symons_house,William Symons's House,william_symons_house,id-fuzzy
 network4,warwick_house_holborn,Warwick House,warwick_house,manual
 network4,waters_vintner,Waters the Vintner's,,manual
 network4,westminster_hall,Westminster Hall,westminster_hall,id-exact
 network4,white_hart_saffron_walden,White Hart Inn,white_hart_saffron_walden,id-exact
 network4,white_horse_kings_street,White Horse Inn,white_horse_king_street,id-folded
+network4,whitefriars,Whitefriars,whitefriars,id-exact
 network4,whitehall,Whitehall Palace,whitehall_palace,manual
 network4,wilkinsons_cook_shop,Wilkinson's Cook Shop,wilkinsons_cookshop,manual
 network4,wills_alehouse,Will's Alehouse,wills_alehouse,id-exact

@@ -89,12 +89,19 @@ def check_nodes(nodes):
             err("nodes.csv:%d  node %r has no name" % (line, nid))
 
         if "_unknown" in nid:
-            if not pepys.UNKNOWN_RE.match(nid):
-                err("nodes.csv:%d  %r must be <type>_unknown_<n> "
-                    "(README principle 4)" % (line, nid))
-            else:
+            if pepys.UNKNOWN_NUM_RE.match(nid):
                 kind, num = nid.rsplit("_unknown_", 1)
                 unknown_nums[kind].append((int(num), line, nid))
+            elif pepys.UNKNOWN_WORD_RE.match(nid):
+                # The GRA's place-qualified form. Allowed, but principle 4 as
+                # written still asks for a number, so keep it visible.
+                warn("nodes.csv:%d  %r qualifies _unknown with a place rather "
+                     "than a number -- allowed per DECISIONS section 15, but "
+                     "README principle 4 still says <type>_unknown_<n>"
+                     % (line, nid))
+            else:
+                err("nodes.csv:%d  %r must be <type>_unknown_<n> or "
+                    "<type>_unknown_<place> (README principle 4)" % (line, nid))
 
         by_norm[norm(nid)].append((nid, line))
 

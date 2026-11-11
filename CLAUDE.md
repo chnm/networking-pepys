@@ -9,8 +9,10 @@ Claude drafts, the project GRA reviews, rulings are written down.
 1. Read `DECISIONS.md` — the rulings already made. Apply them; do not
    re-litigate them. If a case isn't covered, draft the most defensible reading
    and **flag it** for the team rather than deciding silently.
-2. Read `README.md` for identifier naming. The list is numbered 1–11, 13, 14,
-   16 — there is no 12 or 15, so read all of it rather than a range.
+2. Read `README.md` for identifier naming. The numbering has gaps — it runs
+   1–5, 7–11, 13, 14, 16 (no 6, 12 or 15) — so read all of it rather than a
+   range, and never cite a principle by number alone without checking it is
+   still the one you mean.
 3. Check `network-data/curated/nodes.csv` for an existing node before inventing
    one. Variant spellings and honorific differences are the main source of
    accidental duplicates, so search the `variants` column as well as `name` and

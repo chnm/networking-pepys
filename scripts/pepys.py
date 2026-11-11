@@ -22,8 +22,13 @@ EDGE_COLS = ["id", "source", "target", "year", "month", "day", "mode",
 # Controlled vocabulary for edge.mode. Extend deliberately, not ad hoc.
 MODES = {"walk", "coach", "boat", "horse", "wagon", "sedan", "cart", "ship"}
 
-# README principle 4: unknown locations are <type>_unknown_<n>.
-UNKNOWN_RE = re.compile(r"^[a-z][a-z_]*_unknown_\d+$")
+# README principle 4: unknown locations are <type>_unknown_<n>. The GRA's May
+# 1660 review also introduced a place-qualified form (cliff_unknown_deal,
+# dutch_ship_unknown), so both are accepted; validate.py warns on the second
+# because principle 4 as written still asks for a number. See DECISIONS s15.
+UNKNOWN_NUM_RE = re.compile(r"^[a-z][a-z_]*_unknown_\d+$")
+UNKNOWN_WORD_RE = re.compile(r"^[a-z][a-z_]*_unknown(_[a-z]+)?$")
+UNKNOWN_RE = UNKNOWN_NUM_RE  # kept for callers wanting the strict form
 ID_RE = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)*$")
 
 # Old Style: the year began 25 March, so 1 Jan - 24 Mar carries a split year.

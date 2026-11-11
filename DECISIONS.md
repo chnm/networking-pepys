@@ -865,3 +865,167 @@ Exchequer Tavern) are genuinely four places and all remain distinct.
   the ruling these sit in a field the GRA rewrites freely, so they are at risk.
   If they should be stable, they want a home in `evidence` or a column of their
   own — say which and I will move them. Do not write in the 'notes' column, only GRA writes in 'notes'. 
+
+## 15. `_unknown_` may be qualified by a place, not only a number (7 November 2026)
+
+The May review introduced two ids that depart from README principle 4
+(`<type>_unknown_<number>`): `cliff_unknown_deal`, by explicit instruction in
+section 13 flag 5, and `dutch_ship_unknown`, created in the review itself. Two
+in one pass is a pattern rather than a slip, so `validate.py` now accepts
+either form:
+
+- `<type>_unknown_<n>` — the numbered form of principle 4. Numbering is still
+  checked for gaps and repeats within each type.
+- `<type>_unknown_<place>` — a place- or descriptor-qualified form. Accepted,
+  but **warned on**, because principle 4 as written still asks for a number.
+
+**This is a conflict, not a settled rule.** Principle 4 and these two ids
+cannot both be right as stated. Either principle 4 should be rewritten to allow
+the qualified form, or the two ids should be renumbered. Until that is decided
+the warning keeps them visible, and new drafts follow principle 4's numbered
+form so the exception stays confined to the two cases the GRA chose.
+
+## 16. Flagged in the June 1660 draft
+
+197 edges over 23 days, 42 new nodes, 0 errors — by far the largest chunk, and
+the one where the conventions finally stop fighting the material. 1–7 June is
+still aboard and silent; the voyage ends on the 8th with the ride up from Deal,
+and from the 9th Pepys is back in a dense London round of my Lord's business,
+the Clerk of the Acts place, and his own house at Axe Yard.
+
+network4 drafted 190 edges over the same 23 days.
+
+### 1. A real correction the cross-check caught: where my Lord lodged
+
+My first draft sent every "to my Lord" to `sandwich_lodgings`, his Whitehall
+rooms. network4 sent them to Mr Crew's house, and network4 was right. Three
+things in the diary settle it:
+
+- 25 June: "Then to my Lord's lodging, **this being the first night of his
+  coming to Whitehall to lie** since his coming from sea." He had not been
+  sleeping there.
+- 19 June: "towards **my Lord's at Mr. Crew's**" — named outright.
+- On 11, 16 and 22 June Pepys goes "to my Lord" and then "to White Hall with
+  him". My Lord cannot already have been at Whitehall.
+
+Sixteen visits were re-pointed to `john_crews_house`. The exceptions are the
+legs on 13 and 18 June whose entries say "my Lord's **lodging(s)**", which
+still point at `sandwich_lodgings`: he used the Whitehall rooms for business
+while they were being furnished ("what furniture we lack for our lodgings at
+Whitehall", 22 June). **That split is the flag** — it reads the bare phrase "my
+Lord's" and the fuller "my Lord's lodgings" as two different places in the same
+fortnight. If they are meant to be one, 13 and 18 June need re-pointing too.
+
+### 2. Pepys changes lodging mid-month, twice over
+
+- 9–21 June he sleeps at his father's in Salisbury Court.
+- 20 June he visits Axe Yard — "I home and dined with my wife, now making all
+  things ready there again" — but still sleeps at his father's.
+- 22 June: "To bed, the first time since my coming from sea, in my own house,
+  for which God be praised." From here `home_axe_yard` is the night's node.
+
+The 21 June night is the awkward one: "To my father's, where Sir Thomas
+Honeywood and his family were come of a sudden, and so we forced to lie all
+together in a little chamber, three stories high." Drafted as `john_pepys_house`
+with no chamber node, on the ship-cabin precedent.
+
+### 3. Four nights closed by inference
+
+The entries for 9, 10, 11 and 15 June end somewhere other than where the next
+day begins, so the continuity rule forces a return leg the diary does not state:
+9 June from St James's Park, 10 June from Lincoln's Inn, 11 June from Mrs
+Turner's, 15 June from the Fenners'. Each is noted on the edge. 9 June is the
+load-bearing one — the night is placed at his father's only because 10 June
+opens "At my father's found my wife".
+
+### 4. The ride up from Deal, 8 June
+
+The entry is a telegraphic list, the first of the clipped entries that run
+through to the 10th: "Out early, took horses at Deale ... Came to Canterbury,
+dined there ... To Sittiligborne and Rochester. At Chatham and Rochester the
+ships and bridge ... Come to Gravesend."
+
+- The boat ashore from the Charles is **implied, not described** — he is aboard
+  on the 7th and takes horses at Deal on the 8th.
+- **Rochester and Chatham are drafted in road order** — Sittingbourne, Chatham,
+  Rochester, Gravesend — although the entry names Rochester first and Chatham
+  second. network4 avoided the question by merging them into one node. FLAG.
+- The Gravesend inn where he slept is `inn_unknown_1`; "25s. the reckoning for
+  very bare. Paid the house" the next morning marks it as an inn, but it is
+  never named.
+
+### 5. Which Sun, which Leg, which Bell
+
+Three unqualified house names, each with candidates already in the data:
+
+- **22 June, "dined alone at the Sun Tavern."** Four Suns exist
+  (`the_sun_tavern` Chancery Lane, `sun_tavern_king_street`,
+  `sun_tavern_threadneedle_st`, `sun_tavern_fish_street_hill`). Taken as King
+  Street, nearest where he was. A guess.
+- **29 June, "meeting Mr. Townsend in the Palace, he and I ... dined at the Leg
+  there."** "There" suggests a Leg inside the Palace; drafted as
+  `leg_tavern_king_st`, the adjacent street.
+- **23 June, "went to Mr. Holmes to deliver him the horse of Dixwell's that had
+  staid there fourteen days at the Bell."** Taken as `bell_tavern`, on the
+  reading that Holmes was at the Bell.
+
+### 6. A variant worth having: the Exchequer is now the King's Head
+
+20 June: "drank with him at Charing Cross, **now the King's Head Tavern**."
+This is `exchequer_tavern_charing_cross` under its Restoration name, so "the
+King's Head Tavern" is recorded in that node's `variants` rather than drafted
+as a new house. It is exactly the case the column was added for — and if the
+reading is wrong, a fifth Charing Cross tavern is missing. network4 drafted it
+as a separate node.
+
+### 7. `tavern_unknown_3` has been reused
+
+The number was the Hague tavern of 17 May, which the review renamed
+`thomas_fuller_lodging`, freeing it. The 14 June unnamed tavern ("to a tavern
+with Washington the Purser") now holds it, which keeps the family contiguous
+and keeps the validator quiet. **But a reused number is a trap for anyone
+citing an id.** Say if you would rather have a gap than a reuse.
+
+### 8. Smaller calls
+
+- **Rooms inside a complex.** `shield_gallery_whitehall` is drafted (principle
+  10, following `stone_gallery_whitehall`), but the Nursery of 28 June — "I
+  went up to him to the Nursery, where he do lie" — is folded into
+  `sandwich_lodgings` as a room of that lodging. Principle 10 could argue for
+  a node; the ship-cabin rule argues against.
+- **The Banqueting House, 23 June.** The King failed to appear to touch for
+  the King's evil and "afterward he touched them in the Banquetting-house".
+  Whether Pepys followed is not stated, so there is no edge.
+- **Mrs Brown's, 18 June.** "He went to Mrs. Brown's" — my Lord. Pepys is
+  drafted as going too, since they leave for Stepney together, but the entry
+  does not say so.
+- **The Commissioners of the Navy, 15 June** are taken to sit at `navy_office`,
+  which bears on the open question at section 6 flag 12.
+- **Mrs Pierce's house** in Margaret churchyard (28 June) is taken to be
+  `james_pearse_house`, her husband the surgeon's, which the entry supports
+  ("Her husband returned to sea"). That node had no location; it now has one.
+- **Modes not given.** The trip to the Swan at Dowgate (27 June) and the
+  carriage of his father and wife to Whitefriars (26 June) have no mode in the
+  text; drafted walk and boat respectively on geography alone.
+- **network4 disagreements not followed**: a visit to
+  `lestrange_calthorpe_chamber` on 9 June, which the entry ("Landed at the
+  Temple. To Mr. Crew's") does not support; and `whitehall_palace` in place of
+  the named lodgings of Secretary Nicholas, Mr Coventry and the Duke of
+  Gloucester, where principle 5 favours naming the person's lodging.
+
+### 9. Closed by the May review
+
+Section 13's flags are all answered. For the record: shipboard movement stays
+unrecorded ("Continue with the current conventions"), so the 20 silent days of
+May and the 7 of June are correct rather than a gap. That question is now shut.
+
+### 10. Still open from earlier chunks
+
+- Principle 4 against the two place-qualified `_unknown_` ids (section 15).
+- The README numbering still has gaps: 1–5, 7–11, 13, 14, 16. There is now no
+  6 either. `CLAUDE.md` has been corrected to say so.
+- Whether `navy_office` and the July 1660 house stay two nodes (section 6
+  flag 12), now also bearing on the Navy Commissioners of 15 June.
+- Whether the curatorial warnings still sitting in `notes` ("kept distinct
+  from chequers_inn") want a stable home, given that `notes` is rewritten
+  freely (section 14).
