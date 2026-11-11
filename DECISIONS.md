@@ -7,8 +7,8 @@ never answered twice and the conventions do not drift over 120 months.
 and cite the entry that prompted it. Claude reads this file before drafting a
 new chunk. If a rule is not written down, assume it will be broken.
 
-Identifier naming principles live in `README.md` (principles 1-12) and are not
-repeated here. This file records what those principles resolved to in practice.
+Identifier naming principles live in `README.md` -- thirteen of them -- and are
+not repeated here. On numbering, see section 17 before citing one. This file records what those principles resolved to in practice.
 
 ---
 
@@ -406,11 +406,11 @@ disembarking only. Nothing after 22 March is drafted yet.
 
 ### Noticed while reviewing
 
-- **README's principle numbering is broken.** Principle 12 was deleted and the
-  list now runs 1-11, 13, 14, 16 -- there is no 15, and nothing is numbered 12.
-  Worth renumbering, because this file and `CLAUDE.md` cite principles by
-  number; the references to "principle 12" have been repointed to 13-14, but
-  any new citation will be guessing.
+- ~~**README's principle numbering is broken.**~~ **Withdrawn 11 November
+  2026 -- this was my error, not a defect in the README.** See section 17. The
+  list is complete; the source numbers are simply not the rendered ones. The
+  one genuine casualty is the reference to "principle 12" below, which names a
+  number the source does not use; it has been repointed to 13-14.
 - **6 March no longer records the visit to Mrs Jem.** The review retargeted that
   leg to `sandwich_lodgings` and dropped the following one, so the day reads
   home -> my Lord's lodgings -> the Red Lion -> home. That is a defensible
@@ -455,8 +455,7 @@ All seven ship questions are now answered, so the voyage can be drafted:
 - **Section 6 ruling 4** -- "the Swan tavern", 2 March. Stands as `swan_inn`.
 - **Section 6 ruling 12** -- whether `navy_office` and the house Pepys moves
   into in July 1660 stay two nodes.
-- **README numbering** -- the principle list runs 1-11, 13, 14, 16, with no 12
-  and no 15. Both this file and `CLAUDE.md` cite principles by number.
+- ~~**README numbering**~~ -- withdrawn; see section 17. Nothing is missing.
 - **6 March and Mrs Jem** -- the day no longer records the visit to her, which
   sits against section 6 ruling 2 placing her at `scott_house` through
   15 March.
@@ -793,8 +792,8 @@ is the last chunk where it matters for 1660. Continue with the current conventio
 
 ### 10. Still open from earlier chunks
 
-- The README's principle numbering runs 1-11, 13, 14, 16. There is no 12 and
-  no 15, and both this file and `CLAUDE.md` cite principles by number. The README's principles have been manually renumbered by the GRA.
+- ~~The README's principle numbering~~ -- withdrawn; see section 17. Nothing
+  is missing and nothing is out of order.
 - Whether `navy_office` and the July 1660 house stay two nodes (section 6
   flag 12).
 - Whether the "Mr Thomas"/"Thomas Crew" and "Mr Woodfine"/"Thomas Woodfine"
@@ -1022,10 +1021,69 @@ May and the 7 of June are correct rather than a gap. That question is now shut.
 ### 10. Still open from earlier chunks
 
 - Principle 4 against the two place-qualified `_unknown_` ids (section 15).
-- The README numbering still has gaps: 1–5, 7–11, 13, 14, 16. There is now no
-  6 either. `CLAUDE.md` has been corrected to say so.
+- ~~The README numbering still has gaps~~ — withdrawn; see section 17.
 - Whether `navy_office` and the July 1660 house stay two nodes (section 6
   flag 12), now also bearing on the Navy Commissioners of 15 June.
 - Whether the curatorial warnings still sitting in `notes` ("kept distinct
   from chequers_inn") want a stable home, given that `notes` is rewritten
   freely (section 14).
+
+## 17. The README principles are complete — the numbering is a Markdown artefact (11 November 2026)
+
+**Correcting my own error, which this file repeated across four sections.** I
+reported several times that `README.md` was missing principles 6, 12 and 15 and
+that the numbering was "broken". It is not. The list is complete, in order, and
+nothing has been deleted.
+
+Markdown ordered lists renumber on render: only the first item's number is
+honoured, and every item after it increments by one whatever digit is typed.
+So the source
+
+```
+1. 2. 3. 4. 5. 7. 8. 9. 10. 11. 13. 14. 16.
+```
+
+displays as a consecutive **1–13**. Anyone reading the README on GitHub — which
+is how the GRA reads it — sees thirteen principles numbered without a gap. The
+"missing" numbers exist only in the raw bytes and have no meaning.
+
+### The part that does matter
+
+Source and rendered numbering agree for the first five principles and diverge
+for every one after:
+
+| source | rendered | principle |
+|---|---|---|
+| 1–5 | 1–5 | *(identical)* |
+| 7 | 6 | most specific label for a person |
+| 8 | 7 | honorific when no first name |
+| 9 | 8 | honorific on a person's home |
+| 10 | 9 | precision inside a sprawling complex |
+| 11 | 10 | area-level labels for semi-known places |
+| 13 | 11 | a named ship is one location |
+| 14 | 12 | ship nodes take the vessel's name |
+| 16 | 13 | named watermen and coachmen as companions |
+
+**This project cites the source numbers.** Every citation in this file, in
+`CLAUDE.md` and in `validate.py` was checked on 11 November 2026 against the
+principle's text. All resolve correctly against the source numbering — among
+them the GRA's own "README principle 14 now reads *e.g. the_naseby*" for ships
+— with a single exception, noted below. So no citation needs repointing.
+
+The hazard is for a reader going the other way: someone who looks up
+"principle 10" in the rendered README finds area-level labels, not precision
+inside a complex. **Cite the principle's words alongside its number.** The
+citations added since have been written that way.
+
+One stale reference survives at section 7 ruling 3, which argues from a
+"principle 12". The source list has no 12 and the rendered 12 is the
+ship-naming rule, so the intent was the ship principle either way; the ruling's
+conclusion — no cabin or deck nodes — is unaffected and confirmed.
+
+### Why it went unnoticed
+
+`CLAUDE.md` told me to read the whole list "rather than a range", and I did
+read it — but I read it with `grep`, over the raw source, which is precisely
+where the artefact lives and where a human never looks. The lesson is narrower
+than the error: **when a convention is about how a document presents itself,
+reading the bytes is not reading the document.**
