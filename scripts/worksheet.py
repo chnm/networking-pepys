@@ -115,13 +115,13 @@ def main():
             L.append("")
             continue
 
-        L.append("| # | from | to | mode | companions | notes |")
+        L.append("| # | from | to | mode | named companions | evidence |")
         L.append("|---|------|----|------|------------|-------|")
         for e in seq:
             L.append("| %s | %s | %s | %s | %s | %s |"
                      % (e["id"], e["source"], e["target"], e["mode"],
-                        e["companions"].replace("|", "/"),
-                        e["notes"].replace("|", "/")))
+                        e["named_companions"].replace("|", "/"),
+                        e["evidence"].replace("|", "/")))
         L.append("")
 
         fresh = [nid for nid, d in first_seen.items() if d == day]

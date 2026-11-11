@@ -286,14 +286,23 @@ def check_edges(edges, node_ids):
             err("%s  mode %r is not in the controlled vocabulary (%s)"
                 % (where, mode, ", ".join(sorted(pepys.MODES))))
 
-        raw = e["companions"]
+        raw = e["named_companions"]
         if raw != raw.strip():
-            warn("%s  companions %r has leading or trailing whitespace" % (where, raw))
-        if e["notes"] != e["notes"].strip():
-            warn("%s  notes have leading or trailing whitespace, which the "
-                 ".xlsx round-trip would silently normalise away" % where)
+            warn("%s  named_companions %r has leading or trailing whitespace"
+                 % (where, raw))
+        for field in ("notes", "evidence"):
+            if e[field] != e[field].strip():
+                warn("%s  %s has leading or trailing whitespace, which the "
+                     ".xlsx round-trip would silently normalise away"
+                     % (where, field))
+        # notes is the GRA's column on edges as well as nodes; a warrant left
+        # there is a warrant that gets overwritten.
+        if '"' in e["notes"]:
+            warn("%s  notes quotes the diary -- that belongs in evidence, and "
+                 "notes is the GRA's column" % where)
         if "," in raw and ";" not in raw:
-            warn("%s  companions %r uses a comma -- separator is '; '" % (where, raw))
+            warn("%s  named_companions %r uses a comma -- separator is '; '"
+                 % (where, raw))
         for person in pepys.companion_list(raw):
             if person != person.strip(" .;"):
                 warn("%s  companion %r has stray punctuation" % (where, person))
@@ -335,7 +344,7 @@ def check_continuity(edges):
 def check_people(edges):
     by_norm = collections.defaultdict(set)
     for e in edges:
-        for person in pepys.companion_list(e["companions"]):
+        for person in pepys.companion_list(e["named_companions"]):
             by_norm[norm(person)].add(person)
     for key, spellings in sorted(by_norm.items()):
         if len(spellings) > 1:

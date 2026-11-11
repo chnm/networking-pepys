@@ -139,7 +139,7 @@ a class of error gets through review, not speculatively.
 | Crosswalk staleness | Same cause: a rename leaves the crosswalk pointing at a retired id. |
 | Companion near-misses, fuzzy-matched, honorific-aware | "Edward Sheply" sat beside "Edward Shipley" undetected. Honorifics are compared first, since "Mr Sheply" and "Mrs Sheply" are two people. |
 | Variants cross-referenced against every node's `name` and `id` | Variant spellings are the main duplicate risk. It caught a real collision on its first run — which turned out to be a redundant variant Claude had added, so the check also warns when a variant merely restates its node's name. |
-| Quotations left in `notes` | After the column split, a warrant in `notes` is a warrant that will be overwritten. |
+| Quotations left in `notes`, on nodes **and** edges | After the column split, a warrant in `notes` is a warrant that will be overwritten. `notes` is the GRA's column in both files. |
 | Whitespace in text fields | The `.xlsx` round-trip silently normalises a trailing space, which broke losslessness once. |
 | Old Style year against each date | Mechanical and easy to get wrong at the 25 March boundary. |
 | `_unknown_` numbering contiguity | Gaps and repeats accumulate invisibly across months. |
@@ -216,6 +216,23 @@ will.**
   dropped. A variant that restates the name is worse than none.
 
 ---
+
+## 5a. The edge columns follow the node columns, 12 November 2026
+
+The GRA added an `evidence` column to `edges_1660.csv` and renamed
+`companions` to `named_companions`. The same split that `nodes.csv` got in
+November now applies to edges: **`notes` is the GRA's column in both files and
+Claude does not write in it**; `evidence` holds Claude's warrant for the leg.
+
+All 383 edge notes moved to `evidence`. Checking first was worth it: the
+GRA's May review had edited six notes, which at a glance looked like notes she
+had authored and so should stay. They were my own text with the Scheveningen
+spelling corrected inside it, so every edge note was mine and all of them
+moved, leaving `notes` empty for her.
+
+The rename is cosmetic for drafting — it is the same field, holding the same
+thing — but it is not cosmetic for the code, which addressed the column by
+name in five places.
 
 ## 6. Reading `README.md`
 

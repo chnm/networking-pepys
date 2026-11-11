@@ -26,7 +26,8 @@ except ImportError:
 WIDTHS = {"id": 26, "name": 30, "variants": 28, "location": 30,
           "latitude": 12, "longitude": 12, "notes": 44, "evidence": 70,
           "source": 26, "target": 26, "year": 9, "month": 7,
-          "day": 6, "mode": 8, "companions": 40}
+          "day": 6, "mode": 8, "named_companions": 40,
+          "evidence": 70}
 NUMERIC = {"month", "day", "latitude", "longitude"}
 
 

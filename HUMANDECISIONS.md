@@ -88,12 +88,15 @@ history is in `DECISIONS.md`.
 
 ## B2. Who owns which column
 
-| Column | Holds | Whose |
-|---|---|---|
-| `evidence` | The diary passage warranting the identification, quoted, with its date | Claude drafts, GRA verifies |
-| `notes` | Locational and curatorial gloss, supporting the coordinate work | **GRA only. Claude does not write here.** |
-| `variants` | The diary's other spellings for the same place, `; `-separated | Claude drafts, GRA rules |
-| `latitude` / `longitude` | Coordinates | **GRA only. Claude leaves blank, never guesses.** |
+Both `nodes.csv` and `edges_<year>.csv` carry `notes` and `evidence`.
+
+| Column | Where | Holds | Whose |
+|---|---|---|---|
+| `evidence` | nodes, edges | The diary passage warranting the identification or the leg, quoted, with its date | Claude drafts, GRA verifies |
+| `notes` | nodes, edges | Whatever the GRA wants it to hold | **GRA only. Claude does not write here.** |
+| `variants` | nodes | The diary's other spellings for the same place, `; `-separated | Claude drafts, GRA rules |
+| `named_companions` | edges | People who travelled *with* Pepys, `; `-separated | Claude drafts, GRA rules |
+| `latitude` / `longitude` | nodes | Coordinates | **GRA only. Claude leaves blank, never guesses.** |
 
 A variant that merely restates the node's name is worse than no variant: it
 manufactures false collisions in the duplicate check.

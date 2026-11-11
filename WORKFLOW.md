@@ -19,7 +19,8 @@ you can see exactly what changed in a review:
 network-data/curated/
   nodes.csv          cumulative, all months
                      (id,name,variants,location,latitude,longitude,notes,evidence)
-  edges_1660.csv     one file per calendar year (id,source,target,year,month,day,mode,companions,notes)
+  edges_1660.csv     one file per calendar year
+                     (id,source,target,year,month,day,mode,named_companions,notes,evidence)
   crosswalk.csv      first-gen ids -> curated ids, for the cross-check
 ```
 

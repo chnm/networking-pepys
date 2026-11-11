@@ -70,13 +70,14 @@ Stdlib only, except the two `.xlsx` scripts, which need `openpyxl`.
   `the_` plus the vessel's name — `the_naseby`, `the_london`. The prefix keeps
   the ship *London* apart from `city_of_london`. Water travel is always
   `mode` = `boat`; there is no `ship` mode. No cabin or deck nodes.
-- **Companions** travel *with* Pepys; people met at the destination do not count.
+- **Companions.** The edge column is `named_companions` (renamed from
+  `companions`, 12 Nov 2026; nothing else about it changed). Only people who
+  travelled *with* Pepys — someone met at the destination does not count.
 - **Never invent coordinates.** That field is the GRA's.
-- **`notes` vs `evidence` vs `variants`.** `evidence` holds the diary passage
-  that warrants an identification — quote it, with the date. `notes` is
-  locational and curatorial gloss supporting the coordinate work; the GRA owns
-  it and rewrites it freely, so never put a warrant there, it will be
-  overwritten. `variants` holds the diary's *other spellings for the same
+- **`notes` vs `evidence` vs `variants`.** Both `nodes.csv` and
+  `edges_<year>.csv` carry `notes` and `evidence`. **`notes` is the GRA's
+  column in both — never write in it.** `evidence` is yours: the diary passage
+  warranting the identification or the leg, quoted, with the date. `variants` holds the diary's *other spellings for the same
   place* ("the 3 Tun tavern" for `three_tuns_tavern`, "Mr Laxton's" for
   `john_layton_apothecary`), `; `-separated — not narrative fragments and not a
   restatement of the name. The validator cross-checks every node's name and id

@@ -17,7 +17,10 @@ NODE_COLS = ["id", "name", "variants", "location", "latitude", "longitude",
 # evidence -- the diary passage that warrants the identification
 # variants -- the diary's other spellings for this same place, "; "-separated
 EDGE_COLS = ["id", "source", "target", "year", "month", "day", "mode",
-             "companions", "notes"]
+             "named_companions", "notes", "evidence"]
+# Edges carry the same split as nodes: evidence is Claude's warrant for the
+# leg, quoted from the diary; notes is the GRA's column and Claude does not
+# write in it. named_companions was "companions" until 12 Nov 2026.
 
 # Controlled vocabulary for edge.mode. Extend deliberately, not ad hoc.
 MODES = {"walk", "coach", "boat", "horse", "wagon", "sedan", "cart", "ship"}
@@ -91,7 +94,7 @@ def all_edges():
 
 
 def companion_list(raw):
-    """Edge companions are a single '; '-separated field."""
+    """Edge named_companions is a single '; '-separated field."""
     return [p.strip() for p in (raw or "").split(";") if p.strip()]
 
 
