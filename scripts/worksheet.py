@@ -91,7 +91,7 @@ def main():
     L.append("# Review worksheet - %s %s" % (month_name, heading_year))
     L.append("")
     L.append("%d edges over %d days. Mark each day `OK`, `FIX: ...`, or "
-             "`FLAG: ...` (a FLAG becomes a rule in DECISIONS.md)." %
+             "`FLAG: ...` (a FLAG becomes a rule in HUMANDECISIONS.md)." %
              (len(edges), len(by_day)))
     L.append("")
 

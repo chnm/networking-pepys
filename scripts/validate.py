@@ -96,7 +96,7 @@ def check_nodes(nodes):
                 # The GRA's place-qualified form. Allowed, but principle 4 as
                 # written still asks for a number, so keep it visible.
                 warn("nodes.csv:%d  %r qualifies _unknown with a place rather "
-                     "than a number -- allowed per DECISIONS section 15, but "
+                     "than a number -- allowed, but "
                      "README principle 4 still says <type>_unknown_<n>"
                      % (line, nid))
             else:

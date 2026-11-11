@@ -25,7 +25,8 @@ MODES = {"walk", "coach", "boat", "horse", "wagon", "sedan", "cart", "ship"}
 # README principle 4: unknown locations are <type>_unknown_<n>. The GRA's May
 # 1660 review also introduced a place-qualified form (cliff_unknown_deal,
 # dutch_ship_unknown), so both are accepted; validate.py warns on the second
-# because principle 4 as written still asks for a number. See DECISIONS s15.
+# because principle 4 as written still asks for a number. See HUMANDECISIONS
+# section A2.
 UNKNOWN_NUM_RE = re.compile(r"^[a-z][a-z_]*_unknown_\d+$")
 UNKNOWN_WORD_RE = re.compile(r"^[a-z][a-z_]*_unknown(_[a-z]+)?$")
 UNKNOWN_RE = UNKNOWN_NUM_RE  # kept for callers wanting the strict form
@@ -99,7 +100,7 @@ def next_edge_id(existing):
 
     Ids are CONTIGUOUS in row order from 100001, so inserting or removing a leg
     mid-month means renumbering everything after it. Never cite an id where the
-    reference has to last -- cite a date and a leg. See DECISIONS.md.
+    reference has to last -- cite a date and a leg. See HUMANDECISIONS.md.
     """
     nums = [int(e["id"]) for e in existing if str(e.get("id", "")).isdigit()]
     return max(nums) + 1 if nums else 100001

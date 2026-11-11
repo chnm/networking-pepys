@@ -1,11 +1,20 @@
-# Decisions log
+# Decisions log — CLOSED 11 November 2026
+
+> **This file is a historical record and is no longer added to.** It holds
+> everything decided from January 1660 through June 1660, in the order it was
+> decided, and is kept because the reasoning behind a rule is often worth more
+> than the rule.
+>
+> **Current files:** `HUMANDECISIONS.md` for the GRA's rulings and the queue of
+> questions awaiting one; `CLAUDEDECISIONS.md` for Claude's drafting method and
+> its own judgement calls. Anything below that still matters has been carried
+> into one of those two. Where they disagree with this file, they win.
 
 Every ruling made while reconstructing the network, so the same question is
 never answered twice and the conventions do not drift over 120 months.
 
-**How to use it:** when a review turns up an ambiguity, write the ruling here
-and cite the entry that prompted it. Claude reads this file before drafting a
-new chunk. If a rule is not written down, assume it will be broken.
+**How it was used:** when a review turned up an ambiguity, the ruling was
+written here and cited the entry that prompted it.
 
 Identifier naming principles live in `README.md` -- thirteen of them -- and are
 not repeated here. On numbering, see section 17 before citing one. This file records what those principles resolved to in practice.

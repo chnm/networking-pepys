@@ -37,7 +37,7 @@ Edit the workbooks, run `from_xlsx.py`, commit the CSV diff.
 ## The per-chunk loop
 
 **1. Claude drafts.** Reads the diary text for the chunk, appends edges to the
-year file and new places to `nodes.csv`. Reads `DECISIONS.md` first, so
+year file and new places to `nodes.csv`. Reads `HUMANDECISIONS.md` first, so
 established rulings are applied rather than re-litigated.
 
 **2. Machine checks run — before you see anything.**
@@ -86,7 +86,7 @@ new place introduced. Mark each day:
 - `FLAG: ...` — ambiguous, needs a ruling
 
 **5. Rulings become rules.** Every `FLAG` is resolved into a line in
-`DECISIONS.md`, with the entry that prompted it. This is the step that makes 120
+`HUMANDECISIONS.md`, with the entry that prompted it. This is the step that makes 120
 months tractable: it stops the same question recurring and stops Claude
 inventing `mr_crews_house` in month 40 when `john_crews_house` was settled in
 month 1.
@@ -108,6 +108,6 @@ January is the yardstick: 294 edges, 77 places, 30 days.
 | `variants` field | drafts what the diary shows | adds, rules on spellings |
 | `notes` field | drafts a first gloss | owns it, rewrites freely |
 | `latitude` / `longitude` | leaves blank | fills |
-| Place identifications | applies `DECISIONS.md` | rules on anything new |
+| Place identifications | applies `HUMANDECISIONS.md` | rules on anything new |
 | Machine checks | runs before handoff | |
 | Historical judgement | flags, never decides | decides |

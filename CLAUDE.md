@@ -6,9 +6,16 @@ Claude drafts, the project GRA reviews, rulings are written down.
 
 ## Before drafting anything
 
-1. Read `DECISIONS.md` — the rulings already made. Apply them; do not
-   re-litigate them. If a case isn't covered, draft the most defensible reading
-   and **flag it** for the team rather than deciding silently.
+1. Read `HUMANDECISIONS.md` — the GRA's rulings. Apply them; do not
+   re-litigate them. Section A is what is still waiting on a ruling; B to D are
+   binding. If a case isn't covered, draft the most defensible reading and
+   **flag it into section A** rather than deciding silently. Never write a
+   ruling into that file yourself.
+   Then read `CLAUDEDECISIONS.md` — your own drafting method, the defaults for
+   when the diary is silent, and the corrections already made. Record new
+   drafting judgement there, not in `HUMANDECISIONS.md`.
+   `DECISIONS.md` is the closed record to 11 November 2026. Consult it for the
+   history behind a rule; never add to it.
 2. Read `README.md` for identifier naming. **Nothing is missing**: it is one
    Markdown ordered list of 13 principles, which renders 1–13. The literal
    numbers in the source read 1–5, 7–11, 13, 14, 16, because Markdown
